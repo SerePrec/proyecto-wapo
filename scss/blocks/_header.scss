@@ -1,0 +1,40 @@
+header {
+  nav {
+    padding-right: 3.9rem;
+    height: 7rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    .nav-link {
+      background-color: transparent;
+      position: relative;
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: #000;
+      padding: 0 0;
+      margin: 0 1rem;
+      z-index: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 2.5%;
+        bottom: 0.25rem;
+        width: 95%;
+        height: 0.3125rem;
+        background-color: $amarillo-claro;
+        z-index: -1;
+      }
+    }
+    .redes {
+      width: 9.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 1.875rem;
+      img {
+        width: 2rem;
+      }
+    }
+  }
+}

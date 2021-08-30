@@ -10,3 +10,37 @@ html {
 
 body {
   font-family: "Poppins", Helvetica, sans-serif; }
+
+header nav {
+  padding-right: 3.9rem;
+  height: 7rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  z-index: 1000; }
+  header nav .nav-link {
+    background-color: transparent;
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #000;
+    padding: 0 0;
+    margin: 0 1rem;
+    z-index: 0; }
+    header nav .nav-link::before {
+      content: "";
+      position: absolute;
+      left: 2.5%;
+      bottom: 0.25rem;
+      width: 95%;
+      height: 0.3125rem;
+      background-color: #ffd800;
+      z-index: -1; }
+  header nav .redes {
+    width: 9.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.875rem; }
+    header nav .redes img {
+      width: 2rem; }
