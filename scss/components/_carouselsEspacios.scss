@@ -1,0 +1,96 @@
+.carousels-wraper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  #carouselDptos,
+  #carouselEspTrabajo,
+  #carouselEspComun {
+    position: relative;
+    flex: 0 0 calc(100% / 3);
+    .carousel-inner {
+      position: relative;
+      .carousel-item {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(#000, 0.3);
+          transition: background-color 0.4s ease-in-out;
+        }
+        img {
+          min-height: 350px;
+          object-fit: cover;
+        }
+      }
+      .carousel-caption {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        padding: 0;
+        z-index: 10;
+        transition: opacity 0.3s ease-in;
+        p {
+          font-size: 2.1875rem;
+          font-weight: 500;
+          margin-bottom: 0;
+          span.highlight {
+            display: inline-block;
+            position: relative;
+            z-index: 0;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 2.5%;
+              bottom: 0.65rem;
+              width: 95%;
+              height: 0.3125rem;
+              background-color: $amarillo-claro;
+              z-index: -1;
+            }
+          }
+          span.no-wrap {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .carousel-btn {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      text-align: center;
+      font-weight: 300;
+      font-size: 12.5rem;
+      color: $amarillo-marca;
+      text-decoration: none;
+      z-index: 15;
+      opacity: 0;
+      transition: all 0.3s ease-in;
+      &:hover {
+        color: $amarillo-claro;
+      }
+    }
+    &:hover {
+      .carousel-inner {
+        .carousel-item {
+          &::before {
+            background-color: rgba(#000, 0.5);
+          }
+        }
+        .carousel-caption {
+          opacity: 0;
+        }
+      }
+      .carousel-btn {
+        opacity: 1;
+      }
+    }
+  }
+}

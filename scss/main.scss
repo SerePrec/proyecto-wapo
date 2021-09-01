@@ -6,10 +6,12 @@
 // importación de bloques
 @import "./blocks/header";
 @import "./blocks/footer";
+@import "./blocks/seccionPropuesta";
+@import "./blocks/seccionServicios";
+@import "./blocks/seccionEspacios";
 
 // importación de componentes
 @import "./components/carouselPrincipal";
 @import "./components/separadorSecciones";
-@import "./components/seccionPropuesta";
-@import "./components/seccionServicios";
+@import "./components/carouselsEspacios";
 @import "./components/whatsappLink";

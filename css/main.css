@@ -83,6 +83,71 @@ footer {
     margin: 0;
     justify-self: end; }
 
+main.home .propuesta {
+  height: 25rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main.home .propuesta p {
+    max-width: 82rem;
+    font-size: 2.625rem;
+    font-weight: 300;
+    text-align: center; }
+    main.home .propuesta p b {
+      font-size: 2.8125rem;
+      font-weight: 500; }
+  main.home .propuesta::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-image: url("../../img/fondo_piedra.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover; }
+
+main.home .servicios h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 3rem 0 4rem 0;
+  margin: 0;
+  text-align: center; }
+
+main.home .servicios .servicios__wraper {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: space-evenly;
+  margin-bottom: 4.5rem; }
+  main.home .servicios .servicios__wraper article {
+    font-size: 1rem;
+    text-align: center; }
+    main.home .servicios .servicios__wraper article .image-wraper {
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    main.home .servicios .servicios__wraper article h4 {
+      font-size: 1rem;
+      font-weight: 500; }
+    main.home .servicios .servicios__wraper article p {
+      font-size: 1rem;
+      font-weight: 300; }
+
+.espacios {
+  background-color: rgba(0, 0, 0, 0.7); }
+  .espacios h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #ffd800;
+    padding: 3rem 0 1.8rem 0;
+    margin: 0;
+    text-align: center; }
+
 #carouselPrincipal {
   position: relative; }
   #carouselPrincipal .carousel-indicators button {
@@ -152,8 +217,7 @@ footer {
           width: 95%;
           height: 0.8rem;
           background-color: #ffd800;
-          z-index: -1;
-          transition: all 0.2s ease-in; }
+          z-index: -1; }
 
 .section-separator-triangle {
   position: relative;
@@ -172,62 +236,112 @@ footer {
   left: 50%;
   transform: translateX(-50%) translateY(100%); }
 
-main.home .propuesta {
-  height: 25rem;
-  position: relative;
+.carousels-wraper {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center; }
-  main.home .propuesta p {
-    max-width: 82rem;
-    font-size: 2.625rem;
-    font-weight: 300;
-    text-align: center; }
-    main.home .propuesta p b {
-      font-size: 2.8125rem;
-      font-weight: 500; }
-  main.home .propuesta::before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.5;
-    background-image: url("../../img/fondo_piedra.png");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover; }
-
-main.home .servicios h3 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin: 3rem auto 4rem auto;
-  text-align: center; }
-
-main.home .servicios .servicios__wraper {
-  display: grid;
-  grid-template-columns: repeat(4, 20%);
-  justify-content: space-evenly;
-  margin-bottom: 4.5rem; }
-  main.home .servicios .servicios__wraper article {
-    font-size: 1rem;
-    text-align: center; }
-    main.home .servicios .servicios__wraper article .image-wraper {
-      height: 10rem;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    main.home .servicios .servicios__wraper article h4 {
-      font-size: 1rem;
-      font-weight: 500; }
-    main.home .servicios .servicios__wraper article p {
-      font-size: 1rem;
-      font-weight: 300; }
+  .carousels-wraper #carouselDptos,
+  .carousels-wraper #carouselEspTrabajo,
+  .carousels-wraper #carouselEspComun {
+    position: relative;
+    flex: 0 0 calc(100% / 3); }
+    .carousels-wraper #carouselDptos .carousel-inner,
+    .carousels-wraper #carouselEspTrabajo .carousel-inner,
+    .carousels-wraper #carouselEspComun .carousel-inner {
+      position: relative; }
+      .carousels-wraper #carouselDptos .carousel-inner .carousel-item,
+      .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-item,
+      .carousels-wraper #carouselEspComun .carousel-inner .carousel-item {
+        position: relative; }
+        .carousels-wraper #carouselDptos .carousel-inner .carousel-item::before,
+        .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-item::before,
+        .carousels-wraper #carouselEspComun .carousel-inner .carousel-item::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.3);
+          transition: background-color 0.4s ease-in-out; }
+        .carousels-wraper #carouselDptos .carousel-inner .carousel-item img,
+        .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-item img,
+        .carousels-wraper #carouselEspComun .carousel-inner .carousel-item img {
+          min-height: 350px;
+          object-fit: cover; }
+      .carousels-wraper #carouselDptos .carousel-inner .carousel-caption,
+      .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-caption,
+      .carousels-wraper #carouselEspComun .carousel-inner .carousel-caption {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        padding: 0;
+        z-index: 10;
+        transition: opacity 0.3s ease-in; }
+        .carousels-wraper #carouselDptos .carousel-inner .carousel-caption p,
+        .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-caption p,
+        .carousels-wraper #carouselEspComun .carousel-inner .carousel-caption p {
+          font-size: 2.1875rem;
+          font-weight: 500;
+          margin-bottom: 0; }
+          .carousels-wraper #carouselDptos .carousel-inner .carousel-caption p span.highlight,
+          .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-caption p span.highlight,
+          .carousels-wraper #carouselEspComun .carousel-inner .carousel-caption p span.highlight {
+            display: inline-block;
+            position: relative;
+            z-index: 0; }
+            .carousels-wraper #carouselDptos .carousel-inner .carousel-caption p span.highlight::before,
+            .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-caption p span.highlight::before,
+            .carousels-wraper #carouselEspComun .carousel-inner .carousel-caption p span.highlight::before {
+              content: "";
+              position: absolute;
+              left: 2.5%;
+              bottom: 0.65rem;
+              width: 95%;
+              height: 0.3125rem;
+              background-color: #ffd800;
+              z-index: -1; }
+          .carousels-wraper #carouselDptos .carousel-inner .carousel-caption p span.no-wrap,
+          .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-caption p span.no-wrap,
+          .carousels-wraper #carouselEspComun .carousel-inner .carousel-caption p span.no-wrap {
+            white-space: nowrap; }
+    .carousels-wraper #carouselDptos .carousel-btn,
+    .carousels-wraper #carouselEspTrabajo .carousel-btn,
+    .carousels-wraper #carouselEspComun .carousel-btn {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      text-align: center;
+      font-weight: 300;
+      font-size: 12.5rem;
+      color: #ffaa00;
+      text-decoration: none;
+      z-index: 15;
+      opacity: 0;
+      transition: all 0.3s ease-in; }
+      .carousels-wraper #carouselDptos .carousel-btn:hover,
+      .carousels-wraper #carouselEspTrabajo .carousel-btn:hover,
+      .carousels-wraper #carouselEspComun .carousel-btn:hover {
+        color: #ffd800; }
+    .carousels-wraper #carouselDptos:hover .carousel-inner .carousel-item::before,
+    .carousels-wraper #carouselEspTrabajo:hover .carousel-inner .carousel-item::before,
+    .carousels-wraper #carouselEspComun:hover .carousel-inner .carousel-item::before {
+      background-color: rgba(0, 0, 0, 0.5); }
+    .carousels-wraper #carouselDptos:hover .carousel-inner .carousel-caption,
+    .carousels-wraper #carouselEspTrabajo:hover .carousel-inner .carousel-caption,
+    .carousels-wraper #carouselEspComun:hover .carousel-inner .carousel-caption {
+      opacity: 0; }
+    .carousels-wraper #carouselDptos:hover .carousel-btn,
+    .carousels-wraper #carouselEspTrabajo:hover .carousel-btn,
+    .carousels-wraper #carouselEspComun:hover .carousel-btn {
+      opacity: 1; }
 
 .whatsapp-link {
   position: fixed;
   bottom: 1.8rem;
   right: 1.8rem;
   z-index: 1030; }
+  .whatsapp-link img {
+    width: 55px; }
