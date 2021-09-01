@@ -20,26 +20,130 @@
   <header>
     <nav class="nav justify-content-end">
       <a class="nav-link active" aria-current="page" href="#">HOME</a>
-      <a class="nav-link" href="#">NOSOTROS</a>
       <a class="nav-link" href="#">NUESTROS ESPACIOS</a>
       <a class="nav-link" href="#">PREGUNTAS FRECUENTES</a>
       <a class="nav-link" href="#">CONTACTO</a>
       <div class="redes">
-        <a href="#"><img src="./img/facebook.png" alt="facebook"></a>
-        <a href="#"><img src="./img/youtube.png" alt="youtube"></a>
-        <a href="#"><img src="./img/instragram.png" alt="instagram"></a>
+        <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
+        <a href="#"><img src="./img/instragram.svg" alt="instagram"></a>
       </div>
     </nav>
-
   </header>
 
   <main class="home">
 
+    <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-logo">
+        <img src="./img/wapo.svg" alt="WAPO">
+        <p>Work and life</p>
+      </div>
+      <a class="carousel-btn" href="#">Solicitá más info</a>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carouselPpal_slide1.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Un lugar para trabajar...</p>
+            <h2>CO-WORKING</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carouselPpal_slide2.png" class="d-block w-100" alt="...">
+          <div class="imageMask"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <p>Un lugar para vivir...</p>
+            <h2>CO-LIVING</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-separator-triangle"></div>
+
+    <section class="propuesta">
+      <div class="max-w">
+        <p>Edificio con departamentos privados y espacios de coliving y coworking, para que todos
+          sean parte de nuestra comunidad.
+          <b>"Te ofrecemos una propuesta con todo resuelto"</b>
+        </p>
+      </div>
+    </section>
+
+    <section class="servicios">
+      <h3>Nuestros Servicios</h3>
+      <div class="max-w servicios__wraper">
+        <article>
+          <div class="image-wraper"><img src="./img/dptos_equipados.svg" alt="Departamentos equipados"></div>
+          <h4>Departamentos equipados</h4>
+          <p>Creamos el confort que necesitas
+            para descansar y relajar.</p>
+        </article>
+        <article>
+          <div class="image-wraper"> <img src="./img/escritorios.svg" alt="Escritorios y mesas de trabajo"></div>
+          <h4>Escritorios y mesas de trabajo</h4>
+          <p>Espacios de trabajo listos para que
+            instales tu oficina.</p>
+        </article>
+        <article>
+          <div class="image-wraper"> <img src="./img/conectividad.svg" alt="Conectividad"></div>
+          <h4>Conectividad</h4>
+          <p>En todos los departamentos
+            y las áreas comunes.</p>
+        </article>
+        <article>
+          <div class="image-wraper"><img src="./img/reuniones.svg" alt="Sala de reuniones"></div>
+          <h4>Sala de reuniones</h4>
+          <p>Equipadas con todo lo necesario
+            para recibir a tu equipo.</p>
+        </article>
+        <article>
+          <div class="image-wraper"> <img src="./img/cafeteria.svg" alt="Servicio de cafetería"></div>
+          <h4>Servicio de cafetería</h4>
+          <p>Disponible las 24hs en las áreas
+            comunes.</p>
+        </article>
+        <article>
+          <div class="image-wraper"><img src="./img/limpieza.svg" alt="Servicio de Limpieza"></div>
+          <h4>Servicio de Limpieza</h4>
+          <p>Para los departamentos y
+            todas las áreas comunes.</p>
+        </article>
+        <article>
+          <div class="image-wraper"><img src="./img/lavanderia.svg" alt="Servicio de Lavandería"></div>
+          <h4>Servicio de Lavandería</h4>
+          <p>Disponible para los residentes
+            y no residentes.</p>
+        </article>
+        <article>
+          <div class="image-wraper"> <img src="./img/simplicidad.svg" alt="Simplicidad, todo en uno"></div>
+          <h4>Simplicidad, todo en uno</h4>
+          <p>Todos los servicios activos y en
+            una sola factura.</p>
+        </article>
+      </div>
+    </section>
+
+
+
+
+
   </main>
 
   <footer>
+    <img class="logo" src="./img/logo_bw.svg" alt="WAPO">
+    <div class="redes">
+      <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+      <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
+      <a href="#"><img src="./img/instragram.svg" alt="instagram"></a>
+    </div>
+    <address>Copyright © 2021 - WAPO <span>Todos los derechos reservados.</span></address>
 
   </footer>
+  <a class="whatsapp-link" href="#"><img src="./img/whatsapp_logo.png" alt="Whatsapp"></a>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

@@ -1,0 +1,27 @@
+footer {
+  height: 16.5rem;
+  display: grid;
+  grid-template-columns: 1fr 20rem 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5rem 0 3.5rem;
+  img.logo {
+    transform: translateY(-1.6rem);
+  }
+  .redes {
+    width: 12.8rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 2.8rem;
+    }
+  }
+  address {
+    font-family: $fuente-secundaria;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    margin: 0;
+    justify-self: end;
+  }
+}
