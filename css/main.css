@@ -311,8 +311,11 @@ main.home .servicios .servicios__wraper {
       left: 0;
       background-color: rgba(0, 0, 0, 0.5); }
     #carouselPrincipal .carousel-item img {
+      display: block;
       min-height: 690px;
       object-fit: cover; }
+      #carouselPrincipal .carousel-item img.md {
+        display: none; }
     #carouselPrincipal .carousel-item .carousel-caption {
       bottom: 35%;
       padding: 0; }
@@ -335,6 +338,41 @@ main.home .servicios .servicios__wraper {
           height: 0.8rem;
           background-color: #ffd800;
           z-index: -1; }
+  @media (max-width: 768px) {
+    #carouselPrincipal .carousel-logo {
+      width: max-content;
+      top: 20%; }
+    #carouselPrincipal .carousel-btn {
+      width: max-content;
+      bottom: 9%; }
+    #carouselPrincipal .carousel-item img {
+      height: 100vh; }
+    #carouselPrincipal .carousel-item:first-child img {
+      object-position: 45% center; }
+    #carouselPrincipal .carousel-item:nth-child(2) img {
+      object-position: 75% center; } }
+  @media (max-width: 576px) {
+    #carouselPrincipal .carousel-logo {
+      top: 15%; }
+      #carouselPrincipal .carousel-logo p {
+        width: max-content;
+        margin: 0 1rem; }
+    #carouselPrincipal .carousel-item img.md {
+      display: block; }
+    #carouselPrincipal .carousel-item img:not(.md) {
+      display: none; }
+    #carouselPrincipal .carousel-item .carousel-caption {
+      bottom: 33%;
+      right: 5%;
+      left: 5%; }
+      #carouselPrincipal .carousel-item .carousel-caption p {
+        font-size: 1.5625rem;
+        margin-bottom: 0.5rem; }
+      #carouselPrincipal .carousel-item .carousel-caption h2 {
+        font-size: 2.8rem; }
+        #carouselPrincipal .carousel-item .carousel-caption h2::before {
+          bottom: 0.5rem;
+          height: 0.625rem; } }
 
 .section-separator-triangle {
   position: relative;
