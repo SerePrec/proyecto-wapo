@@ -279,6 +279,7 @@ main.home .servicios .servicios__wraper article p {
   text-align: center;
   background-color: grey;
   padding: 0 0 2rem 0;
+  font-family: "Poppins", Helvetica, sans-serif;
 }
 .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo {
   display: inline-block;
@@ -307,6 +308,7 @@ main.home .servicios .servicios__wraper article p {
   display: grid;
   grid-template-columns: [x0] 1fr [x1] 1fr [x2];
   grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+  font-family: "Poppins", Helvetica, sans-serif;
 }
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor {
   grid-column: [x1]/[x2];
@@ -321,21 +323,43 @@ main.home .servicios .servicios__wraper article p {
   font-weight: bold;
   margin-top: 5%;
   margin-bottom: 4%;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
-.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__titulospan::before {
-  content: "";
-  position: absolute;
-  left: 2.5%;
-  bottom: 0.75rem;
-  width: 95%;
-  height: 0.8rem;
-  background-color: #ffd800;
-  z-index: -1;
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__subrayado {
+  background: #ffd800;
+  width: 48.5%;
+  height: 1%;
+  z-index: 1;
+  margin-top: -5.5%;
+  color: #ffd800;
+  font-weight: 1px;
+  line-height: 0.5rem;
 }
-.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor p .departamentosConfortables__subtitulo {
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__subrayado2 {
+  margin-left: 28%;
+  background: #ffd800;
+  width: 59%;
+  height: 1%;
+  z-index: 1;
+  margin-top: -5.5%;
+  color: #ffd800;
+  font-weight: 1px;
+  line-height: 0.5rem;
+}
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__subrayado3 {
+  margin-left: 26%;
+  background: #ffd800;
+  width: 56%;
+  height: 1%;
+  z-index: 1;
+  margin-top: -5.5%;
+  color: #ffd800;
+  font-weight: 1px;
+  line-height: 0.5rem;
+}
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__subtitulo {
   font-weight: bold;
-  font-size: 200px;
+  font-size: 1.5rem;
 }
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__descripcion {
   margin-bottom: 0px;
@@ -349,7 +373,7 @@ main.home .servicios .servicios__wraper article p {
   list-style-type: square;
 }
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor ul li {
-  margin-top: 3%;
+  margin-top: 2%;
   color: black;
 }
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor ul li::marker {
