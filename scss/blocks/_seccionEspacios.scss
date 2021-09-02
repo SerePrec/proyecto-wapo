@@ -8,4 +8,32 @@
     margin: 0;
     text-align: center;
   }
+  aside {
+    background-color: #fff;
+    padding: 4.5rem 0;
+    &:nth-of-type(2) {
+      font-size: 0;
+      padding: 0;
+    }
+    .espacios-wraper {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      article {
+        flex-basis: 28%;
+        h3 {
+          font-size: 2.5rem;
+          font-weight: 500;
+          color: $amarillo-marca;
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    iframe {
+      width: 100%;
+      height: 24vw;
+    }
+  }
 }

@@ -106,9 +106,9 @@ main.home .propuesta {
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background-image: url("../../img/fondo_piedra.png");
+    background-image: url("../../img/fondo_piedra_todos.png");
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 50% 50%;
     background-size: cover; }
 
 main.home .servicios h2 {
@@ -147,6 +147,83 @@ main.home .servicios .servicios__wraper {
     padding: 3rem 0 1.8rem 0;
     margin: 0;
     text-align: center; }
+  .espacios aside {
+    background-color: #fff;
+    padding: 4.5rem 0; }
+    .espacios aside:nth-of-type(2) {
+      font-size: 0;
+      padding: 0; }
+    .espacios aside .espacios-wraper {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline; }
+      .espacios aside .espacios-wraper article {
+        flex-basis: 28%; }
+        .espacios aside .espacios-wraper article h3 {
+          font-size: 2.5rem;
+          font-weight: 500;
+          color: #ffaa00; }
+        .espacios aside .espacios-wraper article p {
+          margin-bottom: 0; }
+    .espacios aside iframe {
+      width: 100%;
+      height: 24vw; }
+
+.contacto {
+  background-image: url("../../img/fondo_piedra_todos.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-bottom: 8.5rem; }
+  .contacto h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 4rem 0 3.5rem 0;
+    margin: 0;
+    text-align: center; }
+  .contacto .contacto-wraper {
+    display: flex;
+    justify-content: space-around; }
+    .contacto .contacto-wraper .formulario {
+      flex-basis: 35%; }
+      .contacto .contacto-wraper .formulario h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 2.7rem; }
+      .contacto .contacto-wraper .formulario form .form-control {
+        font-size: 0.9375rem;
+        border-radius: 0;
+        border: 1px solid #8e8c8c;
+        background-color: rgba(255, 255, 255, 0.9); }
+        .contacto .contacto-wraper .formulario form .form-control:focus {
+          box-shadow: 0 0 0 0.25rem rgba(255, 170, 0, 0.35); }
+      .contacto .contacto-wraper .formulario form button[type="submit"] {
+        font-size: 0.9375rem;
+        font-weight: 500;
+        color: #000;
+        background-color: #ffaa00;
+        border-color: #ffaa00;
+        border-radius: 0.5rem;
+        padding: 0.55rem 2.6rem;
+        transition: all 0.25s ease-in; }
+        .contacto .contacto-wraper .formulario form button[type="submit"]:hover {
+          background-color: #ffd800;
+          border-color: #ffd800; }
+      .contacto .contacto-wraper .formulario form textarea {
+        resize: none; }
+    .contacto .contacto-wraper aside {
+      padding-left: 2.4rem;
+      flex-basis: 28%;
+      border-left: 1px solid #000; }
+      .contacto .contacto-wraper aside .direccion p {
+        font-size: 1.125rem;
+        margin-bottom: 0; }
+      .contacto .contacto-wraper aside .cercanias {
+        margin-top: 2.5rem; }
+        .contacto .contacto-wraper aside .cercanias p {
+          font-size: 0.875rem;
+          line-height: 1.75rem;
+          margin-bottom: 0; }
 
 #carouselPrincipal {
   position: relative; }
@@ -221,20 +298,25 @@ main.home .servicios .servicios__wraper {
 
 .section-separator-triangle {
   position: relative;
-  background: #ffaa00;
   height: 6px; }
-
-.section-separator-triangle::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 12px 12px 0 12px;
-  border-color: #ffaa00 transparent transparent transparent;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%); }
+  .section-separator-triangle::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 0 12px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%); }
+  .section-separator-triangle.amarillo {
+    background: #ffaa00; }
+    .section-separator-triangle.amarillo::before {
+      border-color: #ffaa00 transparent transparent transparent; }
+  .section-separator-triangle.gris {
+    background: #8e8c8c; }
+    .section-separator-triangle.gris::before {
+      border-color: #8e8c8c transparent transparent transparent; }
 
 .carousels-wraper {
   display: flex;

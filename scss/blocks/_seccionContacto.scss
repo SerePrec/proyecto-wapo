@@ -1,0 +1,74 @@
+.contacto {
+  background-image: url("../../img/fondo_piedra_todos.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-bottom: 8.5rem;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 4rem 0 3.5rem 0;
+    margin: 0;
+    text-align: center;
+  }
+  .contacto-wraper {
+    display: flex;
+    justify-content: space-around;
+    .formulario {
+      flex-basis: 35%;
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 2.7rem;
+      }
+      form {
+        .form-control {
+          font-size: 0.9375rem;
+          border-radius: 0;
+          border: 1px solid #8e8c8c;
+          background-color: rgba(255, 255, 255, 0.9);
+          &:focus {
+            box-shadow: 0 0 0 0.25rem rgba($amarillo-marca, 0.35);
+          }
+        }
+        button[type="submit"] {
+          font-size: 0.9375rem;
+          font-weight: 500;
+          color: #000;
+          background-color: $amarillo-marca;
+          border-color: $amarillo-marca;
+          border-radius: 0.5rem;
+          padding: 0.55rem 2.6rem;
+          transition: all 0.25s ease-in;
+          &:hover {
+            background-color: $amarillo-claro;
+            border-color: $amarillo-claro;
+          }
+        }
+
+        textarea {
+          resize: none;
+        }
+      }
+    }
+    aside {
+      padding-left: 2.4rem;
+      flex-basis: 28%;
+      border-left: 1px solid #000;
+      .direccion {
+        p {
+          font-size: 1.125rem;
+          margin-bottom: 0;
+        }
+      }
+      .cercanias {
+        margin-top: 2.5rem;
+        p {
+          font-size: 0.875rem;
+          line-height: 1.75rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

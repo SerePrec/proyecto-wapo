@@ -1,18 +1,29 @@
 .section-separator-triangle {
   position: relative;
-  background: $amarillo-marca;
   height: 6px;
-}
 
-.section-separator-triangle::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 12px 12px 0 12px;
-  border-color: $amarillo-marca transparent transparent transparent;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 0 12px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+  }
+
+  &.amarillo {
+    background: $amarillo-marca;
+    &::before {
+      border-color: $amarillo-marca transparent transparent transparent;
+    }
+  }
+  &.gris {
+    background: #8e8c8c;
+    &::before {
+      border-color: #8e8c8c transparent transparent transparent;
+    }
+  }
 }
