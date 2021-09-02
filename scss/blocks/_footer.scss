@@ -18,10 +18,41 @@ footer {
     }
   }
   address {
+    text-align: right;
     font-family: $fuente-secundaria;
     font-size: 0.9375rem;
     font-weight: 400;
     margin: 0;
     justify-self: end;
+  }
+  @media (max-width: $xxl) {
+    address {
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+  @media (max-width: $lg) {
+    padding: 0 1.5rem;
+  }
+  @media (max-width: $md) {
+    height: 9.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    img.logo {
+      display: none;
+    }
+    .redes {
+      margin: 0;
+    }
+    address {
+      width: 100%;
+      font-size: 0.9rem;
+      text-align: center;
+      span {
+        display: block;
+      }
+    }
   }
 }

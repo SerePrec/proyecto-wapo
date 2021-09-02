@@ -2,12 +2,13 @@ header {
   position: sticky;
   top: 0;
   z-index: 1020;
-  nav {
-    padding-right: 3.9rem;
+  .nav {
+    padding-right: 3.5rem;
     height: 7rem;
     background-color: #fff;
     display: flex;
     align-items: center;
+    transition: height 0.5s ease-in-out;
     .nav-link {
       background-color: transparent;
       position: relative;
@@ -48,6 +49,33 @@ header {
       img {
         width: 2rem;
       }
+    }
+    &.thin {
+      height: 5.5rem;
+    }
+  }
+  @media (max-width: $xl) {
+    .nav {
+      .redes {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $lg) {
+    .nav {
+      padding-right: 1rem;
+      .nav-link {
+        font-size: 1rem;
+        margin: 0 0.75rem;
+      }
+      .redes {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $md) {
+    .nav {
+      display: none;
     }
   }
 }

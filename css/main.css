@@ -19,13 +19,14 @@ header {
   position: sticky;
   top: 0;
   z-index: 1020; }
-  header nav {
-    padding-right: 3.9rem;
+  header .nav {
+    padding-right: 3.5rem;
     height: 7rem;
     background-color: #fff;
     display: flex;
-    align-items: center; }
-    header nav .nav-link {
+    align-items: center;
+    transition: height 0.5s ease-in-out; }
+    header .nav .nav-link {
       background-color: transparent;
       position: relative;
       font-size: 1.125rem;
@@ -34,9 +35,9 @@ header {
       padding: 0 0;
       margin: 0 1rem;
       z-index: 0; }
-      header nav .nav-link:hover {
+      header .nav .nav-link:hover {
         color: #000; }
-      header nav .nav-link::before {
+      header .nav .nav-link::before {
         content: "";
         position: absolute;
         left: 2.5%;
@@ -46,19 +47,35 @@ header {
         background-color: #ffd800;
         z-index: -1;
         transition: all 0.2s ease-in; }
-      header nav .nav-link:hover::before {
+      header .nav .nav-link:hover::before {
         bottom: 0; }
-      header nav .nav-link.active::before {
+      header .nav .nav-link.active::before {
         background-color: #ffaa00;
         bottom: 0; }
-    header nav .redes {
+    header .nav .redes {
       width: 9.25rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-left: 1.875rem; }
-      header nav .redes img {
+      header .nav .redes img {
         width: 2rem; }
+    header .nav.thin {
+      height: 5.5rem; }
+  @media (max-width: 1200px) {
+    header .nav .redes {
+      display: none; } }
+  @media (max-width: 992px) {
+    header .nav {
+      padding-right: 1rem; }
+      header .nav .nav-link {
+        font-size: 1rem;
+        margin: 0 0.75rem; }
+      header .nav .redes {
+        display: none; } }
+  @media (max-width: 768px) {
+    header .nav {
+      display: none; } }
 
 footer {
   height: 16.5rem;
@@ -77,11 +94,34 @@ footer {
     footer .redes img {
       width: 2.8rem; }
   footer address {
+    text-align: right;
     font-family: "Montserrat", Helvetica, sans-serif;
     font-size: 0.9375rem;
     font-weight: 400;
     margin: 0;
     justify-self: end; }
+  @media (max-width: 1400px) {
+    footer address span {
+      white-space: nowrap; } }
+  @media (max-width: 992px) {
+    footer {
+      padding: 0 1.5rem; } }
+  @media (max-width: 768px) {
+    footer {
+      height: 9.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      footer img.logo {
+        display: none; }
+      footer .redes {
+        margin: 0; }
+      footer address {
+        width: 100%;
+        font-size: 0.9rem;
+        text-align: center; }
+        footer address span {
+          display: block; } }
 
 main.home .propuesta {
   height: 25rem;
@@ -426,4 +466,25 @@ main.home .servicios .servicios__wraper {
   right: 1.8rem;
   z-index: 1030; }
   .whatsapp-link img {
-    width: 55px; }
+    width: 4.125rem; }
+  @media (max-width: 576px) {
+    .whatsapp-link {
+      bottom: 0.625rem;
+      right: 0.625rem; }
+      .whatsapp-link img {
+        width: 4rem; } }
+
+#header__logo {
+  position: fixed;
+  top: 0.5rem;
+  left: 3.5rem;
+  opacity: 0;
+  z-index: 1030;
+  transition: opacity 0.7s ease-in-out; }
+  #header__logo img {
+    width: 6rem; }
+  #header__logo.show {
+    opacity: 1; }
+  @media (max-width: 992px) {
+    #header__logo {
+      left: 1rem; } }
