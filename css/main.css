@@ -134,9 +134,11 @@ main.home .propuesta {
     font-size: 2.625rem;
     font-weight: 300;
     text-align: center; }
-    main.home .propuesta p b {
-      font-size: 2.8125rem;
-      font-weight: 500; }
+    main.home .propuesta p:first-child {
+      margin-bottom: 0; }
+  main.home .propuesta b {
+    font-size: 2.8125rem;
+    font-weight: 500; }
   main.home .propuesta::before {
     content: " ";
     position: absolute;
@@ -150,6 +152,36 @@ main.home .propuesta {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover; }
+  @media (max-width: 1400px) {
+    main.home .propuesta p,
+    main.home .propuesta b {
+      font-size: 2.3rem; } }
+  @media (max-width: 1200px) {
+    main.home .propuesta p,
+    main.home .propuesta b {
+      padding: 0 2rem;
+      font-size: 1.8rem; } }
+  @media (max-width: 992px) {
+    main.home .propuesta {
+      height: 20rem; }
+      main.home .propuesta p,
+      main.home .propuesta b {
+        padding: 0 1rem;
+        font-size: 1.45rem; } }
+  @media (max-width: 768px) {
+    main.home .propuesta {
+      height: 15rem; }
+      main.home .propuesta p,
+      main.home .propuesta b {
+        font-size: 1.25rem; } }
+  @media (max-width: 768px) {
+    main.home .propuesta {
+      height: auto;
+      padding: 3rem 2.56rem; }
+      main.home .propuesta p,
+      main.home .propuesta b {
+        padding: 0;
+        font-size: 1.25rem; } }
 
 main.home .servicios h2 {
   font-size: 2.5rem;
@@ -177,6 +209,13 @@ main.home .servicios .servicios__wraper {
     main.home .servicios .servicios__wraper article p {
       font-size: 1rem;
       font-weight: 300; }
+
+@media (max-width: 576px) {
+  main.home .servicios h2 {
+    font-size: 1.5625rem;
+    padding: 3rem 0 2rem 0; }
+  main.home .servicios .servicios__wraper {
+    grid-template-columns: 17rem; } }
 
 .espacios {
   background-color: rgba(0, 0, 0, 0.7); }

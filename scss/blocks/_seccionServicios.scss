@@ -31,4 +31,13 @@ main.home .servicios {
       }
     }
   }
+  @media (max-width: $sm) {
+    h2 {
+      font-size: 1.5625rem;
+      padding: 3rem 0 2rem 0;
+    }
+    .servicios__wraper {
+      grid-template-columns: 17rem;
+    }
+  }
 }

@@ -9,10 +9,13 @@ main.home .propuesta {
     font-size: 2.625rem;
     font-weight: 300;
     text-align: center;
-    b {
-      font-size: 2.8125rem;
-      font-weight: 500;
+    &:first-child {
+      margin-bottom: 0;
     }
+  }
+  b {
+    font-size: 2.8125rem;
+    font-weight: 500;
   }
   &::before {
     content: " ";
@@ -27,5 +30,42 @@ main.home .propuesta {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+  }
+  @media (max-width: $xxl) {
+    p,
+    b {
+      font-size: 2.3rem;
+    }
+  }
+  @media (max-width: $xl) {
+    p,
+    b {
+      padding: 0 2rem;
+      font-size: 1.8rem;
+    }
+  }
+  @media (max-width: $lg) {
+    height: 20rem;
+    p,
+    b {
+      padding: 0 1rem;
+      font-size: 1.45rem;
+    }
+  }
+  @media (max-width: $md) {
+    height: 15rem;
+    p,
+    b {
+      font-size: 1.25rem;
+    }
+  }
+  @media (max-width: $md) {
+    height: auto;
+    padding: 3rem 2.56rem;
+    p,
+    b {
+      padding: 0;
+      font-size: 1.25rem;
+    }
   }
 }
