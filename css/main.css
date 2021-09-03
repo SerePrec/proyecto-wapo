@@ -244,9 +244,61 @@ main.home .servicios .servicios__wraper {
           color: #ffaa00; }
         .espacios aside .espacios-wraper article p {
           margin-bottom: 0; }
+    .espacios aside #carouselTextos {
+      display: none; }
     .espacios aside iframe {
       width: 100%;
-      height: 24vw; }
+      height: 24vw;
+      min-height: 25rem; }
+  @media (max-width: 1200px) {
+    .espacios aside .espacios-wraper article h3 {
+      font-size: 2.25rem; }
+    .espacios aside .espacios-wraper article p {
+      font-size: 0.875rem; } }
+  @media (max-width: 768px) {
+    .espacios aside {
+      padding: 2.5rem 0; }
+      .espacios aside .espacios-wraper {
+        display: none; }
+      .espacios aside #carouselTextos {
+        display: block; }
+        .espacios aside #carouselTextos article {
+          width: 60%;
+          min-height: 8rem;
+          margin: auto; }
+          .espacios aside #carouselTextos article h3 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: #ffaa00; }
+          .espacios aside #carouselTextos article p {
+            margin-bottom: 0;
+            font-size: 0.875rem; }
+      .espacios aside iframe {
+        min-height: 20rem; } }
+  @media (max-width: 576px) {
+    .espacios {
+      background-color: rgba(142, 140, 140, 0.3); }
+      .espacios h2 {
+        color: #000;
+        font-size: 1.5625rem; }
+      .espacios aside #carouselTextos .carousel-indicators {
+        bottom: -20%; }
+        .espacios aside #carouselTextos .carousel-indicators button {
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          margin: 0 0.5rem;
+          background-color: #4d4d4d;
+          opacity: 1; }
+          .espacios aside #carouselTextos .carousel-indicators button.active {
+            background-color: #ffaa00; }
+      .espacios aside #carouselTextos article {
+        width: 85%;
+        height: 11.2rem; }
+      .espacios aside iframe {
+        min-height: unset;
+        height: 100vw; } }
 
 .contacto {
   background-image: url("../../img/fondo_piedra_todos.png");
@@ -310,7 +362,11 @@ main.home .servicios .servicios__wraper {
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
-    margin: 0 0.5rem; }
+    margin: 0 0.5rem;
+    opacity: 1;
+    background-color: #fff; }
+    #carouselPrincipal .carousel-indicators button.active {
+      background-color: #ffaa00; }
   #carouselPrincipal .carousel-logo {
     position: absolute;
     top: 10%;
@@ -536,6 +592,41 @@ main.home .servicios .servicios__wraper {
     .carousels-wraper #carouselEspTrabajo:hover .carousel-btn,
     .carousels-wraper #carouselEspComun:hover .carousel-btn {
       opacity: 1; }
+  @media (max-width: 1400px) {
+    .carousels-wraper #carouselDptos .carousel-inner .carousel-caption,
+    .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-caption,
+    .carousels-wraper #carouselEspComun .carousel-inner .carousel-caption {
+      left: 0;
+      right: 0; } }
+  @media (max-width: 992px) {
+    .carousels-wraper {
+      flex-direction: column; }
+      .carousels-wraper #carouselDptos,
+      .carousels-wraper #carouselEspTrabajo,
+      .carousels-wraper #carouselEspComun {
+        flex: 0 0 100%; }
+        .carousels-wraper #carouselDptos .carousel-inner .carousel-caption p,
+        .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-caption p,
+        .carousels-wraper #carouselEspComun .carousel-inner .carousel-caption p {
+          left: 0%;
+          right: 0%; } }
+  @media (max-width: 576px) {
+    .carousels-wraper {
+      flex-direction: column; }
+      .carousels-wraper #carouselDptos,
+      .carousels-wraper #carouselEspTrabajo,
+      .carousels-wraper #carouselEspComun {
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+        margin-bottom: 0.625rem;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+        .carousels-wraper #carouselDptos .carousel-inner .carousel-caption p,
+        .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-caption p,
+        .carousels-wraper #carouselEspComun .carousel-inner .carousel-caption p {
+          width: 85%;
+          margin: auto; }
+      .carousels-wraper #carouselEspComun {
+        margin-bottom: 1.3rem; } }
 
 .whatsapp-link {
   position: fixed;

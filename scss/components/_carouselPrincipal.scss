@@ -6,6 +6,11 @@
       height: 1rem;
       border-radius: 50%;
       margin: 0 0.5rem;
+      opacity: 1;
+      background-color: #fff;
+      &.active {
+        background-color: $amarillo-marca;
+      }
     }
   }
   .carousel-logo {
