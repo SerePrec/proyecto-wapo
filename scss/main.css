@@ -431,7 +431,10 @@ main.home .servicios .servicios__wraper article p {
 }
 
 .contenedor__preguntas {
+  margin-left: 6%;
+  margin-right: 2%;
   padding: 4%;
+  padding-bottom: 0%;
   font-family: "Poppins", Helvetica, sans-serif;
 }
 .contenedor__preguntas .contenedor__preguntas--preguntas {
@@ -442,6 +445,10 @@ main.home .servicios .servicios__wraper article p {
 }
 .contenedor__preguntas .contenedor__preguntas--respuesta1 {
   margin-bottom: 0.5%;
+  margin-top: 0%;
+}
+.contenedor__preguntas .contenedor__preguntas--respuesta1 {
+  margin-bottom: 0%;
   margin-top: 0%;
 }
 
