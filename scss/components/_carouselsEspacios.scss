@@ -144,4 +144,23 @@
       margin-bottom: 1.3rem;
     }
   }
+  @media (max-width: 370px) {
+    #carouselDptos,
+    #carouselEspTrabajo,
+    #carouselEspComun {
+      .carousel-inner {
+        .carousel-caption {
+          p {
+            font-size: 1.7rem;
+            span.highlight {
+              &::before {
+                bottom: 0.55rem;
+                height: 0.25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

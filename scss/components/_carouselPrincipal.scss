@@ -103,6 +103,7 @@
     .carousel-item {
       img {
         height: 100vh;
+        min-height: unset;
       }
       &:first-child img {
         object-position: 45% center;
@@ -142,6 +143,24 @@
           &::before {
             bottom: 0.5rem;
             height: 0.625rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 370px) {
+    .carousel-item {
+      .carousel-caption {
+        bottom: 30%;
+        p {
+          font-size: 1.25rem;
+          margin-bottom: 0.4rem;
+        }
+        h2 {
+          font-size: 2.5rem;
+          &::before {
+            bottom: 0.4rem;
+            height: 0.5rem;
           }
         }
       }

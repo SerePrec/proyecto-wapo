@@ -116,4 +116,18 @@
       }
     }
   }
+  @media (max-width: $sm) {
+    aside {
+      #carouselTextos {
+        article {
+          h3 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
 }

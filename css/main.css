@@ -122,6 +122,9 @@ footer {
         text-align: center; }
         footer address span {
           display: block; } }
+  @media (max-width: 370px) {
+    footer address {
+      font-size: 0.8rem; } }
 
 main.home .propuesta {
   height: 25rem;
@@ -299,6 +302,11 @@ main.home .servicios .servicios__wraper {
       .espacios aside iframe {
         min-height: unset;
         height: 100vw; } }
+  @media (max-width: 576px) {
+    .espacios aside #carouselTextos article h3 {
+      font-size: 2rem; }
+    .espacios aside #carouselTextos article p {
+      font-size: 0.8rem; } }
 
 .contacto {
   background-image: url("../../img/fondo_piedra_todos.png");
@@ -316,7 +324,8 @@ main.home .servicios .servicios__wraper {
     display: flex;
     justify-content: space-around; }
     .contacto .contacto-wraper .formulario {
-      flex-basis: 35%; }
+      flex-basis: 35%;
+      min-width: 30rem; }
       .contacto .contacto-wraper .formulario h3 {
         font-size: 1.5rem;
         font-weight: 600;
@@ -345,6 +354,7 @@ main.home .servicios .servicios__wraper {
     .contacto .contacto-wraper aside {
       padding-left: 2.4rem;
       flex-basis: 28%;
+      min-width: 25rem;
       border-left: 1px solid #000; }
       .contacto .contacto-wraper aside .direccion p {
         font-size: 1.125rem;
@@ -355,6 +365,44 @@ main.home .servicios .servicios__wraper {
           font-size: 0.875rem;
           line-height: 1.75rem;
           margin-bottom: 0; }
+  @media (max-width: 992px) {
+    .contacto {
+      padding-bottom: 2rem; }
+      .contacto h2 {
+        padding-bottom: 2rem; }
+      .contacto .contacto-wraper {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+        .contacto .contacto-wraper .formulario {
+          margin-bottom: 3.5rem;
+          flex-basis: unset;
+          width: 70%;
+          min-width: 30rem; }
+          .contacto .contacto-wraper .formulario h3 {
+            text-align: center; } }
+  @media (max-width: 576px) {
+    .contacto h2 {
+      font-size: 1.5625rem;
+      padding: 1.625rem 0 1rem 0; }
+    .contacto .contacto-wraper .formulario {
+      width: 75%;
+      min-width: unset; }
+      .contacto .contacto-wraper .formulario h3 {
+        font-size: 1.125rem;
+        margin-bottom: 1rem; }
+      .contacto .contacto-wraper .formulario .btn-wraper {
+        display: flex;
+        justify-content: center; }
+    .contacto .contacto-wraper aside {
+      padding-left: 0rem;
+      min-width: unset;
+      border-left: none; } }
+  @media (max-width: 370px) {
+    .contacto .contacto-wraper aside .direccion p {
+      font-size: 1.1rem; }
+    .contacto .contacto-wraper aside .cercanias p {
+      font-size: 0.7rem; } }
 
 #carouselPrincipal {
   position: relative; }
@@ -441,7 +489,8 @@ main.home .servicios .servicios__wraper {
       width: max-content;
       bottom: 9%; }
     #carouselPrincipal .carousel-item img {
-      height: 100vh; }
+      height: 100vh;
+      min-height: unset; }
     #carouselPrincipal .carousel-item:first-child img {
       object-position: 45% center; }
     #carouselPrincipal .carousel-item:nth-child(2) img {
@@ -468,6 +517,17 @@ main.home .servicios .servicios__wraper {
         #carouselPrincipal .carousel-item .carousel-caption h2::before {
           bottom: 0.5rem;
           height: 0.625rem; } }
+  @media (max-width: 370px) {
+    #carouselPrincipal .carousel-item .carousel-caption {
+      bottom: 30%; }
+      #carouselPrincipal .carousel-item .carousel-caption p {
+        font-size: 1.25rem;
+        margin-bottom: 0.4rem; }
+      #carouselPrincipal .carousel-item .carousel-caption h2 {
+        font-size: 2.5rem; }
+        #carouselPrincipal .carousel-item .carousel-caption h2::before {
+          bottom: 0.4rem;
+          height: 0.5rem; } }
 
 .section-separator-triangle {
   position: relative;
@@ -627,6 +687,16 @@ main.home .servicios .servicios__wraper {
           margin: auto; }
       .carousels-wraper #carouselEspComun {
         margin-bottom: 1.3rem; } }
+  @media (max-width: 370px) {
+    .carousels-wraper #carouselDptos .carousel-inner .carousel-caption p,
+    .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-caption p,
+    .carousels-wraper #carouselEspComun .carousel-inner .carousel-caption p {
+      font-size: 1.7rem; }
+      .carousels-wraper #carouselDptos .carousel-inner .carousel-caption p span.highlight::before,
+      .carousels-wraper #carouselEspTrabajo .carousel-inner .carousel-caption p span.highlight::before,
+      .carousels-wraper #carouselEspComun .carousel-inner .carousel-caption p span.highlight::before {
+        bottom: 0.55rem;
+        height: 0.25rem; } }
 
 .whatsapp-link {
   position: fixed;

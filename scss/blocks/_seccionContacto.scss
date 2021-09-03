@@ -16,6 +16,7 @@
     justify-content: space-around;
     .formulario {
       flex-basis: 35%;
+      min-width: 30rem;
       h3 {
         font-size: 1.5rem;
         font-weight: 600;
@@ -54,6 +55,7 @@
     aside {
       padding-left: 2.4rem;
       flex-basis: 28%;
+      min-width: 25rem;
       border-left: 1px solid #000;
       .direccion {
         p {
@@ -67,6 +69,67 @@
           font-size: 0.875rem;
           line-height: 1.75rem;
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+  @media (max-width: $lg) {
+    padding-bottom: 2rem;
+    h2 {
+      padding-bottom: 2rem;
+    }
+    .contacto-wraper {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .formulario {
+        margin-bottom: 3.5rem;
+        h3 {
+          text-align: center;
+        }
+        flex-basis: unset;
+        width: 70%;
+        min-width: 30rem;
+      }
+    }
+  }
+  @media (max-width: $sm) {
+    h2 {
+      font-size: 1.5625rem;
+      padding: 1.625rem 0 1rem 0;
+    }
+    .contacto-wraper {
+      .formulario {
+        h3 {
+          font-size: 1.125rem;
+          margin-bottom: 1rem;
+        }
+        width: 75%;
+        min-width: unset;
+        .btn-wraper {
+          display: flex;
+          justify-content: center;
+        }
+      }
+      aside {
+        padding-left: 0rem;
+        min-width: unset;
+        border-left: none;
+      }
+    }
+  }
+  @media (max-width: 370px) {
+    .contacto-wraper {
+      aside {
+        .direccion {
+          p {
+            font-size: 1.1rem;
+          }
+        }
+        .cercanias {
+          p {
+            font-size: 0.7rem;
+          }
         }
       }
     }

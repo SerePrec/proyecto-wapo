@@ -55,4 +55,9 @@ footer {
       }
     }
   }
+  @media (max-width: 370px) {
+    address {
+      font-size: 0.8rem;
+    }
+  }
 }
