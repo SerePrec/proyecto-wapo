@@ -277,7 +277,7 @@ main.home .servicios .servicios__wraper article p {
 
 .contenedor__nuestrosEspacios {
   text-align: center;
-  background-color: grey;
+  background-image: URL("../img/fondo_piedra_todos.png");
   padding: 0 0 2rem 0;
   font-family: "Poppins", Helvetica, sans-serif;
 }
@@ -313,10 +313,10 @@ main.home .servicios .servicios__wraper article p {
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor {
   grid-column: [x1]/[x2];
   grid-row: [y0]/[y1];
-  width: 100%;
+  width: 95%;
 }
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor {
-  margin-left: 10%;
+  margin-left: 8%;
   margin-top: 5%;
 }
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__titulo {
@@ -327,7 +327,7 @@ main.home .servicios .servicios__wraper article p {
 }
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__subrayado {
   background: #ffd800;
-  width: 48.5%;
+  width: 49%;
   height: 1%;
   z-index: 1;
   margin-top: -5.5%;
@@ -336,9 +336,9 @@ main.home .servicios .servicios__wraper article p {
   line-height: 0.5rem;
 }
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__subrayado2 {
-  margin-left: 28%;
+  margin-left: 29%;
   background: #ffd800;
-  width: 59%;
+  width: 60%;
   height: 1%;
   z-index: 1;
   margin-top: -5.5%;
@@ -347,9 +347,9 @@ main.home .servicios .servicios__wraper article p {
   line-height: 0.5rem;
 }
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__subrayado3 {
-  margin-left: 26%;
+  margin-left: 27%;
   background: #ffd800;
-  width: 56%;
+  width: 58%;
   height: 1%;
   z-index: 1;
   margin-top: -5.5%;
@@ -403,6 +403,46 @@ main.home .servicios .servicios__wraper article p {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.contenedor__preguntasFrecuentes {
+  text-align: center;
+  background-image: URL("../img/fondo_piedra_todos.png");
+  padding: 0 0 2rem 0;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+.contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 0;
+  margin: 3rem 0 1rem 0;
+}
+.contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo::before {
+  content: "";
+  position: absolute;
+  left: 2.5%;
+  bottom: 0.75rem;
+  width: 95%;
+  height: 0.8rem;
+  background-color: #ffd800;
+  z-index: -1;
+}
+
+.contenedor__preguntas {
+  padding: 4%;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+.contenedor__preguntas .contenedor__preguntas--preguntas {
+  font-weight: bold;
+}
+.contenedor__preguntas .contenedor__preguntas--respuesta {
+  margin-bottom: 4%;
+}
+.contenedor__preguntas .contenedor__preguntas--respuesta1 {
+  margin-bottom: 0.5%;
+  margin-top: 0%;
 }
 
 #carouselPrincipal {
