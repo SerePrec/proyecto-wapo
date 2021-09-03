@@ -2,7 +2,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1020;
-  .nav {
+  .nav.nav-desktop {
     padding-right: 3.5rem;
     height: 7rem;
     background-color: #fff;
@@ -18,7 +18,8 @@ header {
       padding: 0 0;
       margin: 0 1rem;
       z-index: 0;
-      &:hover {
+      &:hover,
+      &:focus {
         color: #000;
       }
       &::before {
@@ -55,14 +56,14 @@ header {
     }
   }
   @media (max-width: $xl) {
-    .nav {
+    .nav.nav-desktop {
       .redes {
         display: none;
       }
     }
   }
   @media (max-width: $lg) {
-    .nav {
+    .nav.nav-desktop {
       padding-right: 1rem;
       .nav-link {
         font-size: 1rem;
@@ -74,7 +75,8 @@ header {
     }
   }
   @media (max-width: $md) {
-    .nav {
+    position: static;
+    .nav.nav-desktop {
       display: none;
     }
   }

@@ -65,6 +65,7 @@
       }
     }
     .carousel-caption {
+      display: block;
       bottom: 35%;
       padding: 0;
       p {
@@ -101,6 +102,10 @@
       bottom: 9%;
     }
     .carousel-item {
+      .carousel-caption {
+        right: 5%;
+        left: 5%;
+      }
       img {
         height: 100vh;
         min-height: unset;
@@ -111,6 +116,19 @@
       &:nth-child(2) img {
         object-position: 75% center;
       }
+    }
+  }
+  @media (max-width: $md) and (orientation: landscape) {
+    .carousel-indicators {
+      display: none;
+    }
+    .carousel-item {
+      .carousel-caption {
+        display: none;
+      }
+    }
+    .carousel-btn {
+      display: none;
     }
   }
   @media (max-width: $sm) {

@@ -1,0 +1,129 @@
+#btn-hamburguesa {
+  position: fixed;
+  top: 1.8rem;
+  right: 1.8rem;
+  z-index: 1020;
+  border: none;
+  display: none;
+  img {
+    width: 40px;
+  }
+  @media (max-width: $md) {
+    display: inline-block;
+  }
+  @media (max-width: $sm) {
+    top: 1.25rem;
+    right: 1.25rem;
+  }
+}
+
+#modalNav {
+  .modal-content {
+    .modal-header {
+      flex-direction: column;
+      border-bottom: none;
+      .btn-close {
+        padding: 1.5rem;
+        opacity: 1;
+      }
+      img {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+    .modal-body {
+      flex: none;
+      .nav.nav-mobile {
+        div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-top: 1px solid #cccccc;
+          &:last-child {
+            border-bottom: 1px solid #cccccc;
+          }
+          .nav-link {
+            position: relative;
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: #000;
+            padding: 0 0;
+            margin: 1rem 1rem;
+            z-index: 0;
+            &:hover,
+            &:focus {
+              color: #000;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              left: 2.5%;
+              bottom: 0.25rem;
+              width: 95%;
+              height: 0.3125rem;
+              background-color: $amarillo-claro;
+              z-index: -1;
+            }
+            &.active::before {
+              background-color: $amarillo-marca;
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .modal-footer {
+      border-top: none;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .redes {
+        width: 12.8rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        img {
+          width: 2.8rem;
+        }
+      }
+    }
+  }
+  @media (max-width: $md) and (orientation: landscape) {
+    .modal-content {
+      min-height: 23rem;
+      .modal-header {
+        .btn-close {
+          padding-bottom: 0.55rem;
+        }
+        img {
+          margin: 0;
+        }
+      }
+      .modal-body {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .modal-footer {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $sm) and (orientation: landscape) {
+    .modal-content {
+      min-height: 20rem;
+      .modal-header {
+        flex-direction: row;
+        .btn-close {
+          order: 2;
+          padding-bottom: 0.55rem;
+        }
+        img {
+          width: 2.25rem;
+        }
+      }
+    }
+  }
+}

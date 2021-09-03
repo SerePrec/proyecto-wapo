@@ -18,8 +18,10 @@
 
 <body>
   <header>
+    <!-- Logo flotante -->
     <a id="header__logo" href="#"><img src="./img/logo_leyenda.svg" alt="WAPO"></a>
-    <nav class="nav justify-content-end">
+    <!-- Navegación desktop -->
+    <nav class="nav nav-desktop justify-content-end">
       <a class="nav-link active" aria-current="page" href="#">HOME</a>
       <a class="nav-link" href="#">NUESTROS ESPACIOS</a>
       <a class="nav-link" href="#">PREGUNTAS FRECUENTES</a>
@@ -30,6 +32,39 @@
         <a href="#"><img src="./img/instragram.svg" alt="instagram"></a>
       </div>
     </nav>
+    <!-- Botón menu hamburguesa -->
+    <button type="button" id="btn-hamburguesa" data-bs-toggle="modal" data-bs-target="#modalNav">
+      <img src="./img/btn_hamb.svg" alt="Botón navegación">
+    </button>
+    <!-- Modal navegación mobile -->
+    <div class="modal fade" id="modalNav" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="modalNav" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class=img-wraper>
+              <img src="./img/logo_modal_navegacion.svg" alt="WAPO">
+            </div>
+          </div>
+          <div class="modal-body">
+            <nav class="nav nav-mobile">
+              <div><a class="nav-link active" data-bs-dismiss="modal" aria-current="page" href="#">HOME</a></div>
+              <div> <a class="nav-link" href="#">NUESTROS ESPACIOS</a></div>
+              <div><a class="nav-link" href="#">PREGUNTAS FRECUENTES</a></div>
+              <div> <a class="nav-link" href="#">CONTACTO</a></div>
+            </nav>
+          </div>
+          <div class="modal-footer">
+            <div class="redes">
+              <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+              <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
+              <a href="#"><img src="./img/instragram.svg" alt="instagram"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main class="home">
@@ -49,7 +84,7 @@
         <div class="carousel-item active">
           <img src="./img/carouselPpal_slide1.png" class="w-100" alt="...">
           <img src="./img/carouselPpal_slide1_md.png" class="w-100 md" alt="...">
-          <div class="carousel-caption d-block">
+          <div class="carousel-caption">
             <p>Un lugar para trabajar...</p>
             <h2>CO-WORKING</h2>
           </div>
@@ -57,7 +92,7 @@
         <div class="carousel-item">
           <img src="./img/carouselPpal_slide2.png" class="w-100" alt="...">
           <img src="./img/carouselPpal_slide2_md.png" class="w-100 md" alt="...">
-          <div class="carousel-caption d-block">
+          <div class="carousel-caption">
             <p>Un lugar para vivir...</p>
             <h2>CO-LIVING</h2>
           </div>
@@ -307,11 +342,6 @@
         </aside>
       </div>
     </section>
-
-
-
-
-
   </main>
 
   <footer>

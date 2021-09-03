@@ -19,14 +19,14 @@ header {
   position: sticky;
   top: 0;
   z-index: 1020; }
-  header .nav {
+  header .nav.nav-desktop {
     padding-right: 3.5rem;
     height: 7rem;
     background-color: #fff;
     display: flex;
     align-items: center;
     transition: height 0.5s ease-in-out; }
-    header .nav .nav-link {
+    header .nav.nav-desktop .nav-link {
       background-color: transparent;
       position: relative;
       font-size: 1.125rem;
@@ -35,9 +35,9 @@ header {
       padding: 0 0;
       margin: 0 1rem;
       z-index: 0; }
-      header .nav .nav-link:hover {
+      header .nav.nav-desktop .nav-link:hover, header .nav.nav-desktop .nav-link:focus {
         color: #000; }
-      header .nav .nav-link::before {
+      header .nav.nav-desktop .nav-link::before {
         content: "";
         position: absolute;
         left: 2.5%;
@@ -47,35 +47,37 @@ header {
         background-color: #ffd800;
         z-index: -1;
         transition: all 0.2s ease-in; }
-      header .nav .nav-link:hover::before {
+      header .nav.nav-desktop .nav-link:hover::before {
         bottom: 0; }
-      header .nav .nav-link.active::before {
+      header .nav.nav-desktop .nav-link.active::before {
         background-color: #ffaa00;
         bottom: 0; }
-    header .nav .redes {
+    header .nav.nav-desktop .redes {
       width: 9.25rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-left: 1.875rem; }
-      header .nav .redes img {
+      header .nav.nav-desktop .redes img {
         width: 2rem; }
-    header .nav.thin {
+    header .nav.nav-desktop.thin {
       height: 5.5rem; }
   @media (max-width: 1200px) {
-    header .nav .redes {
+    header .nav.nav-desktop .redes {
       display: none; } }
   @media (max-width: 992px) {
-    header .nav {
+    header .nav.nav-desktop {
       padding-right: 1rem; }
-      header .nav .nav-link {
+      header .nav.nav-desktop .nav-link {
         font-size: 1rem;
         margin: 0 0.75rem; }
-      header .nav .redes {
+      header .nav.nav-desktop .redes {
         display: none; } }
   @media (max-width: 768px) {
-    header .nav {
-      display: none; } }
+    header {
+      position: static; }
+      header .nav.nav-desktop {
+        display: none; } }
 
 footer {
   height: 16.5rem;
@@ -460,6 +462,7 @@ main.home .servicios .servicios__wraper {
       #carouselPrincipal .carousel-item img.md {
         display: none; }
     #carouselPrincipal .carousel-item .carousel-caption {
+      display: block;
       bottom: 35%;
       padding: 0; }
       #carouselPrincipal .carousel-item .carousel-caption p {
@@ -488,6 +491,9 @@ main.home .servicios .servicios__wraper {
     #carouselPrincipal .carousel-btn {
       width: max-content;
       bottom: 9%; }
+    #carouselPrincipal .carousel-item .carousel-caption {
+      right: 5%;
+      left: 5%; }
     #carouselPrincipal .carousel-item img {
       height: 100vh;
       min-height: unset; }
@@ -495,6 +501,13 @@ main.home .servicios .servicios__wraper {
       object-position: 45% center; }
     #carouselPrincipal .carousel-item:nth-child(2) img {
       object-position: 75% center; } }
+  @media (max-width: 768px) and (orientation: landscape) {
+    #carouselPrincipal .carousel-indicators {
+      display: none; }
+    #carouselPrincipal .carousel-item .carousel-caption {
+      display: none; }
+    #carouselPrincipal .carousel-btn {
+      display: none; } }
   @media (max-width: 576px) {
     #carouselPrincipal .carousel-logo {
       top: 15%; }
@@ -726,3 +739,102 @@ main.home .servicios .servicios__wraper {
   @media (max-width: 992px) {
     #header__logo {
       left: 1rem; } }
+
+#btn-hamburguesa {
+  position: fixed;
+  top: 1.8rem;
+  right: 1.8rem;
+  z-index: 1020;
+  border: none;
+  display: none; }
+  #btn-hamburguesa img {
+    width: 40px; }
+  @media (max-width: 768px) {
+    #btn-hamburguesa {
+      display: inline-block; } }
+  @media (max-width: 576px) {
+    #btn-hamburguesa {
+      top: 1.25rem;
+      right: 1.25rem; } }
+
+#modalNav .modal-content .modal-header {
+  flex-direction: column;
+  border-bottom: none; }
+  #modalNav .modal-content .modal-header .btn-close {
+    padding: 1.5rem;
+    opacity: 1; }
+  #modalNav .modal-content .modal-header img {
+    margin-top: 1rem;
+    margin-bottom: 2rem; }
+
+#modalNav .modal-content .modal-body {
+  flex: none; }
+  #modalNav .modal-content .modal-body .nav.nav-mobile div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #cccccc; }
+    #modalNav .modal-content .modal-body .nav.nav-mobile div:last-child {
+      border-bottom: 1px solid #cccccc; }
+    #modalNav .modal-content .modal-body .nav.nav-mobile div .nav-link {
+      position: relative;
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: #000;
+      padding: 0 0;
+      margin: 1rem 1rem;
+      z-index: 0; }
+      #modalNav .modal-content .modal-body .nav.nav-mobile div .nav-link:hover, #modalNav .modal-content .modal-body .nav.nav-mobile div .nav-link:focus {
+        color: #000; }
+      #modalNav .modal-content .modal-body .nav.nav-mobile div .nav-link::before {
+        content: "";
+        position: absolute;
+        left: 2.5%;
+        bottom: 0.25rem;
+        width: 95%;
+        height: 0.3125rem;
+        background-color: #ffd800;
+        z-index: -1; }
+      #modalNav .modal-content .modal-body .nav.nav-mobile div .nav-link.active::before {
+        background-color: #ffaa00;
+        bottom: 0; }
+
+#modalNav .modal-content .modal-footer {
+  border-top: none;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #modalNav .modal-content .modal-footer .redes {
+    width: 12.8rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+    #modalNav .modal-content .modal-footer .redes img {
+      width: 2.8rem; }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  #modalNav .modal-content {
+    min-height: 23rem; }
+    #modalNav .modal-content .modal-header .btn-close {
+      padding-bottom: 0.55rem; }
+    #modalNav .modal-content .modal-header img {
+      margin: 0; }
+    #modalNav .modal-content .modal-body {
+      padding-top: 0;
+      padding-bottom: 0; }
+    #modalNav .modal-content .modal-footer {
+      display: none; } }
+
+@media (max-width: 576px) and (orientation: landscape) {
+  #modalNav .modal-content {
+    min-height: 20rem; }
+    #modalNav .modal-content .modal-header {
+      flex-direction: row; }
+      #modalNav .modal-content .modal-header .btn-close {
+        order: 2;
+        padding-bottom: 0.55rem; }
+      #modalNav .modal-content .modal-header img {
+        width: 2.25rem; } }
