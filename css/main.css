@@ -400,7 +400,7 @@ main.home .servicios .servicios__wraper {
       padding-left: 0rem;
       min-width: unset;
       border-left: none; } }
-  @media (max-width: 370px) {
+  @media (max-width: 405px) {
     .contacto .contacto-wraper aside .direccion p {
       font-size: 1.1rem; }
     .contacto .contacto-wraper aside .cercanias p {
@@ -745,8 +745,8 @@ main.home .servicios .servicios__wraper {
   top: 1.8rem;
   right: 1.8rem;
   z-index: 1020;
-  border: none;
-  display: none; }
+  display: none;
+  border: 0; }
   #btn-hamburguesa img {
     width: 40px; }
   @media (max-width: 768px) {
@@ -756,6 +756,19 @@ main.home .servicios .servicios__wraper {
     #btn-hamburguesa {
       top: 1.25rem;
       right: 1.25rem; } }
+
+.button-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5.375rem;
+  background-color: #fff;
+  z-index: 1010;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out; }
+  @media (max-width: 768px) {
+    .button-bar.show {
+      opacity: 1; } }
 
 #modalNav .modal-content .modal-header {
   flex-direction: column;
