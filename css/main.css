@@ -758,6 +758,7 @@ main.home .servicios .servicios__wraper {
       right: 1.25rem; } }
 
 .button-bar {
+  display: none;
   position: fixed;
   top: 0;
   width: 100%;
@@ -767,8 +768,10 @@ main.home .servicios .servicios__wraper {
   opacity: 0;
   transition: opacity 0.7s ease-in-out; }
   @media (max-width: 768px) {
-    .button-bar.show {
-      opacity: 1; } }
+    .button-bar {
+      display: block; }
+      .button-bar.show {
+        opacity: 1; } }
 
 #modalNav .modal-content .modal-header {
   flex-direction: column;
