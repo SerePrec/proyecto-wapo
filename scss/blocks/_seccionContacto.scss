@@ -1,134 +1,289 @@
-.contacto {
-  background-image: url("../img/fondo_piedra_todos.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  padding-bottom: 8.5rem;
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    padding: 4rem 0 3.5rem 0;
-    margin: 0;
-    text-align: center;
-  }
-  .contacto-wraper {
-    display: flex;
-    justify-content: space-around;
-    .formulario {
-      flex-basis: 35%;
-      min-width: 30rem;
-      h3 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 2.7rem;
-      }
-      form {
-        .form-control {
-          font-size: 0.9375rem;
-          border-radius: 0;
-          border: 1px solid #8e8c8c;
-          background-color: rgba(255, 255, 255, 0.9);
-          &:focus {
-            box-shadow: 0 0 0 0.25rem rgba($amarillo-marca, 0.35);
-          }
+main.home,
+main.contacto {
+  .contacto {
+    h2 {
+      font-weight: 500;
+      margin: 0;
+      text-align: center;
+    }
+    .contacto-wraper {
+      display: flex;
+      justify-content: space-around;
+      .formulario {
+        flex-basis: 35%;
+        min-width: 30rem;
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-bottom: 2.7rem;
         }
-        button[type="submit"] {
-          font-size: 0.9375rem;
-          font-weight: 500;
-          color: #000;
-          background-color: $amarillo-marca;
-          border-color: $amarillo-marca;
-          border-radius: 0.5rem;
-          padding: 0.55rem 2.6rem;
-          transition: all 0.25s ease-in;
-          &:hover {
-            background-color: $amarillo-claro;
-            border-color: $amarillo-claro;
+        form {
+          .form-control {
+            font-size: 0.9375rem;
+            border-radius: 0;
+            border: 1px solid #8e8c8c;
+            background-color: rgba(255, 255, 255, 0.9);
+            &:focus {
+              box-shadow: 0 0 0 0.25rem rgba($amarillo-marca, 0.35);
+            }
           }
-        }
+          button[type="submit"] {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: #000;
+            background-color: $amarillo-marca;
+            border-color: $amarillo-marca;
+            border-radius: 0.5rem;
+            padding: 0.55rem 2.6rem;
+            transition: all 0.25s ease-in;
+            &:hover {
+              background-color: $amarillo-claro;
+              border-color: $amarillo-claro;
+            }
+          }
 
-        textarea {
-          resize: none;
+          textarea {
+            resize: none;
+          }
+        }
+      }
+      aside:not(.mapa) {
+        padding-left: 2.4rem;
+        flex-basis: 28%;
+        min-width: 25rem;
+        border-left: 1px solid #000;
+        .direccion {
+          p {
+            font-size: 1.125rem;
+            margin-bottom: 0;
+          }
+        }
+        .cercanias {
+          margin-top: 2.5rem;
+          p {
+            font-size: 0.875rem;
+            line-height: 1.75rem;
+            margin-bottom: 0;
+          }
         }
       }
     }
-    aside {
-      padding-left: 2.4rem;
-      flex-basis: 28%;
-      min-width: 25rem;
-      border-left: 1px solid #000;
-      .direccion {
-        p {
-          font-size: 1.125rem;
-          margin-bottom: 0;
+    @media (max-width: $lg) {
+      .contacto-wraper {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .formulario {
+          margin-bottom: 3.5rem;
+          h3 {
+            text-align: center;
+          }
+          flex-basis: unset;
+          width: 70%;
+          min-width: 30rem;
         }
       }
-      .cercanias {
-        margin-top: 2.5rem;
-        p {
-          font-size: 0.875rem;
-          line-height: 1.75rem;
-          margin-bottom: 0;
+    }
+    @media (max-width: $sm) {
+      .contacto-wraper {
+        .formulario {
+          h3 {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+          }
+          width: 75%;
+          min-width: unset;
+          .btn-wraper {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        aside:not(.mapa) {
+          padding-left: 0rem;
+          min-width: unset;
+          border-left: none;
+        }
+      }
+    }
+    @media (max-width: 405px) {
+      .contacto-wraper {
+        aside:not(.mapa) {
+          .direccion {
+            p {
+              font-size: 1.1rem;
+            }
+          }
+          .cercanias {
+            p {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main.home {
+  .contacto {
+    background-image: url("../img/fondo_piedra_todos.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding-bottom: 8.5rem;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      padding: 4rem 0 3.5rem 0;
+    }
+    @media (max-width: $lg) {
+      padding-bottom: 2rem;
+      h2 {
+        padding-bottom: 2rem;
+      }
+    }
+    @media (max-width: $sm) {
+      h2 {
+        font-size: 1.5625rem;
+        padding: 1.625rem 0 1rem 0;
+      }
+    }
+  }
+}
+
+main.contacto {
+  .contacto {
+    position: relative;
+    padding-bottom: 9.25rem;
+    &::before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.5;
+      background-image: url("../img/fondo_piedra_todos.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    .title-wraper {
+      text-align: center;
+      h2 {
+        display: inline-block;
+        font-size: 4.5rem;
+        margin: 6.5rem 0 6.5rem 0;
+        position: relative;
+        z-index: 0;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 2.5%;
+          bottom: 0.75rem;
+          width: 95%;
+          height: 0.8rem;
+          background-color: $amarillo-claro;
+          z-index: -1;
+        }
+      }
+    }
+    .contacto-wraper {
+      aside.mapa {
+        font-size: 0;
+        display: none;
+      }
+    }
+  }
+  section.mapa {
+    font-size: 0;
+    iframe {
+      width: 100%;
+      height: 24vw;
+      min-height: 25rem;
+    }
+  }
+  @media (max-width: $xl) {
+    .contacto {
+      .title-wraper {
+        h2 {
+          font-size: 3.5rem;
+          margin: 4.5rem 0 4.5rem 0;
+          &::before {
+            bottom: 0.6rem;
+            height: 0.7rem;
+          }
         }
       }
     }
   }
   @media (max-width: $lg) {
-    padding-bottom: 2rem;
-    h2 {
-      padding-bottom: 2rem;
-    }
-    .contacto-wraper {
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      .formulario {
-        margin-bottom: 3.5rem;
-        h3 {
-          text-align: center;
-        }
-        flex-basis: unset;
-        width: 70%;
-        min-width: 30rem;
-      }
-    }
-  }
-  @media (max-width: $sm) {
-    h2 {
-      font-size: 1.5625rem;
-      padding: 1.625rem 0 1rem 0;
-    }
-    .contacto-wraper {
-      .formulario {
-        h3 {
-          font-size: 1.125rem;
-          margin-bottom: 1rem;
-        }
-        width: 75%;
-        min-width: unset;
-        .btn-wraper {
-          display: flex;
-          justify-content: center;
+    .contacto {
+      padding-bottom: 2.75rem;
+      .title-wraper {
+        h2 {
+          margin: 3rem 0 3rem 0;
         }
       }
-      aside {
-        padding-left: 0rem;
-        min-width: unset;
-        border-left: none;
-      }
-    }
-  }
-  @media (max-width: 405px) {
-    .contacto-wraper {
-      aside {
-        .direccion {
-          p {
-            font-size: 1.1rem;
+      .contacto-wraper {
+        .formulario {
+          margin-bottom: 2.5rem;
+        }
+        aside.mapa {
+          display: block;
+          width: 100%;
+          margin-bottom: 2.5rem;
+          iframe {
+            width: 100%;
+            height: 24vw;
+            min-height: 25rem;
           }
         }
-        .cercanias {
-          p {
-            font-size: 0.7rem;
+      }
+    }
+    section.mapa {
+      display: none;
+    }
+  }
+  @media (max-width: $md) {
+    .contacto {
+      .title-wraper {
+        h2 {
+          font-size: 2.5rem;
+          margin: 2.85rem 0 1rem 0;
+          &::before {
+            bottom: 0.4rem;
+            height: 0.5rem;
+          }
+        }
+      }
+      .contacto-wraper {
+        aside.mapa {
+          iframe {
+            min-height: 20rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $sm) {
+    .contacto {
+      .title-wraper {
+        h2 {
+          font-size: 1.875rem;
+          &::before {
+            bottom: 0.3rem;
+            height: 0.5rem;
+          }
+        }
+      }
+      .contacto-wraper {
+        aside.mapa {
+          iframe {
+            min-height: unset;
+            height: 100vw;
           }
         }
       }
