@@ -13,13 +13,11 @@ function isCompact() {
 window.addEventListener("scroll", () => {
   if (isCompact() && compact === false) {
     $navbar.classList.add("thin");
-    $buttonBar.classList.add("show");
     compact = true;
     return;
   }
   if (!isCompact() && compact === true) {
     $navbar.classList.remove("thin");
-    $buttonBar.classList.remove("show");
     compact = false;
   }
 });

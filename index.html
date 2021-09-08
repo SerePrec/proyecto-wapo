@@ -32,13 +32,12 @@
         <a href="#"><img src="./img/instragram.svg" alt="instagram"></a>
       </div>
     </nav>
-    <!-- Botón menu hamburguesa -->
+    <!-- Menú hamburguesa -->
     <button type="button" id="btn-hamburguesa" data-bs-toggle="modal" data-bs-target="#modalNav">
       <img src="./img/btn_hamb.svg" alt="Botón navegación">
     </button>
     <div class="button-bar"></div>
-    </div>
-    <!-- Modal navegación mobile -->
+    <!-- Modal navegación mobile (menú hamburguesa) -->
     <div class="modal fade" id="modalNav" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="modalNav" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen">
@@ -70,7 +69,7 @@
   </header>
 
   <main class="home">
-
+    <!-- Carrusel principal -->
     <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active"
@@ -102,7 +101,7 @@
       </div>
     </div>
     <div class="section-separator-triangle amarillo"></div>
-
+    <!-- Sección "propuesta" -->
     <section class="propuesta">
       <div class="max-w">
         <p>Edificio con departamentos privados y espacios de coliving y coworking, para que todos sean parte de nuestra
@@ -111,7 +110,7 @@
         </p>
       </div>
     </section>
-
+    <!-- Sección "servicios" -->
     <section class="servicios">
       <h2>Nuestros Servicios</h2>
       <div class="max-w servicios__wraper">
@@ -165,10 +164,11 @@
         </article>
       </div>
     </section>
-
+    <!-- Sección "espacios" -->
     <section class="espacios">
       <h2>Nuestros Espacios</h2>
       <div class="carousels-wraper">
+        <!-- Carrusel "Dptos" -->
         <div id="carouselDptos" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <a class="carousel-btn" href="#">+</a>
           <div class="carousel-inner">
@@ -192,6 +192,7 @@
             </div>
           </div>
         </div>
+        <!-- Carrusel "espacios de trabajo" -->
         <div id="carouselEspTrabajo" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <a class="carousel-btn" href="#">+</a>
           <div class="carousel-inner">
@@ -215,6 +216,7 @@
             </div>
           </div>
         </div>
+        <!-- Carrusel "espacios comunes" -->
         <div id="carouselEspComun" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <a class="carousel-btn" href="#">+</a>
           <div class="carousel-inner">
@@ -239,7 +241,9 @@
           </div>
         </div>
       </div>
+      <!-- Leyendas "espacios" -->
       <aside>
+        <!-- Leyendas "espacios" versión desktop -->
         <div class="max-w espacios-wraper">
           <article>
             <h3>Chit Chat Bites</h3>
@@ -257,6 +261,7 @@
               público de nuestra casa.</p>
           </article>
         </div>
+        <!-- Leyendas "espacios" versión mobile (carrusel) -->
         <div id="carouselTextos" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselTextos" data-bs-slide-to="0" class="active"
@@ -288,10 +293,9 @@
               </article>
             </div>
           </div>
-
         </div>
-
       </aside>
+      <!-- Mapa -->
       <aside>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.37978599153!2d-58.841690948687805!3d-34.61984166576346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc91506ff3b68f%3A0xc61a066b74045ce7!2sEduardo%20Wilde%201580%2C%20B1738BGF%20La%20Reja%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1630535948693!5m2!1ses-419!2sar"
@@ -299,14 +303,13 @@
       </aside>
     </section>
     <div class="section-separator-triangle gris"></div>
-
+    <!-- Sección "contacto" -->
     <section class="contacto">
       <h2>Contacto</h2>
       <div class="max-w contacto-wraper">
+        <!-- Formulario -->
         <div class="formulario">
           <h3>Escribinos para solicitar más info</h3>
-
-
           <form class="row g-4">
             <div class="col-md-6">
               <input type="text" name="nombre" class="form-control" id="inputNombre" placeholder="Nombre">
@@ -325,8 +328,8 @@
               <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
           </form>
-
         </div>
+        <!-- Domicilio -->
         <aside>
           <div class="direccion">
             <p>Eduardo Wilde 1580 La Reja,</p>
@@ -354,8 +357,9 @@
       <a href="#"><img src="./img/instragram.svg" alt="instagram"></a>
     </div>
     <address>Copyright © 2021 - WAPO <span class="no-wrap">Todos los derechos reservados.</span></address>
-
   </footer>
+
+  <!-- Botón fijo de Wathsapp -->
   <a class="whatsapp-link" href="https://wa.me/541112345678" target="_blank" rel="noopener"><img
       src="./img/whatsapp_logo.png" alt="Whatsapp"></a>
 

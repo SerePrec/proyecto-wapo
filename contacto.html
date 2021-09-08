@@ -17,9 +17,9 @@
 </head>
 
 <body>
-  <header>
+  <header class="pages">
     <!-- Logo flotante -->
-    <a id="header__logo" class="show" href="#"><img src="./img/logo_leyenda.svg" alt="WAPO"></a>
+    <a id="header__logo" class="show" href="/"><img src="./img/logo_leyenda.svg" alt="WAPO"></a>
     <!-- Navegación desktop -->
     <nav class="nav nav-desktop justify-content-end">
       <a class="nav-link" aria-current="page" href="/">HOME</a>
@@ -32,13 +32,12 @@
         <a href="#"><img src="./img/instragram.svg" alt="instagram"></a>
       </div>
     </nav>
-    <!-- Botón menu hamburguesa -->
+    <!-- Menú hamburguesa -->
     <button type="button" id="btn-hamburguesa" data-bs-toggle="modal" data-bs-target="#modalNav">
       <img src="./img/btn_hamb.svg" alt="Botón navegación">
     </button>
-    <div class="button-bar"></div>
-    </div>
-    <!-- Modal navegación mobile -->
+    <div class="button-bar show"></div>
+    <!-- Modal navegación mobile (menú hamburguesa) -->
     <div class="modal fade" id="modalNav" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="modalNav" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen">
@@ -51,10 +50,10 @@
           </div>
           <div class="modal-body">
             <nav class="nav nav-mobile">
-              <div><a class="nav-link" data-bs-dismiss="modal" aria-current="page" href="/">HOME</a></div>
+              <div><a class="nav-link" href="/">HOME</a></div>
               <div> <a class="nav-link" href="#">NUESTROS ESPACIOS</a></div>
               <div><a class="nav-link" href="#">PREGUNTAS FRECUENTES</a></div>
-              <div> <a class="nav-link active" href="#">CONTACTO</a></div>
+              <div> <a class="nav-link active" data-bs-dismiss="modal" aria-current="page" href="#">CONTACTO</a></div>
             </nav>
           </div>
           <div class="modal-footer">
@@ -70,17 +69,15 @@
   </header>
 
   <main class="contacto">
-
-
+    <!-- Seccíon "contacto" -->
     <section class="contacto">
       <div class="title-wraper">
         <h2>CONTACTO</h2>
       </div>
       <div class="max-w contacto-wraper">
+        <!-- Formulario -->
         <div class="formulario">
           <h3>Escribinos para solicitar más info</h3>
-
-
           <form class="row g-4">
             <div class="col-md-6">
               <input type="text" name="nombre" class="form-control" id="inputNombre" placeholder="Nombre">
@@ -99,13 +96,14 @@
               <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
           </form>
-
         </div>
+        <!-- Mapa (versión mobile) -->
         <aside class="mapa">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.37978599153!2d-58.841690948687805!3d-34.61984166576346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc91506ff3b68f%3A0xc61a066b74045ce7!2sEduardo%20Wilde%201580%2C%20B1738BGF%20La%20Reja%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1630535948693!5m2!1ses-419!2sar"
             style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </aside>
+        <!-- Domicilio -->
         <aside>
           <div class="direccion">
             <p>Eduardo Wilde 1580 La Reja,</p>
@@ -123,6 +121,7 @@
         </aside>
       </div>
     </section>
+    <!-- Mapa (versión desktop) -->
     <section class="mapa">
       <aside>
         <iframe
@@ -130,8 +129,6 @@
           style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </aside>
     </section>
-
-
   </main>
 
   <footer>
@@ -142,8 +139,9 @@
       <a href="#"><img src="./img/instragram.svg" alt="instagram"></a>
     </div>
     <address>Copyright © 2021 - WAPO <span class="no-wrap">Todos los derechos reservados.</span></address>
-
   </footer>
+
+  <!-- Botón fijo de Wathsapp -->
   <a class="whatsapp-link" href="https://wa.me/541112345678" target="_blank" rel="noopener"><img
       src="./img/whatsapp_logo.png" alt="Whatsapp"></a>
 
@@ -152,7 +150,7 @@
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
   <!-- JS Propio -->
-  <script src="./js/contacto.js"></script>
+  <script src="./js/pages.js"></script>
 </body>
 
 </html>

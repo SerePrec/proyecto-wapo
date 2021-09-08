@@ -76,6 +76,8 @@ header {
   @media (max-width: 768px) {
     header {
       position: static; }
+      header.pages {
+        height: 5.375rem; }
       header .nav.nav-desktop {
         display: none; } }
 
@@ -267,9 +269,22 @@ main.home .espacios {
         display: none; }
       main.home .espacios aside #carouselTextos {
         display: block; }
+        main.home .espacios aside #carouselTextos .carousel-indicators {
+          bottom: -20%; }
+          main.home .espacios aside #carouselTextos .carousel-indicators button {
+            width: 1rem;
+            height: 1rem;
+            border: 0;
+            border-radius: 50%;
+            margin: 0 0.5rem;
+            background-color: #4d4d4d;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            opacity: 1; }
+            main.home .espacios aside #carouselTextos .carousel-indicators button.active {
+              background-color: #ffaa00; }
         main.home .espacios aside #carouselTextos article {
           width: 60%;
-          min-height: 8rem;
+          min-height: 10rem;
           margin: auto; }
           main.home .espacios aside #carouselTextos article h3 {
             text-align: center;
@@ -287,17 +302,6 @@ main.home .espacios {
       main.home .espacios h2 {
         color: #000;
         font-size: 1.5625rem; }
-      main.home .espacios aside #carouselTextos .carousel-indicators {
-        bottom: -20%; }
-        main.home .espacios aside #carouselTextos .carousel-indicators button {
-          width: 1rem;
-          height: 1rem;
-          border-radius: 50%;
-          margin: 0 0.5rem;
-          background-color: #4d4d4d;
-          opacity: 1; }
-          main.home .espacios aside #carouselTextos .carousel-indicators button.active {
-            background-color: #ffaa00; }
       main.home .espacios aside #carouselTextos article {
         width: 85%;
         height: 11.2rem; }
@@ -368,6 +372,10 @@ main.contacto .contacto .contacto-wraper {
     main.home .contacto .contacto-wraper aside:not(.mapa) .cercanias,
     main.contacto .contacto .contacto-wraper aside:not(.mapa) .cercanias {
       margin-top: 2.5rem; }
+      main.home .contacto .contacto-wraper aside:not(.mapa) .cercanias h4,
+      main.contacto .contacto .contacto-wraper aside:not(.mapa) .cercanias h4 {
+        font-size: 1.875rem;
+        font-weight: 500; }
       main.home .contacto .contacto-wraper aside:not(.mapa) .cercanias p,
       main.contacto .contacto .contacto-wraper aside:not(.mapa) .cercanias p {
         font-size: 0.875rem;
@@ -388,7 +396,10 @@ main.contacto .contacto .contacto-wraper {
       min-width: 30rem; }
       main.home .contacto .contacto-wraper .formulario h3,
       main.contacto .contacto .contacto-wraper .formulario h3 {
-        text-align: center; } }
+        text-align: center; }
+      main.home .contacto .contacto-wraper .formulario button[type="submit"],
+      main.contacto .contacto .contacto-wraper .formulario button[type="submit"] {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); } }
 
 @media (max-width: 576px) {
   main.home .contacto .contacto-wraper .formulario,
@@ -413,6 +424,9 @@ main.contacto .contacto .contacto-wraper {
   main.home .contacto .contacto-wraper aside:not(.mapa) .direccion p,
   main.contacto .contacto .contacto-wraper aside:not(.mapa) .direccion p {
     font-size: 1.1rem; }
+  main.home .contacto .contacto-wraper aside:not(.mapa) .cercanias h4,
+  main.contacto .contacto .contacto-wraper aside:not(.mapa) .cercanias h4 {
+    font-size: 1.5rem; }
   main.home .contacto .contacto-wraper aside:not(.mapa) .cercanias p,
   main.contacto .contacto .contacto-wraper aside:not(.mapa) .cercanias p {
     font-size: 0.7rem; } }

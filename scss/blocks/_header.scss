@@ -76,6 +76,9 @@ header {
   }
   @media (max-width: $md) {
     position: static;
+    &.pages {
+      height: 5.375rem;
+    }
     .nav.nav-desktop {
       display: none;
     }
