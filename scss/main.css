@@ -836,6 +836,31 @@ main.contacto section.mapa iframe {
   }
 }
 @media (max-width: 324px) {
+  .carouselNuestrosEspacios {
+    position: relative;
+  }
+  .carouselNuestrosEspacios #departamentosConfortables {
+    grid-column: [x0]/[x1];
+    grid-row: [y0]/[y1];
+  }
+  .carouselNuestrosEspacios #ampliosEspaciosDeTrabajo {
+    grid-column: [x1]/[x2];
+    grid-row: [y1]/[y2];
+  }
+  .carouselNuestrosEspacios #calidosEspaciosComunes {
+    grid-column: [x0]/[x1];
+    grid-row: [y2]/[y3];
+  }
+  .carouselNuestrosEspacios .carousel-inner {
+    position: relative;
+  }
+  .carouselNuestrosEspacios .carousel-inner .carousel-item img {
+    min-height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .contenedor__nuestrosEspacios {
     text-align: center;
     background-image: URL("../img/fondo_piedra_todos.png");
@@ -1032,6 +1057,34 @@ main.contacto section.mapa iframe {
   margin-top: 0%;
 }
 
+@media (min-width: 320px) {
+  .contenedor__preguntasFrecuentes {
+    text-align: center;
+    background-image: URL("../img/fondo_piedra_todos.png");
+    padding: 2rem 0 2rem 0;
+    font-family: "Poppins", Helvetica, sans-serif;
+  }
+  .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 0;
+    margin: 3rem 0 1rem 0;
+    width: 95%;
+    text-decoration: underline;
+  }
+  .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo::before {
+    content: "";
+    position: absolute;
+    left: 15.5%;
+    bottom: 3.25rem;
+    width: 70%;
+    height: 0.6rem;
+    background-color: #ffd800;
+    z-index: -1;
+  }
+}
 #carouselPrincipal {
   position: relative;
 }

@@ -154,6 +154,30 @@
 }
 }
 @media (max-width: 324px) {
+    .carouselNuestrosEspacios {
+        #departamentosConfortables{
+            grid-column: [x0] / [x1];
+            grid-row: [y0] / [y1];
+        }
+        #ampliosEspaciosDeTrabajo{
+            grid-column: [x1] / [x2];
+            grid-row: [y1] / [y2];
+        }
+        #calidosEspaciosComunes{
+            grid-column: [x0] / [x1];
+            grid-row: [y2] / [y3];
+        }
+        position: relative;
+        .carousel-inner {
+            position: relative;
+            .carousel-item img {
+                min-height: 250px;
+                width: 100%;
+                object-fit: cover;
+            }
+            
+        }
+    }
     
 .contenedor__nuestrosEspacios{
     text-align: center;

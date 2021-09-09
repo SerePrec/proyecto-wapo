@@ -45,3 +45,32 @@
     }
 
 }
+@media (min-width: 320px) {
+    .contenedor__preguntasFrecuentes{
+        text-align: center;
+        background-image: URL("../img/fondo_piedra_todos.png");
+        padding: 2rem 0 2rem 0;
+        font-family: $fuente-principal;
+        .contenedor__PreguntasFrecuentes--titulo {
+            display: inline-block;
+            font-size: 2.5rem;
+            font-weight: 500;
+            position: relative;
+            z-index: 0;
+            margin: 3rem 0 1rem 0;
+            width: 95%;
+            text-decoration: underline;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                left: 15.5%;
+                bottom: 3.25rem;
+                width: 70%;
+                height: 0.6rem;
+                background-color: $amarillo-claro;
+                z-index: -1;
+            }
+        }  
+    } 
+}
