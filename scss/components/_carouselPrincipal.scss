@@ -6,6 +6,11 @@
       height: 1rem;
       border-radius: 50%;
       margin: 0 0.5rem;
+      opacity: 1;
+      background-color: #fff;
+      &.active {
+        background-color: $amarillo-marca;
+      }
     }
   }
   .carousel-logo {
@@ -52,10 +57,15 @@
       background-color: rgba(#000, 0.5);
     }
     img {
+      display: block;
       min-height: 690px;
       object-fit: cover;
+      &.md {
+        display: none;
+      }
     }
     .carousel-caption {
+      display: block;
       bottom: 35%;
       padding: 0;
       p {
@@ -78,6 +88,98 @@
           height: 0.8rem;
           background-color: $amarillo-claro;
           z-index: -1;
+        }
+      }
+    }
+  }
+  @media (max-width: $md) {
+    .carousel-logo {
+      width: max-content;
+      top: 20%;
+    }
+    .carousel-btn {
+      width: max-content;
+      bottom: 9%;
+    }
+    .carousel-item {
+      .carousel-caption {
+        right: 5%;
+        left: 5%;
+      }
+      img {
+        height: 100vh;
+        min-height: unset;
+      }
+      &:first-child img {
+        object-position: 45% center;
+      }
+      &:nth-child(2) img {
+        object-position: 75% center;
+      }
+    }
+  }
+  @media (max-width: $md) and (orientation: landscape) {
+    .carousel-indicators {
+      display: none;
+    }
+    .carousel-item {
+      .carousel-caption {
+        display: none;
+      }
+    }
+    .carousel-btn {
+      display: none;
+    }
+  }
+  @media (max-width: $sm) {
+    .carousel-logo {
+      top: 15%;
+      p {
+        width: max-content;
+        margin: 0 1rem;
+      }
+    }
+    .carousel-item {
+      img {
+        &.md {
+          display: block;
+        }
+        &:not(.md) {
+          display: none;
+        }
+      }
+      .carousel-caption {
+        bottom: 33%;
+        right: 5%;
+        left: 5%;
+        p {
+          font-size: 1.5625rem;
+          margin-bottom: 0.5rem;
+        }
+        h2 {
+          font-size: 2.8rem;
+          &::before {
+            bottom: 0.5rem;
+            height: 0.625rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 370px) {
+    .carousel-item {
+      .carousel-caption {
+        bottom: 30%;
+        p {
+          font-size: 1.25rem;
+          margin-bottom: 0.4rem;
+        }
+        h2 {
+          font-size: 2.5rem;
+          &::before {
+            bottom: 0.4rem;
+            height: 0.5rem;
+          }
         }
       }
     }

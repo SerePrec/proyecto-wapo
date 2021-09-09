@@ -1,3 +1,4 @@
+@media (min-width: 1024px) {
 
 .contenedor__nuestrosEspacios{
     text-align: center;
@@ -38,6 +39,7 @@
         grid-column: [x1] / [x2];
         grid-row: [y0] / [y1];
         width: 95%;
+        display: grid;
         .departamentosConfortables__subContenedor {
             margin-left: 8%;
             margin-top: 5%;
@@ -46,6 +48,7 @@
                 margin-top: 5%;
                 margin-bottom: 4%;
                 font-size: 2.3rem;
+                
                 //.highlight {
                 //    &::before {
                 //    content: "";
@@ -140,3 +143,174 @@
             
         }
     }
+.departamentosConfortables__contenedor--mobile{
+    display: none;
+}
+.departamentosConfortables__contenedor--mobile {
+    display: none;
+}
+.departamentosConfortables__contenedor--mobile {
+    display: none;
+}
+}
+@media (max-width: 324px) {
+    
+.contenedor__nuestrosEspacios{
+    text-align: center;
+    background-image: URL("../img/fondo_piedra_todos.png");
+    margin-top: 10%;
+    padding: 0 0 0.5rem 0;
+    font-family: $fuente-principal;
+    .contenedor__nuestrosEspacios--titulo {
+            font-size: 1.8rem;
+            font-weight: 500;
+            position: relative;
+            z-index: 0;
+            padding-top: 8%;
+            margin: 2rem 0 0.7rem 0;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 2.5%;
+              bottom: 0.15rem;
+              width: 95%;
+              height: 0.4rem;
+              background-color: $amarillo-claro;
+              z-index: -1;
+            }
+        }        
+    .contenedor__nuestrosEspacios--descripcion {
+        margin-left:  2%;
+        margin-right: 2%;
+    }
+}
+.button__bar--nuestrosEspacios {
+    height: 5%;
+    padding-bottom: 5%;
+}
+    .departamentosConfortables__contenedor {
+        display: none;
+    }
+    .departamentosConfortables__contenedor {
+        display: none;
+    }
+    .departamentosConfortables__contenedor {
+        display: none; 
+    }  
+}
+.nuestrosEspacios__carousel--departamentosConfortables{
+    font-family: $fuente-principal;
+    text-align: center;
+    .departamentosConfortables__contenedor--mobile {
+       
+        .departamentosConfortables__subContenedor--mobile {
+            margin-left: 2%;
+            margin-top: 2%;
+            .departamentosConfortables__titulo--mobile {
+                font-weight: bold;
+                margin-top: 5%;
+                margin-bottom: 4%;
+                font-size: 1.9rem;   
+                .highlight::before {
+                    content: "";
+                    position: absolute;
+                    left: 13.5%;
+                    bottom: -3.15rem;
+                    width: 75%;
+                    height: 0.5rem;
+                    background-color: $amarillo-claro;
+                    z-index: -1;
+                }
+            }
+            // .departamentosConfortables__subrayado--mobile {
+            //     background: $amarillo-claro;
+            //     margin-left: 12%;
+            //     width: 75%;
+            //     height: 1%;
+            //     z-index: 1;
+            //     margin-top: -18.5%;
+            //     margin-bottom: 15%;
+            //     color: $amarillo-claro;
+            //     font-weight: 1px;
+            //     line-height: 0.5rem;
+            // }
+            #departamentosConfortables__titulo--mobileBis{
+                margin-bottom: 20%;
+            }
+            .departamentosConfortables__subrayado2--mobile {
+                margin-left: 26%;
+                background: $amarillo-claro;
+                width: 50%;
+                height: 1%;
+                z-index: 1;
+                margin-top: -23.5%;
+                color: $amarillo-claro;
+                font-weight: 1px;
+                line-height: 0.5rem;
+            }
+            .departamentosConfortables__subrayado2Bis--mobile{
+                margin-left: 50%;
+                background: $amarillo-claro;
+                width: 43%;
+                height: 1%;
+                z-index: 1;
+                margin-top: -18.5%;
+                color: $amarillo-claro;
+                font-weight: 1px;
+                line-height: 0.5rem;
+                margin-bottom: 25%;
+            }
+            .departamentosConfortables__subrayado3--mobile {
+                margin-left: 27%;
+                background: $amarillo-claro;
+                width: 46%;
+                height: 1%;
+                z-index: 1;
+                margin-top: -7.5%;
+                color: $amarillo-claro;
+                font-weight: 1px;
+                line-height: 0.5rem;
+            }
+            .departamentosConfortables__subrayado3Bis--mobile{
+                margin-left: 48%;
+                background: $amarillo-claro;
+                width: 44%;
+                height: 1%;
+                z-index: 1;
+                margin-top: -19.5%;
+                color: $amarillo-claro;
+                font-weight: 1px;
+                line-height: 0.5rem;
+                margin-bottom: 25%;
+            }
+            .departamentosConfortables__subtitulo--mobile {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 5%;
+            }
+            .departamentosConfortables__descripcion--mobile  {
+                margin-bottom: 0px;
+                margin-top: 4%;
+                text-align: left;
+                font-size: 16px;
+            }
+            .departamentosConfortables__descripcionBis--mobile  {
+                margin-top: 0px;
+                text-align: left;
+                font-size: 16px;
+            }
+            ul {
+                margin-top: 4%;
+                list-style-type: square;
+                li {
+                    margin-top: 2%;
+                    color: black;
+                    text-align: left;
+                    &::marker{
+                        color: $amarillo-claro;
+                    }
+                }
+            }
+        } 
+    }
+}    
