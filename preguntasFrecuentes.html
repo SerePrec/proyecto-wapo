@@ -2,83 +2,111 @@
 <html lang="es-AR">
 
 <head>
-  <meta charset="UTF-8">
-  <title>WAPO</title>
-  <link rel="favicon" href="#">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="../scss/main.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="...">
-  <meta name="keywords" content="...">
+    <meta charset="UTF-8">
+    <title>WAPO</title>
+    <link rel="favicon" href="#">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../scss/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="...">
+    <meta name="keywords" content="...">
 </head>
 
 <body>
-  <header>
-    <nav class="nav justify-content-end">
-      <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
-      <a class="nav-link" href="NuestrosEspacios.html">NUESTROS ESPACIOS</a>
-      <a class="nav-link active" href="preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
-      <a class="nav-link" href="#">CONTACTO</a>
-      <div class="redes">
-        <a href="#"><img src="../img/facebook.svg" alt="facebook"></a>
-        <a href="#"><img src="../img/youtube.svg" alt="youtube"></a>
-        <a href="#"><img src="../img/instragram.svg" alt="instagram"></a>
-      </div>
-    </nav>
-  </header>
+    <header>
+        <header>
+            <!-- Logo flotante -->
+            <a id="header__logo" href="#"><img src="img/logo_leyenda.svg" alt="WAPO"></a>
+            <!-- Navegación desktop -->
+            <nav class="nav nav-desktop justify-content-end">
+                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                <a class="nav-link" href="nuestrosEspacios.html">NUESTROS ESPACIOS</a>
+                <a class="nav-link active" href="preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+                <div class="redes">
+                    <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="img/youtube.svg" alt="youtube"></a>
+                    <a href="#"><img src="img/instragram.svg" alt="instagram"></a>
+                </div>
+            </nav>
+            <!-- Menú hamburguesa -->
+            <button type="button" id="btn-hamburguesa" data-bs-toggle="modal" data-bs-target="#modalNav">
+    <img src="img/btn_hamb.svg" alt="Botón navegación">
+  </button>
+            <div class="button-bar" id="button__bar--nuestrosEspacios"></div>
+            <!-- Modal navegación mobile (menú hamburguesa) -->
+            <div class="modal fade" id="modalNav" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalNav" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class=img-wraper>
+                                <img src="img/logo_modal_navegacion.svg" alt="WAPO">
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <nav class="nav nav-mobile">
+                                <div><a class="nav-link" data-bs-dismiss="modal" aria-current="page" href="index.html">HOME</a></div>
+                                <div> <a class="nav-link" href="nuestrosEspacios.html">NUESTROS ESPACIOS</a></div>
+                                <div><a class="nav-link active" href="preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a></div>
+                                <div> <a class="nav-link" href="contacto.html">CONTACTO</a></div>
+                            </nav>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="redes">
+                                <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+                                <a href="#"><img src="img/youtube.svg" alt="youtube"></a>
+                                <a href="#"><img src="img/instragram.svg" alt="instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-  <main class="preguntasFrecuentes">
-    <section class="contenedor__preguntasFrecuentes">
-        <h2 class="contenedor__PreguntasFrecuentes--titulo">PREGUNTAS FRECUENTES</h2>       
-    </section>
-    <section class="contenedor__preguntas">
-      <h3 class="contenedor__preguntas--preguntas">¿Hay disponibilidad?</h3>
-      <p class="contenedor__preguntas--respuesta">Estamos con niveles de ocupación altos, es preferible reservar con un mes de anticipación mínimo.</p>
-      <h3 class="contenedor__preguntas--preguntas">¿Por qué plazo se pueden hacer los contratos?</h3>
-      <p class="contenedor__preguntas--respuesta">Se puede contratar por cantidad de noches, semana, mes, máximo tres meses con opción de renovar.</p>
-      <h3 class="contenedor__preguntas--preguntas">¿Qué incluye el precio?</h3>
-      <p class="contenedor__preguntas--respuesta">Incluye el alquiler del departamento, expensas y servicios (luz, wifi).</p>
-      <h3 class="contenedor__preguntas--preguntas">¿Puedo reservar un espacio de trabajo o una sala de reunión por mes, semana día, hora?</h3>
-      <p class="contenedor__preguntas--respuesta">Si! Nos adaptamos a tus necesidades.</p>
-      <h3 class="contenedor__preguntas--preguntas">¿Qué servicios incluyen?</h3>
-      <p class="contenedor__preguntas--respuesta1">Todos los servicios y utilidades están incluidos. También ofrecemos té y café libre, wifi, cámaras de seguridad, parking, de bicis, concierge y recepción de paquetería, accesodurante las 24 hs.</p>
-      <p class="contenedor__preguntas--respuesta1">Salas de reunión (5 hs. por persona por mes libre).</p>
-      <p class="contenedor__preguntas--respuesta">Espacios comunes: Cocina compartida, living y coworking.</p>
-      <h3 class="contenedor__preguntas--preguntas">¿Están permitidas las mascotas?</h3>
-      <p class="contenedor__preguntas--respuesta">Si! Somos pet friendly.</p>
-      <h3 class="contenedor__preguntas--preguntas">¿Puedo organizar un evento?</h3>
-      <p class="contenedor__preguntas--respuesta2">Por supuesto! Si estás interesado en organizar un evento, contáctanos a wapo.espacios@gmail.com</p>
-    
-    
-    
-    
-    </section>
+        <main class="preguntasFrecuentes">
+            <section class="contenedor__preguntasFrecuentes">
+                <h2 class="contenedor__PreguntasFrecuentes--titulo"><span class="highlight">PREGUNTAS</span> FRECUENTES</h2>
+            </section>
+            <section class="contenedor__preguntas1">
+                <section class="contenedor__preguntas">
+                    <h3 class="contenedor__preguntas--preguntas">¿Hay disponibilidad?</h3>
+                    <p class="contenedor__preguntas--respuesta">Estamos con niveles de ocupación altos, es preferible reservar con un mes de anticipación mínimo.</p>
+                    <h3 class="contenedor__preguntas--preguntas">¿Por qué plazo se pueden hacer los contratos?</h3>
+                    <p class="contenedor__preguntas--respuesta">Se puede contratar por cantidad de noches, semana, mes, máximo tres meses con opción de renovar.</p>
+                    <h3 class="contenedor__preguntas--preguntas">¿Qué incluye el precio?</h3>
+                    <p class="contenedor__preguntas--respuesta">Incluye el alquiler del departamento, expensas y servicios (luz, wifi).</p>
+                    <h3 class="contenedor__preguntas--preguntas">¿Puedo reservar un espacio de trabajo o una sala de reunión por mes, semana día, hora?</h3>
+                    <p class="contenedor__preguntas--respuesta">Si! Nos adaptamos a tus necesidades.</p>
+                    <h3 class="contenedor__preguntas--preguntas">¿Qué servicios incluyen?</h3>
+                    <p class="contenedor__preguntas--respuesta1">Todos los servicios y utilidades están incluidos. También ofrecemos té y café libre, wifi, cámaras de seguridad, parking, de bicis, concierge y recepción de paquetería, accesodurante las 24 hs.</p>
+                    <p class="contenedor__preguntas--respuesta1">Salas de reunión (5 hs. por persona por mes libre).</p>
+                    <p class="contenedor__preguntas--respuesta">Espacios comunes: Cocina compartida, living y coworking.</p>
+                    <h3 class="contenedor__preguntas--preguntas">¿Están permitidas las mascotas?</h3>
+                    <p class="contenedor__preguntas--respuesta">Si! Somos pet friendly.</p>
+                    <h3 class="contenedor__preguntas--preguntas">¿Puedo organizar un evento?</h3>
+                    <p class="contenedor__preguntas--respuesta2">Por supuesto! Si estás interesado en organizar un evento, contáctanos a wapo.espacios@gmail.com</p>
+                </section>
+            </section>
+        </main>
 
+        <footer>
+            <img class="logo" src="../img/logo_bw.svg" alt="WAPO">
+            <div class="redes">
+                <a href="#"><img src="../img/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="../img/youtube.svg" alt="youtube"></a>
+                <a href="#"><img src="../img/instragram.svg" alt="instagram"></a>
+            </div>
+            <address>Copyright © 2021 - WAPO <span>Todos los derechos reservados.</span></address>
 
+        </footer>
+        <a class="whatsapp-link" href="https://wa.me/541112345678" target="_blank" rel="noopener"><img src="../img/whatsapp_logo.png" alt="Whatsapp"></a>
 
-  </main>  
-
-  <footer>
-    <img class="logo" src="../img/logo_bw.svg" alt="WAPO">
-    <div class="redes">
-      <a href="#"><img src="../img/facebook.svg" alt="facebook"></a>
-      <a href="#"><img src="../img/youtube.svg" alt="youtube"></a>
-      <a href="#"><img src="../img/instragram.svg" alt="instagram"></a>
-    </div>
-    <address>Copyright © 2021 - WAPO <span>Todos los derechos reservados.</span></address>
-
-  </footer>
-  <a class="whatsapp-link" href="https://wa.me/541112345678" target="_blank" rel="noopener"><img
-      src="../img/whatsapp_logo.png" alt="Whatsapp"></a>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 
 </html>

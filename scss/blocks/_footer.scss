@@ -1,63 +1,63 @@
 footer {
-  height: 16.5rem;
-  display: grid;
-  grid-template-columns: 1fr 20rem 1fr;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 3.5rem 0 3.5rem;
-  img.logo {
-    transform: translateY(-1.6rem);
-  }
-  .redes {
-    width: 12.8rem;
-    margin: auto;
-    display: flex;
+    height: 16.5rem;
+    display: grid;
+    grid-template-columns: 1fr 20rem 1fr;
     justify-content: space-between;
-    img {
-      width: 2.8rem;
-    }
-  }
-  address {
-    text-align: right;
-    font-family: $fuente-secundaria;
-    font-size: 0.9375rem;
-    font-weight: 400;
-    margin: 0;
-    justify-self: end;
-  }
-  @media (max-width: $xxl) {
-    address {
-      span {
-        white-space: nowrap;
-      }
-    }
-  }
-  @media (max-width: $lg) {
-    padding: 0 1.5rem;
-  }
-  @media (max-width: $md) {
-    height: 9.6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 3.5rem 0 3.5rem;
     img.logo {
-      display: none;
+        transform: translateY(-1.6rem);
     }
     .redes {
-      margin: 0;
+        width: 12.8rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 2.8rem;
+        }
     }
     address {
-      width: 100%;
-      font-size: 0.9rem;
-      text-align: center;
-      span {
-        display: block;
-      }
+        text-align: right;
+        font-family: $fuente-secundaria;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        margin: 0;
+        justify-self: end;
     }
-  }
-  @media (max-width: 370px) {
-    address {
-      font-size: 0.8rem;
+    @media (max-width: $xxl) {
+        address {
+            span {
+                white-space: nowrap;
+            }
+        }
     }
-  }
+    @media (max-width: $lg) {
+        padding: 0 1.5rem;
+    }
+    @media (max-width: $md) {
+        height: 9.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        img.logo {
+            display: none;
+        }
+        .redes {
+            margin: 0;
+        }
+        address {
+            width: 100%;
+            font-size: 0.9rem;
+            text-align: center;
+            span {
+                display: block;
+            }
+        }
+    }
+    @media (max-width: 370px) {
+        address {
+            font-size: 0.8rem;
+        }
+    }
 }
