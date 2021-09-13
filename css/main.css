@@ -638,6 +638,11 @@ main.contacto section.mapa {
         .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile ul li::marker {
           color: #ffd800; }
 
+#ampliosEspaciosDeTrabajo .carousel-item:nth-child(1) img,
+#ampliosEspaciosDeTrabajo .carousel-item:nth-child(2) img,
+#ampliosEspaciosDeTrabajo .carousel-item:nth-child(3) img {
+  transform: rotateY(180deg); }
+
 @media (min-width: 700px) {
   .nuestrosEspacios__carousel--departamentosConfortables {
     font-family: "Poppins", Helvetica, sans-serif;

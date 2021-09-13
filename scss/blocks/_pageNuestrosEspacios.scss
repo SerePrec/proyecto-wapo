@@ -124,6 +124,16 @@
   }
 }
 
+#ampliosEspaciosDeTrabajo {
+  .carousel-item:nth-child(1),
+  .carousel-item:nth-child(2),
+  .carousel-item:nth-child(3) {
+    img {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
 @media (min-width: 700px) {
   .nuestrosEspacios__carousel--departamentosConfortables {
     font-family: $fuente-principal;
