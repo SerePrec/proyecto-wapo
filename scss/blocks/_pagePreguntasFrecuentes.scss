@@ -4,6 +4,14 @@
         background-image: URL("../img/fondo2.png");
         padding: 2rem 0 2rem 0;
         font-family: $fuente-principal;
+        &::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            opacity: 0.5;
+        }
         .contenedor__PreguntasFrecuentes--titulo {
             display: inline-block;
             font-size: 1.9rem;
@@ -12,9 +20,15 @@
             z-index: 0;
             margin: 2rem 0 0 0;
             line-height: 55px;
-            .highlight {
-                border-bottom: 12px solid $amarillo-claro;
-                margin-bottom: 2%;
+            .highlight::before {
+                content: "";
+                position: absolute;
+                left: 2.5%;
+                bottom: 0.45rem;
+                width: 95%;
+                height: 0.5rem;
+                background-color: $amarillo-claro;
+                z-index: -1;
             }
         }
     }
@@ -42,6 +56,14 @@
         background-image: URL("../img/fondo2.png");
         padding: 0 0 2rem 0;
         font-family: $fuente-principal;
+        &::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            opacity: 0.5;
+        }
         .contenedor__PreguntasFrecuentes--titulo {
             display: inline-block;
             font-size: 1.8rem;
@@ -51,7 +73,6 @@
             margin: 3rem 0 1rem 0;
             margin-bottom: 1%;
             padding-bottom: 0ch;
-            border-bottom: 12px solid $amarillo-claro;
             .highlight {
                 border-width: 0ch;
             }
@@ -65,6 +86,14 @@
         background-image: URL("../img/fondo2.png");
         padding: 0 0 2rem 0;
         font-family: $fuente-principal;
+        &::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            opacity: 0.5;
+        }
         .contenedor__PreguntasFrecuentes--titulo {
             display: inline-block;
             font-size: 2rem;
@@ -74,7 +103,6 @@
             margin: 3rem 0 1rem 0;
             margin-bottom: 1%;
             padding-bottom: 0ch;
-            border-bottom: 12px solid $amarillo-claro;
             .highlight {
                 border-width: 0ch;
             }
@@ -88,6 +116,14 @@
         background-image: URL("../img/fondo2.png");
         padding: 0 0 2rem 0;
         font-family: $fuente-principal;
+        &::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            opacity: 0.5;
+        }
         .contenedor__PreguntasFrecuentes--titulo {
             display: inline-block;
             font-size: 2.2rem;
@@ -97,9 +133,17 @@
             margin: 3rem 0 1rem 0;
             margin-bottom: 1%;
             padding-bottom: 0ch;
-            border-bottom: 12px solid $amarillo-claro;
             .highlight {
-                border-width: 0ch;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 2.5%;
+                    bottom: 0.25rem;
+                    width: 95%;
+                    height: 0.5rem;
+                    background-color: $amarillo-claro;
+                    z-index: -1;
+                }
             }
         }
     }
@@ -109,6 +153,7 @@
         padding: 4%;
         padding-bottom: 0%;
         font-family: $fuente-principal;
+        margin-left: 10%;
         .contenedor__preguntas--preguntas {
             font-weight: bold;
         }
@@ -121,6 +166,14 @@
         background-image: URL("../img/fondo2.png");
         padding: 0 0 2rem 0;
         font-family: $fuente-principal;
+        &::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            opacity: 0.5;
+        }
         .contenedor__PreguntasFrecuentes--titulo {
             display: inline-block;
             font-size: 3.5rem;
@@ -129,7 +182,6 @@
             z-index: 0;
             margin: 3rem 0 1rem 0;
             margin-bottom: 2%;
-            border-bottom: 12px solid $amarillo-claro;
             vertical-align: text-bottom;
             .highlight {
                 border-width: 0ch;
@@ -142,6 +194,7 @@
         padding: 4%;
         padding-bottom: 0%;
         font-family: $fuente-principal;
+        margin-left: 10%;
         .contenedor__preguntas--preguntas {
             font-weight: bold;
         }
