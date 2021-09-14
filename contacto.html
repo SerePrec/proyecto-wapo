@@ -82,19 +82,22 @@
         <!-- Formulario -->
         <div class="formulario">
           <h3>Escribinos para solicitar más info</h3>
-          <form class="row g-4">
+          <form id="contactForm" class="row g-4" target="_blank"
+            action="https://formsubmit.co/17ea9d3cc4d979e47d3af862478f2590" method="POST">
+            <input type="hidden" name="_subject" value="WAPO - Contacto">
             <div class="col-md-6">
-              <input type="text" name="nombre" class="form-control" id="inputNombre" placeholder="Nombre">
+              <input type="text" name="nombre" class="form-control" id="inputNombre" placeholder="Nombre" required>
             </div>
             <div class="col-md-6">
-              <input type="text" name="apellido" class="form-control" id="inputApellido" placeholder="Apellido">
+              <input type="text" name="apellido" class="form-control" id="inputApellido" placeholder="Apellido"
+                required>
             </div>
             <div class="col-12">
-              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required>
             </div>
             <div class="col-12">
               <textarea name="consulta" class="form-control" id="inputConsulta" rows="4"
-                placeholder="¿En qué podemos ayudarte?"></textarea>
+                placeholder="¿En qué podemos ayudarte?" required></textarea>
             </div>
             <div class="col-12 btn-wraper">
               <button type="submit" class="btn btn-primary">Enviar</button>
@@ -157,6 +160,8 @@
     crossorigin="anonymous"></script>
   <!-- JS Propio -->
   <script src="./js/pages.js"></script>
+  <script src="./js/formulario.js"></script>
+
 </body>
 
 </html>
