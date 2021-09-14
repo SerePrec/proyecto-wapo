@@ -1,607 +1,614 @@
-    @media (min-width: 320px) {
-        .carouselNuestrosEspacios {
-            position: relative;
-            .carousel-inner {
-                position: relative;
-                .carousel-item img {
-                    min-height: 250px;
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
+@media (min-width: 320px) {
+  .carouselNuestrosEspacios {
+    position: relative;
+    .carousel-inner {
+      position: relative;
+      .carousel-item img {
+        min-height: 250px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .contenedor__nuestrosEspacios {
+    text-align: center;
+    //background-image: URL("../img/fondo2.png");
+    padding: 0 0 0.5rem 0;
+    font-family: $fuente-principal;
+    position: relative;
+    &::before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.5;
+      background-image: url("../img/fondo_piedra_todos.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    .contenedor__nuestrosEspacios--titulo {
+      font-size: 1.8rem;
+      font-weight: 500px;
+      position: relative;
+      z-index: 0;
+      margin: 3rem 0 1.5rem 0;
+      display: inline-block;
+      .highlight {
+        display: inline-block;
+        position: relative;
+        z-index: 0;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 2.5%;
+          bottom: 0.25rem;
+          width: 95%;
+          height: 0.5rem;
+          background-color: $amarillo-claro;
+          z-index: -1;
         }
-        .contenedor__nuestrosEspacios {
-            text-align: center;
-            background-image: URL("../img/fondo2.png");
-            padding: 0 0 0.5rem 0;
-            font-family: $fuente-principal;
+      }
+    }
+    .contenedor__nuestrosEspacios--descripcion {
+      margin-left: 2%;
+      margin-right: 2%;
+      font-family: $fuente-principal;
+      font-weight: 500;
+    }
+  }
+  .button__bar--nuestrosEspacios {
+    height: 5%;
+    padding-bottom: 5%;
+  }
+  .departamentosConfortables__contenedor {
+    display: none;
+  }
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables {
+  font-family: $fuente-principal;
+  text-align: center;
+  .departamentosConfortables__contenedor--mobile {
+    .departamentosConfortables__subContenedor--mobile {
+      margin-left: 0%;
+      margin-top: 0%;
+      .departamentosConfortables__titulo--mobile {
+        font-weight: bold;
+        margin-top: 3%;
+        margin-bottom: 1%;
+        font-size: 1.9rem;
+        padding-top: 2%;
+        .highlight {
+          //border-bottom: 8px solid $amarillo-claro;
+          //display: inline-block;
+          padding-bottom: -4%;
+          margin-bottom: 2%;
+          display: inline-block;
+          position: relative;
+          z-index: 0;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 2.5%;
+            bottom: 0.25rem;
+            width: 95%;
+            height: 0.5rem;
+            background-color: $amarillo-claro;
+            z-index: -1;
+          }
+        }
+      }
+      #departamentosConfortables__titulo--mobileBis2 {
+        box-shadow: 0px 7px 6px rgb(202, 199, 199);
+      }
+      .departamentosConfortables__subtitulo--mobile {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 2%;
+        margin-bottom: 1%;
+      }
+      .departamentosConfortables__descripcion--mobile {
+        margin: 0 0.5% 0 2%;
+        text-align: left;
+        font-size: 16px;
+      }
+      .departamentosConfortables__descripcionBis--mobile {
+        margin: 0 0.5% 0 2%;
+        text-align: left;
+        font-size: 16px;
+      }
+      ul {
+        margin-top: 0%;
+        list-style-type: square;
+        margin-bottom: 3%;
+        padding-bottom: 1%;
+        li {
+          margin-top: 2%;
+          color: black;
+          text-align: left;
+          &::marker {
+            color: $amarillo-claro;
+          }
+        }
+      }
+    }
+  }
+}
+
+#ampliosEspaciosDeTrabajo {
+  .carousel-item:nth-child(1),
+  .carousel-item:nth-child(2),
+  .carousel-item:nth-child(3) {
+    img {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .contenedor__nuestrosEspacios--descripcion {
+    font-family: $fuente-principal;
+    font-weight: 500;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .nuestrosEspacios__carousel--departamentosConfortables {
+    font-family: $fuente-principal;
+    text-align: center;
+    .departamentosConfortables__contenedor--mobile {
+      .departamentosConfortables__subContenedor--mobile {
+        margin-left: 0%;
+        margin-top: 0%;
+        // border-bottom: 10px solid rgb(202, 199, 199);
+        .departamentosConfortables__titulo--mobile {
+          font-weight: 500px;
+          margin-top: 0%;
+          margin-bottom: 0%;
+          font-size: 1.9rem;
+          padding-top: 2%;
+          .highlight {
+            //border-bottom: 8px solid $amarillo-claro;
+            //display: inline-block;
+            padding-bottom: -4%;
+            margin-bottom: 2%;
             &::before {
-                content: " ";
-                position: absolute;
-                left: 0;
-                top: 0;
-                z-index: -1;
-                opacity: 0.5;
+              bottom: 0.25rem;
+              height: 0.5rem;
             }
-            .contenedor__nuestrosEspacios--titulo {
-                font-size: 1.8rem;
-                font-weight: 500px;
-                position: relative;
-                z-index: 0;
-                margin: 3rem 0 1.5rem 0;
-                display: inline-block;
-                .highlight {
-                    display: inline-block;
-                    position: relative;
-                    z-index: 0;
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        left: 2.5%;
-                        bottom: 0.25rem;
-                        width: 95%;
-                        height: 0.5rem;
-                        background-color: $amarillo-claro;
-                        z-index: -1;
-                    }
-                }
+          }
+        }
+        #departamentosConfortables__titulo--mobileBis2 {
+          box-shadow: 0px 7px 6px rgb(202, 199, 199);
+        }
+        .departamentosConfortables__subtitulo--mobile {
+          font-weight: bold;
+          font-size: 1.2rem;
+          margin-top: 2%;
+          margin-bottom: 1%;
+        }
+        .departamentosConfortables__descripcion--mobile {
+          margin: 0 0.5% 0 2%;
+          text-align: left;
+          font-size: 16px;
+        }
+        .departamentosConfortables__descripcionBis--mobile {
+          margin: 0 0.5% 0 2%;
+          text-align: left;
+          font-size: 16px;
+        }
+        ul {
+          margin-top: 0%;
+          list-style-type: square;
+          margin-bottom: 3%;
+          padding-bottom: 1%;
+          margin-left: 0.5%;
+          li {
+            margin-top: 2%;
+            color: black;
+            text-align: left;
+            &::marker {
+              color: $amarillo-claro;
             }
-            .contenedor__nuestrosEspacios--descripcion {
-                margin-left: 2%;
-                margin-right: 2%;
-                font-family: $fuente-principal;
-                font-weight: 500;
-            }
+          }
         }
-        .button__bar--nuestrosEspacios {
-            height: 5%;
-            padding-bottom: 5%;
-        }
-        .departamentosConfortables__contenedor {
-            display: none;
-        }
+      }
     }
-    
-    .nuestrosEspacios__carousel--departamentosConfortables {
-        font-family: $fuente-principal;
-        text-align: center;
-        .departamentosConfortables__contenedor--mobile {
-            .departamentosConfortables__subContenedor--mobile {
-                margin-left: 0%;
-                margin-top: 0%;
-                .departamentosConfortables__titulo--mobile {
-                    font-weight: bold;
-                    margin-top: 3%;
-                    margin-bottom: 1%;
-                    font-size: 1.9rem;
-                    padding-top: 2%;
-                    .highlight {
-                        //border-bottom: 8px solid $amarillo-claro;
-                        //display: inline-block;
-                        padding-bottom: -4%;
-                        margin-bottom: 2%;
-                        display: inline-block;
-                        position: relative;
-                        z-index: 0;
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            left: 2.5%;
-                            bottom: 0.25rem;
-                            width: 95%;
-                            height: 0.5rem;
-                            background-color: $amarillo-claro;
-                            z-index: -1;
-                        }
-                    }
-                }
-                #departamentosConfortables__titulo--mobileBis2 {
-                    box-shadow: 0px 7px 6px rgb(202, 199, 199);
-                }
-                .departamentosConfortables__subtitulo--mobile {
-                    font-weight: bold;
-                    font-size: 1.2rem;
-                    margin-top: 2%;
-                    margin-bottom: 1%;
-                }
-                .departamentosConfortables__descripcion--mobile {
-                    margin: 0 0.5% 0 2%;
-                    text-align: left;
-                    font-size: 16px;
-                }
-                .departamentosConfortables__descripcionBis--mobile {
-                    margin: 0 0.5% 0 2%;
-                    text-align: left;
-                    font-size: 16px;
-                }
-                ul {
-                    margin-top: 0%;
-                    list-style-type: square;
-                    margin-bottom: 3%;
-                    padding-bottom: 1%;
-                    li {
-                        margin-top: 2%;
-                        color: black;
-                        text-align: left;
-                        &::marker {
-                            color: $amarillo-claro;
-                        }
-                    }
-                }
-            }
+  }
+}
+
+@media (min-width: 1020px) {
+  .contenedor__nuestrosEspacios {
+    text-align: center;
+    //background-image: URL("../img/fondo2.png");
+    padding: 0 0 2rem 0;
+    font-family: $fuente-principal;
+    // &::before {
+    //   content: " ";
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   z-index: -1;
+    //   opacity: 0.5;
+    // }
+    .contenedor__nuestrosEspacios--titulo {
+      display: inline-block;
+      font-size: 3.5rem;
+      font-weight: 500;
+      position: relative;
+      z-index: 0;
+      margin: 2rem 0 0.7rem 0;
+      //border-bottom: 12px solid $amarillo-claro;
+      display: inline-block;
+      margin-bottom: 2%;
+      .highlight {
+        //border-bottom: 8px solid $amarillo-claro;
+        //margin-bottom: 3%;
+        &::before {
+          bottom: 0.5rem;
+          height: 0.8rem;
         }
+      }
     }
-    
+    .contenedor__nuestrosEspacios--descripcion {
+      margin-left: 18%;
+      margin-right: 18%;
+      font-family: $fuente-principal;
+      font-weight: 500;
+    }
+  }
+  .nuestrosEspacios__carousel--departamentosConfortables {
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+    font-family: $fuente-principal;
+    .departamentosConfortables__contenedor {
+      grid-column: [x1] / [x2];
+      grid-row: [y0] / [y1];
+      width: 100%;
+      display: grid;
+      .departamentosConfortables__subContenedor {
+        margin-left: 6%;
+        margin-bottom: 0px;
+        .amplios {
+          margin-top: 1%;
+        }
+        .departamentosConfortables__titulo {
+          font-weight: bold;
+          margin-top: 1%;
+          font-size: 1.9rem;
+          margin-bottom: 0px;
+          .highlight {
+            // border-bottom: 10px solid $amarillo-claro;
+            //display: inline-block;
+            //margin-bottom: 0%;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 2.5%;
+              bottom: 0.45rem;
+              width: 95%;
+              height: 0.5rem;
+              background-color: $amarillo-claro;
+              z-index: -1;
+            }
+          }
+        }
+        .departamentosConfortables__subtitulo {
+          font-weight: bold;
+          font-size: 1.5rem;
+          margin-bottom: 0%;
+          margin-top: 0%;
+        }
+        .departamentosConfortables__descripcion {
+          margin-bottom: 0px;
+          margin-top: 0%;
+          text-align: left;
+          font-size: 1rem;
+        }
+        .departamentosConfortables__descripcionBis {
+          margin: 0 0 0 0;
+          text-align: left;
+          font-size: 1rem;
+        }
+        .amplio {
+          margin-top: 2%;
+        }
+        ul {
+          margin: 0 0 0 0;
+          list-style-type: square;
+          font-size: 1rem;
+          li {
+            margin-top: 0%;
+            text-align: left;
+            margin-bottom: 0%;
+            &::marker {
+              color: $amarillo-claro;
+            }
+          }
+        }
+      }
+    }
+  }
+  .carouselNuestrosEspacios {
+    #departamentosConfortables {
+      grid-column: [x0] / [x1];
+      grid-row: [y0] / [y1];
+    }
     #ampliosEspaciosDeTrabajo {
-        .carousel-item:nth-child(1),
-        .carousel-item:nth-child(2),
-        .carousel-item:nth-child(3) {
-            img {
-                transform: rotateY(180deg);
-            }
-        }
+      grid-column: [x1] / [x2];
+      grid-row: [y1] / [y2];
     }
-    
-    @media (min-width: 700px) {
-        .contenedor__nuestrosEspacios--descripcion {
-            font-family: $fuente-principal;
-            font-weight: 500;
-            margin-left: 15%;
-            margin-right: 15%;
-        }
-        .nuestrosEspacios__carousel--departamentosConfortables {
-            font-family: $fuente-principal;
-            text-align: center;
-            .departamentosConfortables__contenedor--mobile {
-                .departamentosConfortables__subContenedor--mobile {
-                    margin-left: 0%;
-                    margin-top: 0%;
-                    // border-bottom: 10px solid rgb(202, 199, 199);
-                    .departamentosConfortables__titulo--mobile {
-                        font-weight: 500px;
-                        margin-top: 0%;
-                        margin-bottom: 0%;
-                        font-size: 1.9rem;
-                        padding-top: 2%;
-                        .highlight {
-                            //border-bottom: 8px solid $amarillo-claro;
-                            //display: inline-block;
-                            padding-bottom: -4%;
-                            margin-bottom: 2%;
-                            &::before {
-                                bottom: 0.25rem;
-                                height: 0.5rem;
-                            }
-                        }
-                    }
-                    #departamentosConfortables__titulo--mobileBis2 {
-                        box-shadow: 0px 7px 6px rgb(202, 199, 199);
-                    }
-                    .departamentosConfortables__subtitulo--mobile {
-                        font-weight: bold;
-                        font-size: 1.2rem;
-                        margin-top: 2%;
-                        margin-bottom: 1%;
-                    }
-                    .departamentosConfortables__descripcion--mobile {
-                        margin: 0 0.5% 0 2%;
-                        text-align: left;
-                        font-size: 16px;
-                    }
-                    .departamentosConfortables__descripcionBis--mobile {
-                        margin: 0 0.5% 0 2%;
-                        text-align: left;
-                        font-size: 16px;
-                    }
-                    ul {
-                        margin-top: 0%;
-                        list-style-type: square;
-                        margin-bottom: 3%;
-                        padding-bottom: 1%;
-                        margin-left: 0.5%;
-                        li {
-                            margin-top: 2%;
-                            color: black;
-                            text-align: left;
-                            &::marker {
-                                color: $amarillo-claro;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    #calidosEspaciosComunes {
+      grid-column: [x0] / [x1];
+      grid-row: [y2] / [y3];
     }
-    
-    @media (min-width: 1020px) {
-        .contenedor__nuestrosEspacios {
-            text-align: center;
-            background-image: URL("../img/fondo2.png");
-            padding: 0 0 2rem 0;
-            font-family: $fuente-principal;
+    position: relative;
+    .carousel-inner {
+      position: relative;
+      .carousel-item img {
+        min-height: 300px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .departamentosConfortables__contenedor--mobile {
+    display: none;
+  }
+  .departamentosConfortables__contenedor--mobile {
+    display: none;
+  }
+  .departamentosConfortables__contenedor--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1207px) {
+  .contenedor__nuestrosEspacios {
+    text-align: center;
+    //background-image: URL("../img/fondo2.png");
+    padding: 0 0 2rem 0;
+    font-family: $fuente-principal;
+    // &::before {
+    //   content: " ";
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   z-index: -1;
+    //   opacity: 0.5;
+    // }
+    .contenedor__nuestrosEspacios--titulo {
+      display: inline-block;
+      font-size: 3.5rem;
+      font-weight: 500;
+      position: relative;
+      z-index: 0;
+      margin: 2rem 0 0.7rem 0;
+      //border-bottom: 12px solid $amarillo-claro;
+      display: inline-block;
+      margin-bottom: 2%;
+    }
+    .contenedor__nuestrosEspacios--descripcion {
+      margin-left: 18%;
+      margin-right: 18%;
+      font-family: $fuente-principal;
+      font-weight: 500;
+    }
+  }
+  .nuestrosEspacios__carousel--departamentosConfortables {
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+    font-family: $fuente-principal;
+    .departamentosConfortables__contenedor {
+      grid-column: [x1] / [x2];
+      grid-row: [y0] / [y1];
+      width: 95%;
+      display: grid;
+      .departamentosConfortables__subContenedor {
+        margin-left: 6%;
+        .departamentosConfortables__titulo {
+          font-weight: bold;
+          margin-top: 2%;
+          font-size: 1.9rem;
+          .highlight {
+            //border-bottom: 10px solid $amarillo-claro;
+            //display: inline-block;
+            margin-bottom: 1%;
+          }
+        }
+        .departamentosConfortables__subtitulo {
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+        .departamentosConfortables__descripcion {
+          margin-bottom: 0px;
+          margin-top: 0%;
+          text-align: left;
+        }
+        .departamentosConfortables__descripcionBis {
+          margin-top: 0px;
+          text-align: left;
+        }
+        ul {
+          margin-top: 0%;
+          list-style-type: square;
+          margin-bottom: 0px;
+          li {
+            margin-top: 1%;
+            text-align: left;
+            color: black;
+            &::marker {
+              color: $amarillo-claro;
+            }
+          }
+        }
+      }
+    }
+  }
+  .carouselNuestrosEspacios {
+    #departamentosConfortables {
+      grid-column: [x0] / [x1];
+      grid-row: [y0] / [y1];
+    }
+    #ampliosEspaciosDeTrabajo {
+      grid-column: [x1] / [x2];
+      grid-row: [y1] / [y2];
+    }
+    #calidosEspaciosComunes {
+      grid-column: [x0] / [x1];
+      grid-row: [y2] / [y3];
+    }
+    position: relative;
+    .carousel-inner {
+      position: relative;
+      .carousel-item img {
+        min-height: 300px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .departamentosConfortables__contenedor--mobile {
+    display: none;
+  }
+  .departamentosConfortables__contenedor--mobile {
+    display: none;
+  }
+  .departamentosConfortables__contenedor--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contenedor__nuestrosEspacios {
+    text-align: center;
+    //background-image: URL("../img/fondo2.png");
+    padding: 0 0 2rem 0;
+    font-family: $fuente-principal;
+    // &::before {
+    //   content: " ";
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   z-index: -1;
+    //   opacity: 0.1;
+    // }
+    .contenedor__nuestrosEspacios--titulo {
+      display: inline-block;
+      font-size: 3.5rem;
+      font-weight: 500;
+      position: relative;
+      z-index: 0;
+      margin: 2rem 0 0.7rem 0;
+      display: inline-block;
+      margin-bottom: 2%;
+    }
+    .contenedor__nuestrosEspacios--descripcion {
+      margin-left: 20%;
+      margin-right: 20%;
+      font-family: $fuente-principal;
+      font-weight: 500;
+    }
+  }
+  .nuestrosEspacios__carousel--departamentosConfortables {
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+    font-family: $fuente-principal;
+    .departamentosConfortables__contenedor {
+      grid-column: [x1] / [x2];
+      grid-row: [y0] / [y1];
+      width: 95%;
+      display: grid;
+      .departamentosConfortables__subContenedor {
+        margin-left: 8%;
+        .departamentosConfortables__titulo {
+          font-weight: bold;
+          margin-top: 5%;
+          margin-bottom: 4%;
+          font-size: 2.3rem;
+          text-align: left;
+          .highlight {
+            padding-bottom: -4%;
+            margin-bottom: 2%;
             &::before {
-                content: " ";
-                position: absolute;
-                left: 0;
-                top: 0;
-                z-index: -1;
-                opacity: 0.5;
+              bottom: 0.6rem;
+              height: 0.5rem;
             }
-            .contenedor__nuestrosEspacios--titulo {
-                display: inline-block;
-                font-size: 3.5rem;
-                font-weight: 500;
-                position: relative;
-                z-index: 0;
-                margin: 2rem 0 0.7rem 0;
-                //border-bottom: 12px solid $amarillo-claro;
-                display: inline-block;
-                margin-bottom: 2%;
-                .highlight {
-                    //border-bottom: 8px solid $amarillo-claro;
-                    //margin-bottom: 3%;
-                    &::before {
-                        bottom: 0.5rem;
-                        height: 0.8rem;
-                    }
-                }
-            }
-            .contenedor__nuestrosEspacios--descripcion {
-                margin-left: 18%;
-                margin-right: 18%;
-                font-family: $fuente-principal;
-                font-weight: 500;
-            }
+          }
         }
-        .nuestrosEspacios__carousel--departamentosConfortables {
-            display: grid;
-            grid-template-columns: [x0] 1fr [x1] 1fr [x2];
-            grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
-            font-family: $fuente-principal;
-            .departamentosConfortables__contenedor {
-                grid-column: [x1] / [x2];
-                grid-row: [y0] / [y1];
-                width: 100%;
-                display: grid;
-                .departamentosConfortables__subContenedor {
-                    margin-left: 6%;
-                    margin-bottom: 0px;
-                    .amplios {
-                        margin-top: 1%;
-                    }
-                    .departamentosConfortables__titulo {
-                        font-weight: bold;
-                        margin-top: 1%;
-                        font-size: 1.9rem;
-                        margin-bottom: 0px;
-                        .highlight {
-                            // border-bottom: 10px solid $amarillo-claro;
-                            //display: inline-block;
-                            //margin-bottom: 0%;
-                            position: relative;
-                            &::before {
-                                content: "";
-                                position: absolute;
-                                left: 2.5%;
-                                bottom: 0.45rem;
-                                width: 95%;
-                                height: 0.5rem;
-                                background-color: $amarillo-claro;
-                                z-index: -1;
-                            }
-                        }
-                    }
-                    .departamentosConfortables__subtitulo {
-                        font-weight: bold;
-                        font-size: 1.5rem;
-                        margin-bottom: 0%;
-                        margin-top: 0%;
-                    }
-                    .departamentosConfortables__descripcion {
-                        margin-bottom: 0px;
-                        margin-top: 0%;
-                        text-align: left;
-                        font-size: 1rem;
-                    }
-                    .departamentosConfortables__descripcionBis {
-                        margin: 0 0 0 0;
-                        text-align: left;
-                        font-size: 1rem;
-                    }
-                    .amplio {
-                        margin-top: 2%;
-                    }
-                    ul {
-                        margin: 0 0 0 0;
-                        list-style-type: square;
-                        font-size: 1rem;
-                        li {
-                            margin-top: 0%;
-                            text-align: left;
-                            margin-bottom: 0%;
-                            &::marker {
-                                color: $amarillo-claro;
-                            }
-                        }
-                    }
-                }
-            }
+        .departamentosConfortables__subtitulo {
+          font-weight: bold;
+          font-size: 1.5rem;
+          text-align: left;
         }
-        .carouselNuestrosEspacios {
-            #departamentosConfortables {
-                grid-column: [x0] / [x1];
-                grid-row: [y0] / [y1];
-            }
-            #ampliosEspaciosDeTrabajo {
-                grid-column: [x1] / [x2];
-                grid-row: [y1] / [y2];
-            }
-            #calidosEspaciosComunes {
-                grid-column: [x0] / [x1];
-                grid-row: [y2] / [y3];
-            }
-            position: relative;
-            .carousel-inner {
-                position: relative;
-                .carousel-item img {
-                    min-height: 300px;
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
+        .departamentosConfortables__descripcion {
+          margin-bottom: 0%;
+          margin-top: 4%;
+          text-align: left;
         }
-        .departamentosConfortables__contenedor--mobile {
-            display: none;
+        .departamentosConfortables__descripcionBis {
+          margin-top: 0px;
+          text-align: left;
         }
-        .departamentosConfortables__contenedor--mobile {
-            display: none;
+        ul {
+          margin-top: 4%;
+          list-style-type: square;
+          li {
+            margin-top: 3%;
+            text-align: left;
+            color: black;
+            &::marker {
+              color: $amarillo-claro;
+            }
+          }
         }
-        .departamentosConfortables__contenedor--mobile {
-            display: none;
-        }
+      }
     }
-    
-    @media (min-width: 1207px) {
-        .contenedor__nuestrosEspacios {
-            text-align: center;
-            background-image: URL("../img/fondo2.png");
-            padding: 0 0 2rem 0;
-            font-family: $fuente-principal;
-            &::before {
-                content: " ";
-                position: absolute;
-                left: 0;
-                top: 0;
-                z-index: -1;
-                opacity: 0.5;
-            }
-            .contenedor__nuestrosEspacios--titulo {
-                display: inline-block;
-                font-size: 3.5rem;
-                font-weight: 500;
-                position: relative;
-                z-index: 0;
-                margin: 2rem 0 0.7rem 0;
-                //border-bottom: 12px solid $amarillo-claro;
-                display: inline-block;
-                margin-bottom: 2%;
-            }
-            .contenedor__nuestrosEspacios--descripcion {
-                margin-left: 18%;
-                margin-right: 18%;
-                font-family: $fuente-principal;
-                font-weight: 500;
-            }
-        }
-        .nuestrosEspacios__carousel--departamentosConfortables {
-            display: grid;
-            grid-template-columns: [x0] 1fr [x1] 1fr [x2];
-            grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
-            font-family: $fuente-principal;
-            .departamentosConfortables__contenedor {
-                grid-column: [x1] / [x2];
-                grid-row: [y0] / [y1];
-                width: 95%;
-                display: grid;
-                .departamentosConfortables__subContenedor {
-                    margin-left: 6%;
-                    .departamentosConfortables__titulo {
-                        font-weight: bold;
-                        margin-top: 2%;
-                        font-size: 1.9rem;
-                        .highlight {
-                            //border-bottom: 10px solid $amarillo-claro;
-                            //display: inline-block;
-                            margin-bottom: 1%;
-                        }
-                    }
-                    .departamentosConfortables__subtitulo {
-                        font-weight: bold;
-                        font-size: 1.5rem;
-                    }
-                    .departamentosConfortables__descripcion {
-                        margin-bottom: 0px;
-                        margin-top: 0%;
-                        text-align: left;
-                    }
-                    .departamentosConfortables__descripcionBis {
-                        margin-top: 0px;
-                        text-align: left;
-                    }
-                    ul {
-                        margin-top: 0%;
-                        list-style-type: square;
-                        margin-bottom: 0px;
-                        li {
-                            margin-top: 1%;
-                            text-align: left;
-                            color: black;
-                            &::marker {
-                                color: $amarillo-claro;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .carouselNuestrosEspacios {
-            #departamentosConfortables {
-                grid-column: [x0] / [x1];
-                grid-row: [y0] / [y1];
-            }
-            #ampliosEspaciosDeTrabajo {
-                grid-column: [x1] / [x2];
-                grid-row: [y1] / [y2];
-            }
-            #calidosEspaciosComunes {
-                grid-column: [x0] / [x1];
-                grid-row: [y2] / [y3];
-            }
-            position: relative;
-            .carousel-inner {
-                position: relative;
-                .carousel-item img {
-                    min-height: 300px;
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-        .departamentosConfortables__contenedor--mobile {
-            display: none;
-        }
-        .departamentosConfortables__contenedor--mobile {
-            display: none;
-        }
-        .departamentosConfortables__contenedor--mobile {
-            display: none;
-        }
+  }
+  #espaciosDeTrabajo {
+    margin-left: 20%;
+    li {
+      margin-top: 6%;
+      margin-left: 1%;
     }
-    
-    @media (min-width: 1400px) {
-        .contenedor__nuestrosEspacios {
-            text-align: center;
-            background-image: URL("../img/fondo2.png");
-            padding: 0 0 2rem 0;
-            font-family: $fuente-principal;
-            &::before {
-                content: " ";
-                position: absolute;
-                left: 0;
-                top: 0;
-                z-index: -1;
-                opacity: 0.1;
-            }
-            .contenedor__nuestrosEspacios--titulo {
-                display: inline-block;
-                font-size: 3.5rem;
-                font-weight: 500;
-                position: relative;
-                z-index: 0;
-                margin: 2rem 0 0.7rem 0;
-                display: inline-block;
-                margin-bottom: 2%;
-            }
-            .contenedor__nuestrosEspacios--descripcion {
-                margin-left: 20%;
-                margin-right: 20%;
-                font-family: $fuente-principal;
-                font-weight: 500;
-            }
-        }
-        .nuestrosEspacios__carousel--departamentosConfortables {
-            display: grid;
-            grid-template-columns: [x0] 1fr [x1] 1fr [x2];
-            grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
-            font-family: $fuente-principal;
-            .departamentosConfortables__contenedor {
-                grid-column: [x1] / [x2];
-                grid-row: [y0] / [y1];
-                width: 95%;
-                display: grid;
-                .departamentosConfortables__subContenedor {
-                    margin-left: 8%;
-                    .departamentosConfortables__titulo {
-                        font-weight: bold;
-                        margin-top: 5%;
-                        margin-bottom: 4%;
-                        font-size: 2.3rem;
-                        text-align: left;
-                        .highlight {
-                            padding-bottom: -4%;
-                            margin-bottom: 2%;
-                            &::before {
-                                bottom: 0.6rem;
-                                height: 0.5rem;
-                            }
-                        }
-                    }
-                    .departamentosConfortables__subtitulo {
-                        font-weight: bold;
-                        font-size: 1.5rem;
-                        text-align: left;
-                    }
-                    .departamentosConfortables__descripcion {
-                        margin-bottom: 0%;
-                        margin-top: 4%;
-                        text-align: left;
-                    }
-                    .departamentosConfortables__descripcionBis {
-                        margin-top: 0px;
-                        text-align: left;
-                    }
-                    ul {
-                        margin-top: 4%;
-                        list-style-type: square;
-                        li {
-                            margin-top: 3%;
-                            text-align: left;
-                            color: black;
-                            &::marker {
-                                color: $amarillo-claro;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        #espaciosDeTrabajo {
-            margin-left: 20%;
-            li {
-                margin-top: 6%;
-                margin-left: 1%;
-            }
-        }
-        .carouselNuestrosEspacios {
-            #departamentosConfortables {
-                grid-column: [x0] / [x1];
-                grid-row: [y0] / [y1];
-            }
-            #ampliosEspaciosDeTrabajo {
-                grid-column: [x1] / [x2];
-                grid-row: [y1] / [y2];
-            }
-            #calidosEspaciosComunes {
-                grid-column: [x0] / [x1];
-                grid-row: [y2] / [y3];
-            }
-            position: relative;
-            .carousel-inner {
-                position: relative;
-                .carousel-item img {
-                    min-height: 250px;
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-        .departamentosConfortables__contenedor--mobile {
-            display: none;
-        }
-        .departamentosConfortables__contenedor--mobile {
-            display: none;
-        }
-        .departamentosConfortables__contenedor--mobile {
-            display: none;
-        }
+  }
+  .carouselNuestrosEspacios {
+    #departamentosConfortables {
+      grid-column: [x0] / [x1];
+      grid-row: [y0] / [y1];
     }
+    #ampliosEspaciosDeTrabajo {
+      grid-column: [x1] / [x2];
+      grid-row: [y1] / [y2];
+    }
+    #calidosEspaciosComunes {
+      grid-column: [x0] / [x1];
+      grid-row: [y2] / [y3];
+    }
+    position: relative;
+    .carousel-inner {
+      position: relative;
+      .carousel-item img {
+        min-height: 250px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .departamentosConfortables__contenedor--mobile {
+    display: none;
+  }
+  .departamentosConfortables__contenedor--mobile {
+    display: none;
+  }
+  .departamentosConfortables__contenedor--mobile {
+    display: none;
+  }
+}
