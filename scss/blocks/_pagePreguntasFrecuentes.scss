@@ -1,20 +1,26 @@
 @media (min-width: 320px) {
     .contenedor__preguntasFrecuentes {
         text-align: center;
-        background-image: URL("../img/fondo2.png");
         padding: 2rem 0 2rem 0;
         font-family: $fuente-principal;
+        position: relative;
         &::before {
             content: " ";
             position: absolute;
             left: 0;
             top: 0;
+            width: 100%;
+            height: 100%;
             z-index: -1;
             opacity: 0.5;
+            background-image: url("../img/fondo_piedra_todos.png");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
         }
         .contenedor__PreguntasFrecuentes--titulo {
             display: inline-block;
-            font-size: 1.9rem;
+            font-size: 1.6rem;
             font-weight: 500;
             position: relative;
             z-index: 0;
@@ -53,17 +59,8 @@
 @media (min-width: 369px) {
     .contenedor__preguntasFrecuentes {
         text-align: center;
-        background-image: URL("../img/fondo2.png");
         padding: 0 0 2rem 0;
         font-family: $fuente-principal;
-        &::before {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: -1;
-            opacity: 0.5;
-        }
         .contenedor__PreguntasFrecuentes--titulo {
             display: inline-block;
             font-size: 1.8rem;
@@ -83,17 +80,8 @@
 @media (min-width: 400px) {
     .contenedor__preguntasFrecuentes {
         text-align: center;
-        background-image: URL("../img/fondo2.png");
         padding: 0 0 2rem 0;
         font-family: $fuente-principal;
-        &::before {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: -1;
-            opacity: 0.5;
-        }
         .contenedor__PreguntasFrecuentes--titulo {
             display: inline-block;
             font-size: 2rem;
@@ -113,17 +101,8 @@
 @media (min-width: 600px) {
     .contenedor__preguntasFrecuentes {
         text-align: center;
-        background-image: URL("../img/fondo2.png");
         padding: 0 0 2rem 0;
         font-family: $fuente-principal;
-        &::before {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: -1;
-            opacity: 0.5;
-        }
         .contenedor__PreguntasFrecuentes--titulo {
             display: inline-block;
             font-size: 2.2rem;
@@ -163,20 +142,11 @@
 @media (min-width: 700px) {
     .contenedor__preguntasFrecuentes {
         text-align: center;
-        background-image: URL("../img/fondo2.png");
         padding: 0 0 2rem 0;
         font-family: $fuente-principal;
-        &::before {
-            content: " ";
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: -1;
-            opacity: 0.5;
-        }
         .contenedor__PreguntasFrecuentes--titulo {
             display: inline-block;
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 500;
             position: relative;
             z-index: 0;
@@ -209,5 +179,22 @@
             margin-bottom: 0%;
             margin-top: 0%;
         }
+    }
+}
+
+@media (min-width: 1020px) {
+    .contenedor__preguntasFrecuentes {
+        text-align: center;
+        padding: 0 0 2rem 0;
+        font-family: $fuente-principal;
+        .contenedor__PreguntasFrecuentes--titulo {
+            display: inline-block;
+            font-size: 3.5rem;
+            font-weight: 500;
+        }
+    }
+    .contenedor__preguntas {
+        margin-left: 6%;
+        margin-right: 6%;
     }
 }
