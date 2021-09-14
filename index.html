@@ -2,354 +2,379 @@
 <html lang="es-AR">
 
 <head>
-    <meta charset="UTF-8">
-    <title>WAPO</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="...">
-    <meta name="keywords" content="...">
+  <meta charset="UTF-8">
+  <title>WAPO Work and life</title>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="...">
+  <meta name="keywords" content="...">
 </head>
 
 <body>
-    <header>
-        <!-- Logo flotante -->
-        <a id="header__logo" href="#"><img src="img/logo_leyenda.svg" alt="WAPO"></a>
-        <!-- Navegación desktop -->
-        <nav class="nav nav-desktop justify-content-end">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-            <a class="nav-link" href="nuestrosEspacios.html">NUESTROS ESPACIOS</a>
-            <a class="nav-link" href="preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
-            <a class="nav-link" href="./contacto.html">CONTACTO</a>
-            <div class="redes">
-                <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
-                <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
-                <a href="#"><img src="./img/instragram.svg" alt="instagram"></a>
-            </div>
-        </nav>
-        <!-- Menú hamburguesa -->
-        <button type="button" id="btn-hamburguesa" data-bs-toggle="modal" data-bs-target="#modalNav">
+  <header>
+    <!-- Logo flotante -->
+    <a id="header__logo" href="#"><img src="./img/logo_leyenda.svg" alt="WAPO"></a>
+    <!-- Navegación desktop -->
+    <nav class="nav nav-desktop justify-content-end">
+      <a class="nav-link active" aria-current="page" href="#">HOME</a>
+      <a class="nav-link" href="./nuestrosEspacios.html">NUESTROS ESPACIOS</a>
+      <a class="nav-link" href="./preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
+      <a class="nav-link" href="./contacto.html">CONTACTO</a>
+      <div class="redes">
+        <a href="https://www.facebook.com/Wapo-Co-Working-Living-102263008793468" target="_blank" rel="noopener"><img
+            src="./img/facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
+        <a href="https://www.instagram.com/wap_41/" target="_blank" rel="noopener"><img src="./img/instragram.svg"
+            alt="instagram"></a>
+      </div>
+    </nav>
+    <!-- Menú hamburguesa -->
+    <button type="button" id="btn-hamburguesa" data-bs-toggle="modal" data-bs-target="#modalNav">
       <img src="./img/btn_hamb.svg" alt="Botón navegación">
     </button>
-        <div class="button-bar"></div>
-        <!-- Modal navegación mobile (menú hamburguesa) -->
-        <div class="modal fade" id="modalNav" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalNav" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <div class=img-wraper>
-                            <img src="./img/logo_modal_navegacion.svg" alt="WAPO">
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <nav class="nav nav-mobile">
-                            <div><a class="nav-link active" data-bs-dismiss="modal" aria-current="page" href="#">HOME</a></div>
-                            <div> <a class="nav-link" href="nuestrosEspacios.html">NUESTROS ESPACIOS</a></div>
-                            <div><a class="nav-link" href="preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a></div>
-                            <div> <a class="nav-link" href="./contacto.html">CONTACTO</a></div>
-                        </nav>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="redes">
-                            <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
-                            <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
-                            <a href="#"><img src="./img/instragram.svg" alt="instagram"></a>
-                        </div>
-                    </div>
-                </div>
+    <div class="button-bar"></div>
+    <!-- Modal navegación mobile (menú hamburguesa) -->
+    <div class="modal fade" id="modalNav" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="modalNav" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class=img-wraper>
+              <img src="./img/logo_modal_navegacion.svg" alt="WAPO">
             </div>
+          </div>
+          <div class="modal-body">
+            <nav class="nav nav-mobile">
+              <div><a class="nav-link active" data-bs-dismiss="modal" aria-current="page" href="#">HOME</a></div>
+              <div> <a class="nav-link" href="./nuestrosEspacios.html">NUESTROS ESPACIOS</a></div>
+              <div><a class="nav-link" href="./preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a></div>
+              <div> <a class="nav-link" href="./contacto.html">CONTACTO</a></div>
+            </nav>
+          </div>
+          <div class="modal-footer">
+            <div class="redes">
+              <a href="https://www.facebook.com/Wapo-Co-Working-Living-102263008793468" target="_blank"
+                rel="noopener"><img src="./img/facebook.svg" alt="facebook"></a>
+              <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
+              <a href="https://www.instagram.com/wap_41/" target="_blank" rel="noopener"><img src="./img/instragram.svg"
+                  alt="instagram"></a>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <main class="home">
-        <!-- Carrusel principal -->
-        <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-logo">
-                <img id="carousel__logo" src="./img/wapo.svg" alt="WAPO">
-                <p>Work and life</p>
-            </div>
-            <a class="carousel-btn" href="#">Solicitá más info</a>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/carouselPpal_slide1.png" class="w-100" alt="...">
-                    <img src="./img/carouselPpal_slide1_md.png" class="w-100 md" alt="...">
-                    <div class="carousel-caption">
-                        <p>Un lugar para trabajar...</p>
-                        <h2>CO-WORKING</h2>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/carouselPpal_slide2.png" class="w-100" alt="...">
-                    <img src="./img/carouselPpal_slide2_md.png" class="w-100 md" alt="...">
-                    <div class="carousel-caption">
-                        <p>Un lugar para vivir...</p>
-                        <h2>CO-LIVING</h2>
-                    </div>
-                </div>
-            </div>
+  <main class="home">
+    <!-- Carrusel principal -->
+    <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-logo">
+        <img id="carousel__logo" src="./img/wapo.svg" alt="WAPO">
+        <p>Work and life</p>
+      </div>
+      <a class="carousel-btn" href="#">Solicitá más info</a>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carouselPpal_slide1.png" class="w-100" alt="...">
+          <img src="./img/carouselPpal_slide1_md.png" class="w-100 md" alt="...">
+          <div class="carousel-caption">
+            <p>Un lugar para trabajar...</p>
+            <h2>CO-WORKING</h2>
+          </div>
         </div>
-        <div class="section-separator-triangle amarillo"></div>
-        <!-- Sección "propuesta" -->
-        <section class="propuesta">
-            <div class="max-w">
-                <p>Edificio con departamentos privados y espacios de coliving y coworking, para que todos sean parte de nuestra comunidad.
-                </p>
-                <p><b>"Te ofrecemos una propuesta con todo resuelto"</b>
-                </p>
-            </div>
-        </section>
-        <!-- Sección "servicios" -->
-        <section class="servicios">
-            <h2>Nuestros Servicios</h2>
-            <div class="max-w servicios__wraper">
-                <article>
-                    <div class="image-wraper"><img src="./img/dptos_equipados.svg" alt="Departamentos equipados"></div>
-                    <h4>Departamentos equipados</h4>
-                    <p>Creamos el confort que necesitas para descansar y relajar.</p>
-                </article>
-                <article>
-                    <div class="image-wraper"> <img src="./img/escritorios.svg" alt="Escritorios y mesas de trabajo"></div>
-                    <h4>Escritorios y mesas de trabajo</h4>
-                    <p>Espacios de trabajo listos para que instales tu oficina.</p>
-                </article>
-                <article>
-                    <div class="image-wraper"> <img src="./img/conectividad.svg" alt="Conectividad"></div>
-                    <h4>Conectividad</h4>
-                    <p>En todos los departamentos y las áreas comunes.</p>
-                </article>
-                <article>
-                    <div class="image-wraper"><img src="./img/reuniones.svg" alt="Sala de reuniones"></div>
-                    <h4>Sala de reuniones</h4>
-                    <p>Equipadas con todo lo necesario para recibir a tu equipo.</p>
-                </article>
-                <article>
-                    <div class="image-wraper"> <img src="./img/cafeteria.svg" alt="Servicio de cafetería"></div>
-                    <h4>Servicio de cafetería</h4>
-                    <p>Disponible las 24hs en las áreas comunes.
-                    </p>
-                </article>
-                <article>
-                    <div class="image-wraper"><img src="./img/limpieza.svg" alt="Servicio de Limpieza"></div>
-                    <h4>Servicio de Limpieza</h4>
-                    <p>Para los departamentos y todas las áreas comunes.</p>
-                </article>
-                <article>
-                    <div class="image-wraper"><img src="./img/lavanderia.svg" alt="Servicio de Lavandería"></div>
-                    <h4>Servicio de Lavandería</h4>
-                    <p>Disponible para los residentes y no residentes.</p>
-                </article>
-                <article>
-                    <div class="image-wraper"> <img src="./img/simplicidad.svg" alt="Simplicidad, todo en uno"></div>
-                    <h4>Simplicidad, todo en uno</h4>
-                    <p>Todos los servicios activos y en una sola factura.</p>
-                </article>
-            </div>
-        </section>
-        <!-- Sección "espacios" -->
-        <section class="espacios">
-            <h2>Nuestros Espacios</h2>
-            <div class="carousels-wraper">
-                <!-- Carrusel "Dptos" -->
-                <div id="carouselDptos" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <a class="carousel-btn" href="#">+</a>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./img/carouselDptos_slide1.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselDptos_slide2.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselDptos_slide3.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselDptos_slide4.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselDptos_slide5.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-caption d-block">
-                            <p>Departamentos <span class="no-wrap highlight">confortables</span></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carrusel "espacios de trabajo" -->
-                <div id="carouselEspTrabajo" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <a class="carousel-btn" href="#">+</a>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./img/carouselEspTrabajo_slide1.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselEspTrabajo_slide2.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselEspTrabajo_slide3.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselEspTrabajo_slide4.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselEspTrabajo_slide5.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-caption d-block">
-                            <p><span class="highlight">Amplios</span> espacios <span class="no-wrap">de trabajo</span></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carrusel "espacios comunes" -->
-                <div id="carouselEspComun" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <a class="carousel-btn" href="#">+</a>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./img/carouselEspComun_slide1.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselEspComun_slide2.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselEspComun_slide3.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselEspComun_slide4.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/carouselEspComun_slide5.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-caption d-block">
-                            <p><span class="highlight">Cálidos</span> espacios comunes</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Leyendas "espacios" -->
-            <aside>
-                <!-- Leyendas "espacios" versión desktop -->
-                <div class="max-w espacios-wraper">
-                    <article>
-                        <h3>Chit Chat Bites</h3>
-                        <p>Eventos para socializar y conectar con la comunidad en un ambiente casual, usualmente acompañado de algo delicioso
-                        </p>
-                    </article>
-                    <article>
-                        <h3>Wellness</h3>
-                        <p>Nos importa el bienestar de los que vive en casa.</p>
-                        <p>Los invitamos a charlas y talleres en los cuales se trabaja en la salud física y mental.</p>
-                    </article>
-                    <article>
-                        <h3>¡Expresate!</h3>
-                        <p>Le damos un espacio a invitados especiales que tengan un mensaje, idea o talento que compartir con el público de nuestra casa.</p>
-                    </article>
-                </div>
-                <!-- Leyendas "espacios" versión mobile (carrusel) -->
-                <div id="carouselTextos" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselTextos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselTextos" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselTextos" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <article>
-                                <h3>Chit Chat Bites</h3>
-                                <p>Eventos para socializar y conectar con la comunidad en un ambiente casual, usualmente acompañado de algo delicioso
-                                </p>
-                            </article>
-                        </div>
-                        <div class="carousel-item">
-                            <article>
-                                <h3>Wellness</h3>
-                                <p>Nos importa el bienestar de los que vive en casa.</p>
-                                <p>Los invitamos a charlas y talleres en los cuales se trabaja en la salud física y mental.</p>
-                            </article>
-                        </div>
-                        <div class="carousel-item">
-                            <article>
-                                <h3>¡Expresate!</h3>
-                                <p>Le damos un espacio a invitados especiales que tengan un mensaje, idea o talento que compartir con el público de nuestra casa.</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-            <!-- Mapa -->
-            <aside>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.37978599153!2d-58.841690948687805!3d-34.61984166576346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc91506ff3b68f%3A0xc61a066b74045ce7!2sEduardo%20Wilde%201580%2C%20B1738BGF%20La%20Reja%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1630535948693!5m2!1ses-419!2sar"
-                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </aside>
-        </section>
-        <div class="section-separator-triangle gris"></div>
-        <!-- Sección "contacto" -->
-        <section class="contacto">
-            <h2>Contacto</h2>
-            <div class="max-w contacto-wraper">
-                <!-- Formulario -->
-                <div class="formulario">
-                    <h3>Escribinos para solicitar más info</h3>
-                    <form class="row g-4">
-                        <div class="col-md-6">
-                            <input type="text" name="nombre" class="form-control" id="inputNombre" placeholder="Nombre">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" name="apellido" class="form-control" id="inputApellido" placeholder="Apellido">
-                        </div>
-                        <div class="col-12">
-                            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
-                        </div>
-                        <div class="col-12">
-                            <textarea name="consulta" class="form-control" id="inputConsulta" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
-                        </div>
-                        <div class="col-12 btn-wraper">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-                <!-- Domicilio -->
-                <aside>
-                    <div class="direccion">
-                        <p>Eduardo Wilde 1580 La Reja,</p>
-                        <p>Buenos Aires, Argentina.</p>
-                        <p>Whatsapp: 11.xxxx.xxxx</p>
-                    </div>
-                    <div class="cercanias">
-                        <h4>Lugares de cercanía</h4>
-                        <p>45 min (47.4 km) del Obelisco</p>
-                        <p>22 min (10.7 km) del Dique Roggero</p>
-                        <p>45 min (49.9 km) del Aeropuerto Jorge Newbery</p>
-                        <p>42 min (51.7 km) del Aeropuerto internac. de Ezeiza</p>
-                        <p>25 min (29.1 km) de Luján</p>
-                    </div>
-                </aside>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <img class="logo" src="./img/logo_bw.svg" alt="WAPO">
-        <div class="redes">
-            <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
-            <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
-            <a href="#"><img src="./img/instragram.svg" alt="instagram"></a>
+        <div class="carousel-item">
+          <img src="./img/carouselPpal_slide2.png" class="w-100" alt="...">
+          <img src="./img/carouselPpal_slide2_md.png" class="w-100 md" alt="...">
+          <div class="carousel-caption">
+            <p>Un lugar para vivir...</p>
+            <h2>CO-LIVING</h2>
+          </div>
         </div>
-        <address>Copyright © 2021 - WAPO <span class="no-wrap">Todos los derechos reservados.</span></address>
-    </footer>
+      </div>
+    </div>
+    <div class="section-separator-triangle amarillo"></div>
+    <!-- Sección "propuesta" -->
+    <section class="propuesta">
+      <div class="max-w">
+        <p>Edificio con departamentos privados y espacios de coliving y coworking, para que todos sean parte de nuestra
+          comunidad.</p>
+        <p><b>"Te ofrecemos una propuesta con todo resuelto"</b>
+        </p>
+      </div>
+    </section>
+    <!-- Sección "servicios" -->
+    <section class="servicios">
+      <h2>Nuestros Servicios</h2>
+      <div class="max-w servicios__wraper">
+        <article>
+          <div class="image-wraper"><img src="./img/dptos_equipados.svg" alt="Departamentos equipados"></div>
+          <h4>Departamentos equipados</h4>
+          <p>Creamos el confort que necesitas
+            para descansar y relajar.</p>
+        </article>
+        <article>
+          <div class="image-wraper"> <img src="./img/escritorios.svg" alt="Escritorios y mesas de trabajo"></div>
+          <h4>Escritorios y mesas de trabajo</h4>
+          <p>Espacios de trabajo listos para que
+            instales tu oficina.</p>
+        </article>
+        <article>
+          <div class="image-wraper"> <img src="./img/conectividad.svg" alt="Conectividad"></div>
+          <h4>Conectividad</h4>
+          <p>En todos los departamentos
+            y las áreas comunes.</p>
+        </article>
+        <article>
+          <div class="image-wraper"><img src="./img/reuniones.svg" alt="Sala de reuniones"></div>
+          <h4>Sala de reuniones</h4>
+          <p>Equipadas con todo lo necesario
+            para recibir a tu equipo.</p>
+        </article>
+        <article>
+          <div class="image-wraper"> <img src="./img/cafeteria.svg" alt="Servicio de cafetería"></div>
+          <h4>Servicio de cafetería</h4>
+          <p>Disponible las 24hs en las áreas
+            comunes.</p>
+        </article>
+        <article>
+          <div class="image-wraper"><img src="./img/limpieza.svg" alt="Servicio de Limpieza"></div>
+          <h4>Servicio de Limpieza</h4>
+          <p>Para los departamentos y
+            todas las áreas comunes.</p>
+        </article>
+        <article>
+          <div class="image-wraper"><img src="./img/lavanderia.svg" alt="Servicio de Lavandería"></div>
+          <h4>Servicio de Lavandería</h4>
+          <p>Disponible para los residentes
+            y no residentes.</p>
+        </article>
+        <article>
+          <div class="image-wraper"> <img src="./img/simplicidad.svg" alt="Simplicidad, todo en uno"></div>
+          <h4>Simplicidad, todo en uno</h4>
+          <p>Todos los servicios activos y en
+            una sola factura.</p>
+        </article>
+      </div>
+    </section>
+    <!-- Sección "espacios" -->
+    <section class="espacios">
+      <h2>Nuestros Espacios</h2>
+      <div class="carousels-wraper">
+        <!-- Carrusel "Dptos" -->
+        <div id="carouselDptos" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <a class="carousel-btn" href="#">+</a>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/carouselDptos_slide1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselDptos_slide2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselDptos_slide3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselDptos_slide4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselDptos_slide5.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-caption d-block">
+              <p>Departamentos <span class="no-wrap highlight">confortables</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Carrusel "espacios de trabajo" -->
+        <div id="carouselEspTrabajo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <a class="carousel-btn" href="#">+</a>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/carouselEspTrabajo_slide1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselEspTrabajo_slide2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselEspTrabajo_slide3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselEspTrabajo_slide4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselEspTrabajo_slide5.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-caption d-block">
+              <p><span class="highlight">Amplios</span> espacios <span class="no-wrap">de trabajo</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Carrusel "espacios comunes" -->
+        <div id="carouselEspComun" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <a class="carousel-btn" href="#">+</a>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/carouselEspComun_slide1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselEspComun_slide2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselEspComun_slide3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselEspComun_slide4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carouselEspComun_slide5.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-caption d-block">
+              <p><span class="highlight">Cálidos</span> espacios comunes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Leyendas "espacios" -->
+      <aside>
+        <!-- Leyendas "espacios" versión desktop -->
+        <div class="max-w espacios-wraper">
+          <article>
+            <h3>Chit Chat Bites</h3>
+            <p>Eventos para socializar y conectar con la comunidad en un ambiente casual, usualmente acompañado de algo
+              delicioso</p>
+          </article>
+          <article>
+            <h3>Wellness</h3>
+            <p>Nos importa el bienestar de los que vive en casa.</p>
+            <p>Los invitamos a charlas y talleres en los cuales se trabaja en la salud física y mental.</p>
+          </article>
+          <article>
+            <h3>¡Expresate!</h3>
+            <p>Le damos un espacio a invitados especiales que tengan un mensaje, idea o talento que compartir con el
+              público de nuestra casa.</p>
+          </article>
+        </div>
+        <!-- Leyendas "espacios" versión mobile (carrusel) -->
+        <div id="carouselTextos" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselTextos" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselTextos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselTextos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <article>
+                <h3>Chit Chat Bites</h3>
+                <p>Eventos para socializar y conectar con la comunidad en un ambiente casual, usualmente acompañado de
+                  algo
+                  delicioso</p>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article>
+                <h3>Wellness</h3>
+                <p>Nos importa el bienestar de los que vive en casa.</p>
+                <p>Los invitamos a charlas y talleres en los cuales se trabaja en la salud física y mental.</p>
+              </article>
+            </div>
+            <div class="carousel-item">
+              <article>
+                <h3>¡Expresate!</h3>
+                <p>Le damos un espacio a invitados especiales que tengan un mensaje, idea o talento que compartir con el
+                  público de nuestra casa.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- Mapa -->
+      <aside>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.37978599153!2d-58.841690948687805!3d-34.61984166576346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc91506ff3b68f%3A0xc61a066b74045ce7!2sEduardo%20Wilde%201580%2C%20B1738BGF%20La%20Reja%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1630535948693!5m2!1ses-419!2sar"
+          style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </aside>
+    </section>
+    <div class="section-separator-triangle gris"></div>
+    <!-- Sección "contacto" -->
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <div class="max-w contacto-wraper">
+        <!-- Formulario -->
+        <div class="formulario">
+          <h3>Escribinos para solicitar más info</h3>
+          <form class="row g-4">
+            <div class="col-md-6">
+              <input type="text" name="nombre" class="form-control" id="inputNombre" placeholder="Nombre">
+            </div>
+            <div class="col-md-6">
+              <input type="text" name="apellido" class="form-control" id="inputApellido" placeholder="Apellido">
+            </div>
+            <div class="col-12">
+              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="col-12">
+              <textarea name="consulta" class="form-control" id="inputConsulta" rows="4"
+                placeholder="¿En qué podemos ayudarte?"></textarea>
+            </div>
+            <div class="col-12 btn-wraper">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+        <!-- Domicilio -->
+        <aside>
+          <div class="direccion">
+            <p>Eduardo Wilde 1580 La Reja,</p>
+            <p>Buenos Aires, Argentina.</p>
+            <p>Whatsapp: 11.xxxx.xxxx</p>
+          </div>
+          <div class="cercanias">
+            <h4>Lugares de cercanía</h4>
+            <p>45 min (47.4 km) del Obelisco</p>
+            <p>22 min (10.7 km) del Dique Roggero</p>
+            <p>45 min (49.9 km) del Aeropuerto Jorge Newbery</p>
+            <p>42 min (51.7 km) del Aeropuerto internac. de Ezeiza</p>
+            <p>25 min (29.1 km) de Luján</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
 
-    <!-- Botón fijo de Wathsapp -->
-    <a class="whatsapp-link" href="https://wa.me/541112345678" target="_blank" rel="noopener"><img src="./img/whatsapp_logo.png" alt="Whatsapp"></a>
+  <footer>
+    <img class="logo" src="./img/logo_bw.svg" alt="WAPO">
+    <div class="redes">
+      <a href="https://www.facebook.com/Wapo-Co-Working-Living-102263008793468" target="_blank" rel="noopener"><img
+          src="./img/facebook.svg" alt="facebook"></a>
+      <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
+      <a href="https://www.instagram.com/wap_41/" target="_blank" rel="noopener"><img src="./img/instragram.svg"
+          alt="instagram"></a>
+    </div>
+    <address>Copyright © 2021 - WAPO <span class="no-wrap">Todos los derechos reservados.</span></address>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <!-- JS Propio -->
-    <script src="./js/index.js"></script>
+  <!-- Botón fijo de Wathsapp -->
+  <a class="whatsapp-link" href="https://wa.me/541156451489" target="_blank" rel="noopener"><img
+      src="./img/whatsapp_logo.png" alt="Whatsapp"></a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <!-- JS Propio -->
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

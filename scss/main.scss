@@ -2,7 +2,6 @@
 @import "./base/variables";
 @import "./base/reset";
 @import "./base/fuentes";
-
 // importación de bloques
 @import "./blocks/header";
 @import "./blocks/footer";
@@ -10,9 +9,8 @@
 @import "./blocks/seccionServicios";
 @import "./blocks/seccionEspacios";
 @import "./blocks/seccionContacto";
-@import "./blocks/seccionNuestrosEspacios";
-@import "./blocks/seccionPreguntasFrecuentes";
-
+@import "./blocks/pageNuestrosEspacios";
+@import "./blocks/pagePreguntasFrecuentes";
 // importación de componentes
 @import "./components/carouselPrincipal";
 @import "./components/separadorSecciones";

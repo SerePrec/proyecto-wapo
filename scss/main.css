@@ -864,6 +864,14 @@ main.contacto section.mapa iframe {
     padding: 0 0 0.5rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
+  .contenedor__nuestrosEspacios::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
   .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo {
     font-size: 1.8rem;
     font-weight: 500px;
@@ -873,12 +881,25 @@ main.contacto section.mapa iframe {
     display: inline-block;
   }
   .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo .highlight {
-    border-bottom: 8px solid #ffd800;
-    margin-bottom: 3%;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+  }
+  .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo .highlight::before {
+    content: "";
+    position: absolute;
+    left: 2.5%;
+    bottom: 0.25rem;
+    width: 95%;
+    height: 0.5rem;
+    background-color: #ffd800;
+    z-index: -1;
   }
   .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--descripcion {
     margin-left: 2%;
     margin-right: 2%;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 500;
   }
   .button__bar--nuestrosEspacios {
     height: 5%;
@@ -908,10 +929,22 @@ main.contacto section.mapa iframe {
 }
 
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile .departamentosConfortables__titulo--mobile .highlight {
-  border-bottom: 8px solid #ffd800;
-  display: inline-block;
   padding-bottom: -4%;
   margin-bottom: 2%;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile .departamentosConfortables__titulo--mobile .highlight::before {
+  content: "";
+  position: absolute;
+  left: 2.5%;
+  bottom: 0.25rem;
+  width: 95%;
+  height: 0.5rem;
+  background-color: #ffd800;
+  z-index: -1;
 }
 
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile #departamentosConfortables__titulo--mobileBis2 {
@@ -955,7 +988,20 @@ main.contacto section.mapa iframe {
   color: #ffd800;
 }
 
+#ampliosEspaciosDeTrabajo .carousel-item:nth-child(1) img,
+#ampliosEspaciosDeTrabajo .carousel-item:nth-child(2) img,
+#ampliosEspaciosDeTrabajo .carousel-item:nth-child(3) img {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 @media (min-width: 700px) {
+  .contenedor__nuestrosEspacios--descripcion {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 500;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
   .nuestrosEspacios__carousel--departamentosConfortables {
     font-family: "Poppins", Helvetica, sans-serif;
     text-align: center;
@@ -972,10 +1018,12 @@ main.contacto section.mapa iframe {
     padding-top: 2%;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile .departamentosConfortables__titulo--mobile .highlight {
-    border-bottom: 8px solid #ffd800;
-    display: inline-block;
     padding-bottom: -4%;
     margin-bottom: 2%;
+  }
+  .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile .departamentosConfortables__titulo--mobile .highlight::before {
+    bottom: 0.25rem;
+    height: 0.5rem;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile #departamentosConfortables__titulo--mobileBis2 {
     -webkit-box-shadow: 0px 7px 6px #cac7c7;
@@ -1021,6 +1069,14 @@ main.contacto section.mapa iframe {
     padding: 0 0 2rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
+  .contenedor__nuestrosEspacios::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
   .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo {
     display: inline-block;
     font-size: 3.5rem;
@@ -1028,13 +1084,18 @@ main.contacto section.mapa iframe {
     position: relative;
     z-index: 0;
     margin: 2rem 0 0.7rem 0;
-    border-bottom: 12px solid #ffd800;
     display: inline-block;
     margin-bottom: 2%;
+  }
+  .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo .highlight::before {
+    bottom: 0.5rem;
+    height: 0.8rem;
   }
   .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--descripcion {
     margin-left: 18%;
     margin-right: 18%;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 500;
   }
   .nuestrosEspacios__carousel--departamentosConfortables {
     display: -ms-grid;
@@ -1066,9 +1127,17 @@ main.contacto section.mapa iframe {
     margin-bottom: 0px;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__titulo .highlight {
-    border-bottom: 10px solid #ffd800;
-    display: inline-block;
-    margin-bottom: 0%;
+    position: relative;
+  }
+  .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__titulo .highlight::before {
+    content: "";
+    position: absolute;
+    left: 2.5%;
+    bottom: 0.45rem;
+    width: 95%;
+    height: 0.5rem;
+    background-color: #ffd800;
+    z-index: -1;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__subtitulo {
     font-weight: bold;
@@ -1145,6 +1214,14 @@ main.contacto section.mapa iframe {
     padding: 0 0 2rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
+  .contenedor__nuestrosEspacios::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
   .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo {
     display: inline-block;
     font-size: 3.5rem;
@@ -1152,13 +1229,14 @@ main.contacto section.mapa iframe {
     position: relative;
     z-index: 0;
     margin: 2rem 0 0.7rem 0;
-    border-bottom: 12px solid #ffd800;
     display: inline-block;
     margin-bottom: 2%;
   }
   .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--descripcion {
     margin-left: 18%;
     margin-right: 18%;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 500;
   }
   .nuestrosEspacios__carousel--departamentosConfortables {
     display: -ms-grid;
@@ -1185,8 +1263,6 @@ main.contacto section.mapa iframe {
     font-size: 1.9rem;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__titulo .highlight {
-    border-bottom: 10px solid #ffd800;
-    display: inline-block;
     margin-bottom: 1%;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__subtitulo {
@@ -1257,6 +1333,14 @@ main.contacto section.mapa iframe {
     padding: 0 0 2rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
+  .contenedor__nuestrosEspacios::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.1;
+  }
   .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo {
     display: inline-block;
     font-size: 3.5rem;
@@ -1264,13 +1348,14 @@ main.contacto section.mapa iframe {
     position: relative;
     z-index: 0;
     margin: 2rem 0 0.7rem 0;
-    border-bottom: 12px solid #ffd800;
     display: inline-block;
     margin-bottom: 2%;
   }
   .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--descripcion {
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 500;
   }
   .nuestrosEspacios__carousel--departamentosConfortables {
     display: -ms-grid;
@@ -1296,16 +1381,20 @@ main.contacto section.mapa iframe {
     margin-top: 5%;
     margin-bottom: 4%;
     font-size: 2.3rem;
+    text-align: left;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__titulo .highlight {
-    border-bottom: 10px solid #ffd800;
-    display: inline-block;
     padding-bottom: -4%;
     margin-bottom: 2%;
+  }
+  .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__titulo .highlight::before {
+    bottom: 0.6rem;
+    height: 0.5rem;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__subtitulo {
     font-weight: bold;
     font-size: 1.5rem;
+    text-align: left;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__descripcion {
     margin-bottom: 0%;
@@ -1327,6 +1416,13 @@ main.contacto section.mapa iframe {
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor ul li::marker {
     color: #ffd800;
+  }
+  #espaciosDeTrabajo {
+    margin-left: 20%;
+  }
+  #espaciosDeTrabajo li {
+    margin-top: 6%;
+    margin-left: 1%;
   }
   .carouselNuestrosEspacios {
     position: relative;
@@ -1370,6 +1466,14 @@ main.contacto section.mapa iframe {
     padding: 2rem 0 2rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
+  .contenedor__preguntasFrecuentes::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo {
     display: inline-block;
     font-size: 1.9rem;
@@ -1379,9 +1483,15 @@ main.contacto section.mapa iframe {
     margin: 2rem 0 0 0;
     line-height: 55px;
   }
-  .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo .highlight {
-    border-bottom: 12px solid #ffd800;
-    margin-bottom: 2%;
+  .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo .highlight::before {
+    content: "";
+    position: absolute;
+    left: 2.5%;
+    bottom: 0.45rem;
+    width: 95%;
+    height: 0.5rem;
+    background-color: #ffd800;
+    z-index: -1;
   }
   .contenedor__preguntas1 {
     -webkit-box-shadow: 0px 7px 6px #cac7c7;
@@ -1409,6 +1519,14 @@ main.contacto section.mapa iframe {
     padding: 0 0 2rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
+  .contenedor__preguntasFrecuentes::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo {
     display: inline-block;
     font-size: 1.8rem;
@@ -1418,7 +1536,6 @@ main.contacto section.mapa iframe {
     margin: 3rem 0 1rem 0;
     margin-bottom: 1%;
     padding-bottom: 0ch;
-    border-bottom: 12px solid #ffd800;
   }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo .highlight {
     border-width: 0ch;
@@ -1432,6 +1549,14 @@ main.contacto section.mapa iframe {
     padding: 0 0 2rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
+  .contenedor__preguntasFrecuentes::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo {
     display: inline-block;
     font-size: 2rem;
@@ -1441,7 +1566,6 @@ main.contacto section.mapa iframe {
     margin: 3rem 0 1rem 0;
     margin-bottom: 1%;
     padding-bottom: 0ch;
-    border-bottom: 12px solid #ffd800;
   }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo .highlight {
     border-width: 0ch;
@@ -1455,6 +1579,14 @@ main.contacto section.mapa iframe {
     padding: 0 0 2rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
+  .contenedor__preguntasFrecuentes::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo {
     display: inline-block;
     font-size: 2.2rem;
@@ -1464,10 +1596,16 @@ main.contacto section.mapa iframe {
     margin: 3rem 0 1rem 0;
     margin-bottom: 1%;
     padding-bottom: 0ch;
-    border-bottom: 12px solid #ffd800;
   }
-  .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo .highlight {
-    border-width: 0ch;
+  .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo .highlight::before {
+    content: "";
+    position: absolute;
+    left: 2.5%;
+    bottom: 0.25rem;
+    width: 95%;
+    height: 0.5rem;
+    background-color: #ffd800;
+    z-index: -1;
   }
   .contenedor__preguntas {
     margin-left: 6%;
@@ -1475,6 +1613,7 @@ main.contacto section.mapa iframe {
     padding: 4%;
     padding-bottom: 0%;
     font-family: "Poppins", Helvetica, sans-serif;
+    margin-left: 10%;
   }
   .contenedor__preguntas .contenedor__preguntas--preguntas {
     font-weight: bold;
@@ -1488,6 +1627,14 @@ main.contacto section.mapa iframe {
     padding: 0 0 2rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
+  .contenedor__preguntasFrecuentes::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
+  }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo {
     display: inline-block;
     font-size: 3.5rem;
@@ -1496,7 +1643,6 @@ main.contacto section.mapa iframe {
     z-index: 0;
     margin: 3rem 0 1rem 0;
     margin-bottom: 2%;
-    border-bottom: 12px solid #ffd800;
     vertical-align: text-bottom;
   }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo .highlight {
@@ -1508,6 +1654,7 @@ main.contacto section.mapa iframe {
     padding: 4%;
     padding-bottom: 0%;
     font-family: "Poppins", Helvetica, sans-serif;
+    margin-left: 10%;
   }
   .contenedor__preguntas .contenedor__preguntas--preguntas {
     font-weight: bold;
