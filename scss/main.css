@@ -1056,7 +1056,6 @@ main.contacto section.mapa iframe {
     list-style-type: square;
     margin-bottom: 3%;
     padding-bottom: 1%;
-    margin-left: 0.5%;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile ul li {
     margin-top: 2%;
@@ -1317,24 +1316,29 @@ main.contacto section.mapa iframe {
 @media (min-width: 1400px) {
   .contenedor__nuestrosEspacios {
     text-align: center;
-    padding: 0 0 2rem 0;
+    padding: 1rem 0 2rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
   .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo {
     display: inline-block;
-    font-size: 3.5rem;
+    font-size: 72px;
     font-weight: 500;
     position: relative;
     z-index: 0;
-    margin: 2rem 0 0.7rem 0;
+    margin: 4rem 0 2.5rem 0;
     display: inline-block;
-    margin-bottom: 2%;
   }
   .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--descripcion {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
     font-family: "Poppins", Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 37.5px;
+  }
+  .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--descripcion .negrita {
+    font-weight: 600;
   }
   .nuestrosEspacios__carousel--departamentosConfortables {
     display: -ms-grid;
@@ -1354,12 +1358,13 @@ main.contacto section.mapa iframe {
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor {
     margin-left: 8%;
+    margin-top: 6%;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__titulo {
-    font-weight: bold;
-    margin-top: 5%;
-    margin-bottom: 4%;
-    font-size: 2.3rem;
+    font-weight: 500;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 40px;
     text-align: left;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__titulo .highlight {
@@ -1371,27 +1376,32 @@ main.contacto section.mapa iframe {
     height: 0.5rem;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__subtitulo {
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 24px;
     text-align: left;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__descripcion {
     margin-bottom: 0%;
     margin-top: 4%;
     text-align: left;
+    font-size: 18px;
+    line-height: 30px;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor .departamentosConfortables__descripcionBis {
     margin-top: 0px;
     text-align: left;
+    font-size: 18px;
+    line-height: 30px;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor ul {
-    margin-top: 4%;
+    margin-top: 3%;
     list-style-type: square;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor ul li {
-    margin-top: 3%;
+    margin-top: 2%;
     text-align: left;
     color: black;
+    font-size: 17px;
   }
   .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor .departamentosConfortables__subContenedor ul li::marker {
     color: #ffd800;
@@ -1401,7 +1411,6 @@ main.contacto section.mapa iframe {
   }
   #espaciosDeTrabajo li {
     margin-top: 6%;
-    margin-left: 1%;
   }
   .carouselNuestrosEspacios {
     position: relative;
@@ -1441,7 +1450,7 @@ main.contacto section.mapa iframe {
 @media (min-width: 320px) {
   .contenedor__preguntasFrecuentes {
     text-align: center;
-    padding: 2rem 0 2rem 0;
+    padding: 0rem 0 1.3rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
     position: relative;
   }
@@ -1461,12 +1470,12 @@ main.contacto section.mapa iframe {
   }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 27px;
     font-weight: 500;
     position: relative;
     z-index: 0;
-    margin: 2rem 0 0 0;
-    line-height: 55px;
+    margin: 2.5rem 2rem 0 2rem;
+    line-height: 40px;
   }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo .highlight::before {
     content: "";
@@ -1478,29 +1487,36 @@ main.contacto section.mapa iframe {
     background-color: #ffd800;
     z-index: -1;
   }
-  .contenedor__preguntas1 {
-    -webkit-box-shadow: 0px 7px 6px #cac7c7;
-            box-shadow: 0px 7px 6px #cac7c7;
-  }
-  .contenedor__preguntas1 .contenedor__preguntas {
-    padding: 1rem;
-  }
   .contenedor__preguntas {
-    margin-left: 6%;
-    margin-right: 2%;
-    padding: 4%;
-    padding-bottom: 0%;
-    font-family: "Poppins", Helvetica, sans-serif;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 12%;
   }
-  .contenedor__preguntas .contenedor__preguntas--preguntas {
-    font-weight: bold;
+  .contenedor__preguntas--preguntas {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 12%;
+    line-height: 30px;
+  }
+  .contenedor__preguntas--respuesta2 {
+    margin-bottom: 10%;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .contenedor__preguntas--respuesta1 {
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .contenedor__preguntas--respuesta {
+    font-weight: 300;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 369px) {
   .contenedor__preguntasFrecuentes {
     text-align: center;
-    padding: 0 0 2rem 0;
+    padding: 0 0 1.3rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo {
@@ -1509,7 +1525,7 @@ main.contacto section.mapa iframe {
     font-weight: 500;
     position: relative;
     z-index: 0;
-    margin: 3rem 0 1rem 0;
+    margin: 2.5rem 2rem 0 2rem;
     margin-bottom: 1%;
     padding-bottom: 0ch;
   }
@@ -1521,21 +1537,41 @@ main.contacto section.mapa iframe {
 @media (min-width: 400px) {
   .contenedor__preguntasFrecuentes {
     text-align: center;
-    padding: 0 0 2rem 0;
+    padding: 0 0 1.3rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: 500;
+    line-height: 45px;
     position: relative;
     z-index: 0;
-    margin: 3rem 0 1rem 0;
-    margin-bottom: 1%;
-    padding-bottom: 0ch;
+    margin: 3rem 2rem 0 2rem;
   }
-  .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo .highlight {
-    border-width: 0ch;
+  .contenedor__preguntas {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 5%;
+  }
+  .contenedor__preguntas--preguntas {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 12%;
+    line-height: 30px;
+  }
+  .contenedor__preguntas--respuesta2 {
+    margin-bottom: 10%;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .contenedor__preguntas--respuesta1 {
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .contenedor__preguntas--respuesta {
+    font-weight: 300;
+    font-size: 20px;
   }
 }
 
@@ -1561,20 +1597,33 @@ main.contacto section.mapa iframe {
     left: 2.5%;
     bottom: 0.25rem;
     width: 95%;
-    height: 0.5rem;
+    height: 13px;
     background-color: #ffd800;
     z-index: -1;
   }
   .contenedor__preguntas {
     margin-left: 6%;
-    margin-right: 2%;
-    padding: 4%;
-    padding-bottom: 0%;
-    font-family: "Poppins", Helvetica, sans-serif;
-    margin-left: 10%;
+    margin-right: 6%;
+    margin-top: 5%;
   }
-  .contenedor__preguntas .contenedor__preguntas--preguntas {
-    font-weight: bold;
+  .contenedor__preguntas--preguntas {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 12%;
+    line-height: 30px;
+  }
+  .contenedor__preguntas--respuesta2 {
+    margin-bottom: 10%;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .contenedor__preguntas--respuesta1 {
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .contenedor__preguntas--respuesta {
+    font-weight: 300;
+    font-size: 20px;
   }
 }
 
@@ -1599,42 +1648,74 @@ main.contacto section.mapa iframe {
   }
   .contenedor__preguntas {
     margin-left: 6%;
-    margin-right: 2%;
-    padding: 4%;
-    padding-bottom: 0%;
-    font-family: "Poppins", Helvetica, sans-serif;
-    margin-left: 10%;
+    margin-right: 6%;
+    margin-top: 5%;
   }
-  .contenedor__preguntas .contenedor__preguntas--preguntas {
-    font-weight: bold;
+  .contenedor__preguntas--preguntas {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 12%;
+    line-height: 30px;
   }
-  .contenedor__preguntas .contenedor__preguntas--respuesta {
-    margin-bottom: 4%;
+  .contenedor__preguntas--respuesta2 {
+    margin-bottom: 10%;
+    font-weight: 300;
+    font-size: 20px;
   }
-  .contenedor__preguntas .contenedor__preguntas--respuesta1 {
-    margin-bottom: 0.5%;
-    margin-top: 0%;
+  .contenedor__preguntas--respuesta1 {
+    font-weight: 300;
+    font-size: 20px;
   }
-  .contenedor__preguntas .contenedor__preguntas--respuesta1 {
-    margin-bottom: 0%;
-    margin-top: 0%;
+  .contenedor__preguntas--respuesta {
+    font-weight: 300;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 1020px) {
   .contenedor__preguntasFrecuentes {
     text-align: center;
-    padding: 0 0 2rem 0;
+    padding: 1.5rem 0 2rem 0;
     font-family: "Poppins", Helvetica, sans-serif;
   }
   .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo {
     display: inline-block;
-    font-size: 3.5rem;
+    font-size: 72px;
     font-weight: 500;
+    margin-top: 6%;
+  }
+  .contenedor__preguntasFrecuentes .contenedor__PreguntasFrecuentes--titulo .highlight::before {
+    content: "";
+    position: absolute;
+    left: 2.5%;
+    bottom: -8px;
+    width: 95%;
+    height: 13px;
+    background-color: #ffd800;
+    z-index: -1;
   }
   .contenedor__preguntas {
     margin-left: 6%;
     margin-right: 6%;
+    margin-top: 1%;
+  }
+  .contenedor__preguntas--respuesta2 {
+    margin-bottom: 6%;
+    font-weight: 300;
+    font-size: 25px;
+  }
+  .contenedor__preguntas--respuesta1 {
+    font-weight: 300;
+    font-size: 25px;
+  }
+  .contenedor__preguntas--preguntas {
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 6%;
+  }
+  .contenedor__preguntas--respuesta {
+    font-weight: 300;
+    font-size: 25px;
   }
 }
 
