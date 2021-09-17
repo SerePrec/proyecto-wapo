@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./scss/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="...">
@@ -66,15 +66,14 @@
             </div>
         </div>
     </header>
-
-    <main class="nuestrosEspacios">
-        <section class="contenedor__nuestrosEspacios">
-            <h2 class="contenedor__nuestrosEspacios--titulo"><span class="highlight">NUESTROS ESPACIOS</span></h2>
-            <p class="contenedor__nuestrosEspacios--descripcion">
-                <bold class="negrita">WAPO</bold> se encuentra en Moreno, La Reja, y ofrece departamentos independientes. Todos equipados con las mismas comodidades, solo varían los metros cuadrados. Cuenta con espacios de coworking, con oficinas privadas, living con sillones
-                y TV y un Gym Boutique donde se pueden contratar clases particulares, hay WIFI gratuito en todas las instalaciones.
-            </p>
-        </section>
+    <section class="contenedor__nuestrosEspacios">
+        <h2 class="contenedor__nuestrosEspacios--titulo"><span class="highlight">NUESTROS ESPACIOS</span></h2>
+        <p class="contenedor__nuestrosEspacios--descripcion">
+            <bold class="negrita">WAPO</bold> se encuentra en Moreno, La Reja, y ofrece departamentos independientes. Todos equipados con las mismas comodidades, solo varían los metros cuadrados. Cuenta con espacios de coworking, con oficinas privadas, living con sillones
+            y TV y un Gym Boutique donde se pueden contratar clases particulares, hay WIFI gratuito en todas las instalaciones.
+        </p>
+    </section>
+    <main class="nuestrosEspacios" id="nuestrosEspacios__mobile">
         <section class="nuestrosEspacios__carousel--departamentosConfortables">
             <div class="departamentosConfortables__contenedor--mobile">
                 <div class="departamentosConfortables__subContenedor--mobile">
@@ -124,10 +123,10 @@
                     <p class="departamentosConfortables__descripcion">Contratos cortos y todos los servicios incluidos en una sola factura!</p>
                     <p class="departamentosConfortables__descripcionBis">Departamentos equipados, servicios de limpieza y conectividad en todas las áreas... con todo esto no necesitás nada más!</p>
                     <ul>
-                        <li>Cama sommier con sábanas</li>
-                        <li>Tv Smart de 50 pulgadas</li>
-                        <li>Aire acondicionado frío/calor</li>
-                        <li>Kitchenette con dos anafes de vitrocerámica, Microondas, heladera</li>
+                        <li class="amplio2">Cama sommier con sábanas</li>
+                        <li class="amplio2">Tv Smart de 50 pulgadas</li>
+                        <li class="amplio2">Aire acondicionado frío/calor</li>
+                        <li class="amplio2">Kitchenette con dos anafes de vitrocerámica, Microondas, heladera</li>
                         <li>Baño completo con ducha y toallas</li>
                     </ul>
                 </div>
@@ -274,6 +273,7 @@
             </div>
 
         </section>
+
     </main>
     <footer>
         <img class="logo" src="./img/logo_bw.svg" alt="WAPO">
