@@ -263,7 +263,7 @@ main.home .propuesta::before {
   height: 100%;
   z-index: -1;
   opacity: 0.5;
-  background-image: url("../img/fondo_piedra_todos.png");
+  background-image: url("../img/fondo_piedra_todos.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -694,7 +694,7 @@ main.contacto .contacto .contacto-wraper aside:not(.mapa) .cercanias p {
 }
 
 main.home .contacto {
-  background-image: url("../img/fondo_piedra_todos.png");
+  background-image: url("../img/fondo_piedra_todos.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -737,7 +737,7 @@ main.contacto .contacto::before {
   height: 100%;
   z-index: -1;
   opacity: 0.5;
-  background-image: url("../img/fondo_piedra_todos.png");
+  background-image: url("../img/fondo_piedra_todos.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -870,7 +870,7 @@ main.contacto section.mapa iframe {
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background-image: url("../img/fondo_piedra_todos.png");
+    background-image: url("../img/fondo_piedra_todos.jpg");
     background-size: contain;
   }
   #nuestrosEspacios__mobile {
@@ -947,7 +947,183 @@ main.contacto section.mapa iframe {
   margin-top: 1%;
   margin-bottom: 0;
   font-size: 1.9rem;
-  padding-top: 4%;
+  padding: 1.75rem 0;
+  background-color: white;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile .departamentosConfortables__titulo--mobile .highlight {
+  padding-bottom: -4%;
+  margin-bottom: 2%;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile .departamentosConfortables__titulo--mobile .highlight::before {
+  content: "";
+  position: absolute;
+  left: 2.5%;
+  bottom: 0.25rem;
+  width: 95%;
+  height: 0.5rem;
+  background-color: #ffd800;
+  z-index: -1;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile #departamentosConfortables__titulo--mobileBis2 {
+  -webkit-box-shadow: 0px 7px 6px #cac7c7;
+          box-shadow: 0px 7px 6px #cac7c7;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile .departamentosConfortables__subtitulo--mobile {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0%;
+  margin-bottom: 3%;
+  padding-top: 2%;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile .departamentosConfortables__descripcion--mobile {
+  margin: 0% 4% 0% 4%;
+  text-align: left;
+  font-size: 16px;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile .departamentosConfortables__descripcionBis--mobile {
+  margin: 0% 4% 0% 4%;
+  text-align: left;
+  font-size: 16px;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile ul {
+  margin-top: 0%;
+  margin-left: 2%;
+  list-style-type: square;
+  margin-bottom: 3%;
+  padding-bottom: 2.5rem;
+  margin-right: 2%;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile ul li {
+  margin-top: 2%;
+  color: black;
+  text-align: left;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile ul li::marker {
+  color: #ffd800;
+}
+
+#ampliosEspaciosDeTrabajo .carousel-item:nth-child(1) img,
+#ampliosEspaciosDeTrabajo .carousel-item:nth-child(2) img,
+#ampliosEspaciosDeTrabajo .carousel-item:nth-child(3) img {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+@media (min-width: 367px) {
+  .carouselNuestrosEspacios {
+    position: relative;
+  }
+  .carouselNuestrosEspacios .carousel-inner {
+    position: relative;
+  }
+  .carouselNuestrosEspacios .carousel-inner .carousel-item img {
+    min-height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .backWraper {
+    position: relative;
+  }
+  .backWraper::before {
+    position: absolute;
+    content: " ";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-image: url("../img/fondo_piedra_todos.jpg");
+    background-size: contain;
+  }
+  #nuestrosEspacios__mobile {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 1rem;
+  }
+  .contenedor__nuestrosEspacios {
+    text-align: center;
+    padding: 0 0 0.5rem 0;
+    font-family: "Poppins", Helvetica, sans-serif;
+    position: relative;
+  }
+  .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo {
+    font-size: 2.3rem;
+    font-weight: 500px;
+    position: relative;
+    z-index: 0;
+    margin: 3rem 0.6rem 1.5rem 0.6rem;
+    display: inline-block;
+  }
+  .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo .highlight {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+  }
+  .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--titulo .highlight::before {
+    content: "";
+    position: absolute;
+    left: 2.5%;
+    bottom: 0.25rem;
+    width: 95%;
+    height: 0.5rem;
+    background-color: #ffd800;
+    z-index: -1;
+  }
+  .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--descripcion {
+    margin-left: 9%;
+    margin-right: 9%;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .contenedor__nuestrosEspacios .contenedor__nuestrosEspacios--descripcion .negrita {
+    font-weight: 600;
+  }
+  .button__bar--nuestrosEspacios {
+    height: 5%;
+    padding-bottom: 5%;
+  }
+  .departamentosConfortables__contenedor {
+    display: none;
+  }
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables {
+  font-family: "Poppins", Helvetica, sans-serif;
+  text-align: center;
+  background-color: transparent;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile #departamentosConfortables__titulo--mobileBis2 {
+  margin-bottom: 3rem;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile {
+  margin-left: 0%;
+  margin-top: 0%;
+  background-color: white;
+}
+
+.nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile .departamentosConfortables__titulo--mobile {
+  font-weight: 500;
+  margin-top: 1%;
+  margin-bottom: 0;
+  font-size: 1.9rem;
+  padding: 1.75rem 0;
   background-color: white;
 }
 
@@ -981,6 +1157,9 @@ main.contacto section.mapa iframe {
   margin-top: 0%;
   margin-bottom: 3%;
   padding-top: 2%;
+  text-align: left;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .nuestrosEspacios__carousel--departamentosConfortables .departamentosConfortables__contenedor--mobile .departamentosConfortables__subContenedor--mobile .departamentosConfortables__descripcion--mobile {
@@ -1000,7 +1179,7 @@ main.contacto section.mapa iframe {
   margin-left: 2%;
   list-style-type: square;
   margin-bottom: 3%;
-  padding-bottom: 3%;
+  padding-bottom: 2.5rem;
   margin-right: 2%;
 }
 
@@ -1036,7 +1215,7 @@ main.contacto section.mapa iframe {
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background-image: url("../img/fondo_piedra_todos.png");
+    background-image: url("../img/fondo_piedra_todos.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1111,9 +1290,9 @@ main.contacto section.mapa iframe {
     content: "";
     position: absolute;
     left: 2.5%;
-    bottom: 0.45rem;
+    bottom: 0.25rem;
     width: 95%;
-    height: 0.5rem;
+    height: 0.3rem;
     background-color: #ffd800;
     z-index: -1;
   }
@@ -1214,7 +1393,7 @@ main.contacto section.mapa iframe {
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background-image: url("../img/fondo_piedra_todos.png");
+    background-image: url("../img/fondo_piedra_todos.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1283,9 +1462,9 @@ main.contacto section.mapa iframe {
     content: "";
     position: absolute;
     left: 2.5%;
-    bottom: 0.45rem;
+    bottom: 0.3rem;
     width: 95%;
-    height: 0.5rem;
+    height: 0.3rem;
     background-color: #ffd800;
     z-index: -1;
   }
@@ -1385,7 +1564,7 @@ main.contacto section.mapa iframe {
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background-image: url("../img/fondo_piedra_todos.png");
+    background-image: url("../img/fondo_piedra_todos.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1454,7 +1633,7 @@ main.contacto section.mapa iframe {
     content: "";
     position: absolute;
     left: 2.5%;
-    bottom: 0.45rem;
+    bottom: 0.4rem;
     width: 95%;
     height: 0.5rem;
     background-color: #ffd800;
@@ -1982,7 +2161,7 @@ main.contacto section.mapa iframe {
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background-image: url("../img/fondo_piedra_todos.png");
+    background-image: url("../img/fondo_piedra_todos.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
