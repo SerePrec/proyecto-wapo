@@ -76,6 +76,9 @@
       &:hover {
         color: $amarillo-claro;
       }
+      &.link--mobile {
+        display: none;
+      }
     }
     &:hover {
       .carousel-inner {
@@ -118,6 +121,20 @@
             left: 0%;
             right: 0%;
           }
+        }
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    #carouselDptos,
+    #carouselEspTrabajo,
+    #carouselEspComun {
+      .carousel-btn {
+        &.link--md {
+          display: none;
+        }
+        &.link--mobile {
+          display: inline;
         }
       }
     }
